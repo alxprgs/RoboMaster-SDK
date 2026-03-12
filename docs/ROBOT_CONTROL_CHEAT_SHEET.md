@@ -1,0 +1,3126 @@
+# RoboMaster SDK — Control API Cheat Sheet (clean)
+
+> Только пользовательские API управления: robot/chassis/gimbal/camera/blaster/led/vision/sensor/robotic_arm/gripper/servo/battery/flight/multi_robot + примеры. Исключены tests/pybind/protocol/internal/decoder/mkdoc/tools.
+
+## Инициализация / подключение / остановка
+
+- `src.robomaster.robot:Drone.__init__` — описание отсутствует
+- `src.robomaster.robot:Drone.start` — описание отсутствует
+- `src.robomaster.robot:Drone.search_stop` — описание отсутствует
+- `src.robomaster.robot:Drone.initialize` — описание отсутствует
+- `src.robomaster.robot:Drone.close` — 停止drone对象
+- `src.robomaster.robot:Robot.__init__` — описание отсутствует
+- `src.robomaster.robot:Robot._start_heart_beat_timer` — описание отсутствует
+- `src.robomaster.robot:Robot._stop_heart_beat_timer` — описание отсутствует
+- `src.robomaster.robot:Robot.is_initialized` — описание отсутствует
+- `src.robomaster.robot:Robot.initialize` — 初始化机器人
+- `src.robomaster.robot:Robot.close` — описание отсутствует
+- `src.robomaster.robot:Robot._wait_for_connection` — описание отсутствует
+- `src.robomaster.chassis:ChassisMoveAction.__init__` — описание отсутствует
+- `src.robomaster.chassis:Chassis.__init__` — описание отсутствует
+- `src.robomaster.chassis:Chassis.stop` — описание отсутствует
+- `src.robomaster.chassis:Chassis._auto_stop_timer` — описание отсутствует
+- `src.robomaster.gimbal:GimbalMoveAction.__init__` — описание отсутствует
+- `src.robomaster.gimbal:GimbalRecenterAction.__init__` — описание отсутствует
+- `src.robomaster.gimbal:Gimbal.__init__` — описание отсутствует
+- `src.robomaster.camera:Camera.__init__` — описание отсутствует
+- `src.robomaster.camera:Camera.start_video_stream` — описание отсутствует
+- `src.robomaster.camera:Camera.stop_video_stream` — описание отсутствует
+- `src.robomaster.camera:TelloCamera.__init__` — описание отсутствует
+- `src.robomaster.camera:TelloCamera.start_video_stream` — 开启视频流
+- `src.robomaster.camera:TelloCamera.stop_video_stream` — описание отсутствует
+- `src.robomaster.camera:TelloCamera.stop` — описание отсутствует
+- `src.robomaster.camera:EPCamera.__init__` — описание отсутствует
+- `src.robomaster.camera:EPCamera.start_video_stream` — 开启视频流
+- `src.robomaster.camera:EPCamera.stop_video_stream` — 停止视频流
+- `src.robomaster.camera:EPCamera.start_audio_stream` — 开启音频流
+- `src.robomaster.camera:EPCamera.stop_audio_stream` — 停止音频流
+- `src.robomaster.camera:EPCamera.stop` — 停止
+- `src.robomaster.blaster:Blaster.__init__` — описание отсутствует
+- `src.robomaster.led:Led.__init__` — описание отсутствует
+- `src.robomaster.led:TelloLed.__init__` — описание отсутствует
+- `src.robomaster.vision:Vision.__init__` — описание отсутствует
+- `src.robomaster.sensor:DistanceSensor.__init__` — описание отсутствует
+- `src.robomaster.sensor:SensorAdaptor.__init__` — описание отсутствует
+- `src.robomaster.sensor:TelloDistanceSensor.__init__` — описание отсутствует
+- `src.robomaster.robotic_arm:RoboticArmMoveAction.__init__` — описание отсутствует
+- `src.robomaster.robotic_arm:RoboticArm.__init__` — описание отсутствует
+- `src.robomaster.gripper:Gripper.__init__` — описание отсутствует
+- `src.robomaster.gripper:Gripper.close` — 控制机械爪关闭
+- `src.robomaster.servo:ServoSetAngleAction.__init__` — описание отсутствует
+- `src.robomaster.servo:Servo.__init__` — описание отсутствует
+- `src.robomaster.battery:TelloBattery.__init__` — описание отсутствует
+- `src.robomaster.battery:Battery.__init__` — описание отсутствует
+- `src.robomaster.flight:FlightAction.__init__` — описание отсутствует
+- `src.robomaster.flight:Flight.__init__` — описание отсутствует
+- `src.robomaster.flight:Flight.stop` — 停止rc运动并悬停，任何时候都可以
+- `src.multi_robomaster.multi_robot:MultiRobotBase.__init__` — описание отсутствует
+- `src.multi_robomaster.multi_robot:MultiRobotBase.initialize` — scan all robots and init its
+- `src.multi_robomaster.multi_robot:MultiRobotBase.close` — описание отсутствует
+- `src.multi_robomaster.multi_robot:MultiEP.__init__` — описание отсутствует
+- `src.multi_robomaster.multi_robot:MultiEP.initialize` — scan all robots and init its
+- `src.multi_robomaster.multi_robot:MultiDrone.__init__` — описание отсутствует
+- `src.multi_robomaster.multi_robot:MultiDrone.initialize` — описание отсутствует
+- `src.multi_robomaster.multi_robot:MultiDrone.close` — описание отсутствует
+
+## Robot
+
+### `src/robomaster/robot.py`
+
+#### Классы
+
+- **Класс `Drone`** (публичный)
+  - Описание: 教育系列无人机
+  - Конструктор: `__init__(self, cli=None)`
+  - Аргументы конструктора:
+    - `cli`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, cli=None)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `cli`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__()`
+    - `conf` (публичный)
+      - Сигнатура: `conf(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.conf()`
+    - `flight` (публичный)
+      - Сигнатура: `flight(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.flight()`
+    - `action_dispatcher` (публичный)
+      - Сигнатура: `action_dispatcher(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.action_dispatcher()`
+    - `battery` (публичный)
+      - Сигнатура: `battery(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.battery()`
+    - `camera` (публичный)
+      - Сигнатура: `camera(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.camera()`
+    - `dds` (публичный)
+      - Сигнатура: `dds(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.dds()`
+    - `sensor` (публичный)
+      - Сигнатура: `sensor(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.sensor()`
+    - `led` (публичный)
+      - Сигнатура: `led(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.led()`
+    - `ai_module` (публичный)
+      - Сигнатура: `ai_module(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.ai_module()`
+    - `get_module` (публичный)
+      - Сигнатура: `get_module(self, name)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - `name`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.get_module(...)`
+    - `_scan_modules` (приватный)
+      - Сигнатура: `_scan_modules(self)`
+      - Описание: описание отсутствует
+      - Связи: Flight, TelloCamera, TelloBattery, TelloAI, TelloSubscriber
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._scan_modules()`
+    - `get_subnets` (публичный)
+      - Сигнатура: `get_subnets(self)`
+      - Описание: Look through the machine's internet connection and
+      - Связи: interfaces, ifaddresses, IPNetwork, append
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_subnets()`
+    - `_scan_host` (приватный)
+      - Сигнатура: `_scan_host(self, timeout=10)`
+      - Описание: Find avaliable ip list in server's subnets
+      - Связи: info, get_subnets, time, IPNetwork, len
+      - Аргументы:
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._scan_host()`
+    - `scan_drone_robot` (публичный)
+      - Сигнатура: `scan_drone_robot(self)`
+      - Описание: Automatic scanning of robots in the network
+      - Связи: Thread, start, _scan_host, join
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.scan_drone_robot()`
+    - `_scan_receive_task` (приватный)
+      - Сигнатура: `_scan_receive_task(self)`
+      - Описание: Listen to responses from the Tello when scan the devices.
+      - Связи: info, len, recvfrom, join, format
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._scan_receive_task()`
+    - `start` (публичный)
+      - Сигнатура: `start(self)`
+      - Описание: описание отсутствует
+      - Связи: socket, bind, get_local_ip, warning, format
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.start()`
+    - `search_stop` (публичный)
+      - Сигнатура: `search_stop(self)`
+      - Описание: описание отсутствует
+      - Связи: close
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.search_stop()`
+    - `initialize` (публичный)
+      - Сигнатура: `initialize(self, conn_type=config.DEFAULT_CONN_TYPE)`
+      - Описание: описание отсутствует
+      - Связи: ActionDispatcher, initialize, _scan_modules, _enable_sdk, start
+      - Аргументы:
+        - `conn_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_robot.initialize(conn_type='rndis')` (`examples/01_robot/00_logger.py:30`)
+        - `ep_robot.initialize(conn_type="ap")` (`examples/01_robot/01_get_version.py:22`)
+    - `_enable_sdk` (приватный)
+      - Сигнатура: `_enable_sdk(self, on_off=1)`
+      - Описание: описание отсутствует
+      - Связи: TextProtoDrone, TextMsg, get_status, send_sync_msg, get_proto
+      - Аргументы:
+        - `on_off`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._enable_sdk()`
+    - `close` (публичный)
+      - Сигнатура: `close(self)`
+      - Описание: 停止drone对象
+      - Связи: _enable_sdk, stop, info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_robot.close()` (`examples/01_robot/00_logger.py:34`)
+        - `ep_robot.close()` (`examples/01_robot/01_get_version.py:27`)
+    - `send_command` (публичный)
+      - Сигнатура: `send_command(self)`
+      - Описание: описание отсутствует
+      - Связи: _enable_sdk
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.send_command()`
+    - `get_sdk_version` (публичный)
+      - Сигнатура: `get_sdk_version(self)`
+      - Описание: 获取SDK版本号
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `version = tl_drone.get_sdk_version()` (`examples/12_drone/00_logger.py:28`)
+        - `version = tl_drone.get_sdk_version()` (`examples/12_drone/01_ap_conn.py:28`)
+    - `get_wifi_version` (публичный)
+      - Сигнатура: `get_wifi_version(self)`
+      - Описание: 获取WIFI版本号
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_wifi_version()`
+    - `get_ssid` (публичный)
+      - Сигнатура: `get_ssid(self)`
+      - Описание: 获取SSID名称
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ssid = tl_drone.get_ssid()` (`examples/12_drone/24_get_ssid.py:26`)
+    - `get_drone_version` (публичный)
+      - Сигнатура: `get_drone_version(self)`
+      - Описание: 获取飞机固件版本号
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_drone_version()`
+    - `get_esp32_version` (публичный)
+      - Сигнатура: `get_esp32_version(self)`
+      - Описание: 获取esp32版本号
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_esp32_version()`
+    - `get_hardware` (публичный)
+      - Сигнатура: `get_hardware(self)`
+      - Описание: 获取飞机硬件信息
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_hardware()`
+    - `get_sn` (публичный)
+      - Сигнатура: `get_sn(self)`
+      - Описание: 获取飞机sn号
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `SN = ep_robot.get_sn()` (`examples/01_robot/02_get_sn.py:24`)
+        - `SN = tl_drone.get_sn()` (`examples/12_drone/03_get_sn.py:26`)
+    - `get_wifi` (публичный)
+      - Сигнатура: `get_wifi(self)`
+      - Описание: 获取wifi信噪比
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_wifi()`
+    - `get_motor_time` (публичный)
+      - Сигнатура: `get_motor_time(self)`
+      - Описание: 获取电机运行时间
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_motor_time()`
+    - `get_height` (публичный)
+      - Сигнатура: `get_height(self)`
+      - Описание: 获取飞机相对高度
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_height()`
+    - `get_temp` (публичный)
+      - Сигнатура: `get_temp(self)`
+      - Описание: 获取飞机机身温度
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_temp()`
+    - `get_attitude` (публичный)
+      - Сигнатура: `get_attitude(self)`
+      - Описание: 获取飞机三轴姿态信息
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_attitude()`
+    - `get_baro` (публичный)
+      - Сигнатура: `get_baro(self)`
+      - Описание: 获取电机气压计高度
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_baro()`
+    - `get_acceleration` (публичный)
+      - Сигнатура: `get_acceleration(self)`
+      - Описание: 获取飞机三轴加速度值
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_acceleration()`
+    - `set_wifichannel` (публичный)
+      - Сигнатура: `set_wifichannel(self, channel)`
+      - Описание: 设置飞机WIFI信道
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, get_proto
+      - Аргументы:
+        - `channel`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 需要设置的信道
+      - Пример: `obj.set_wifichannel(...)`
+    - `config_sta` (публичный)
+      - Сигнатура: `config_sta(self, ssid, password)`
+      - Описание: 设置飞机的连接模式为组网模式
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, warning
+      - Аргументы:
+        - `ssid`: тип `не указан`; единицы `не указаны`; диапазон `целое`; 路由器的账号
+        - `password`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 路由器的密码
+      - Пример из examples:
+        - `tl_drone.config_sta(ssid="RoboMaster_SDK_WiFi", password="12341234")` (`examples/12_drone/23_set_sta.py:26`)
+    - `sub_temp` (публичный)
+      - Сигнатура: `sub_temp(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅飞机温度信息
+      - Связи: TelloTempInfoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 订阅数据的频率, 1HZ, 5HZ, 10HZ
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入数据处理的回掉函数
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+      - Пример: `obj.sub_temp()`
+    - `unsub_temp` (публичный)
+      - Сигнатура: `unsub_temp(self)`
+      - Описание: 取消订阅温度信息。
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.unsub_temp()`
+    - `sub_tof` (публичный)
+      - Сигнатура: `sub_tof(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅飞机tof信息
+      - Связи: TelloTofInfoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 订阅数据的频率, 1HZ, 5HZ, 10HZ
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入数据处理的回掉函数
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+      - Пример из examples:
+        - `tl_drone.sub_tof(freq=10, callback=sub_tof_info_handler)` (`examples/12_drone/17_sub_info.py:36`)
+    - `unsub_tof` (публичный)
+      - Сигнатура: `unsub_tof(self)`
+      - Описание: 取消订阅tof信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `tl_drone.unsub_tof()` (`examples/12_drone/17_sub_info.py:44`)
+    - `sub_drone_info` (публичный)
+      - Сигнатура: `sub_drone_info(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅飞机高度、气压计、电机运行时间信息
+      - Связи: TelloDroneInfoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 订阅数据的频率, 1HZ, 5HZ, 10HZ
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入数据处理的回掉函数
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+      - Пример из examples:
+        - `tl_drone.sub_drone_info(freq=1, callback=sub_drone_info_handler)` (`examples/12_drone/17_sub_info.py:37`)
+    - `unsub_drone_info` (публичный)
+      - Сигнатура: `unsub_drone_info(self)`
+      - Описание: 取消订阅飞机高度、气压计、电机运行时间信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `tl_drone.unsub_drone_info()` (`examples/12_drone/17_sub_info.py:45`)
+    - `_sub_drone_all_status` (приватный)
+      - Сигнатура: `_sub_drone_all_status(self, freq=10, callback=None, *args, **kw)`
+      - Описание: 订阅飞机所有状态数据
+      - Связи: TelloStatusSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 订阅数据的频率, 1HZ, 5HZ, 10HZ
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; function:传入数据处理的回掉函数
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+      - Пример: `obj._sub_drone_all_status()`
+    - `_unsub_drone_all_status` (приватный)
+      - Сигнатура: `_unsub_drone_all_status(self)`
+      - Описание: 取消订阅飞机所有状态
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._unsub_drone_all_status()`
+    - `get_status` (публичный)
+      - Сигнатура: `get_status(self, name)`
+      - Описание: 获取飞机指定的状态
+      - Связи: get_status
+      - Аргументы:
+        - `name`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; string:需要获取的状态名，可列表["MID", "x", "y", "z", "mpry", "pitch", "roll", "yaw", "vgx", "vgy",
+      - Пример: `obj.get_status(...)`
+
+- **Класс `Robot`** (публичный)
+  - Описание: RoboMaster EP 机甲大师 机器人
+  - Конструктор: `__init__(self, cli=None)`
+  - Аргументы конструктора:
+    - `cli`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, cli=None)`
+      - Описание: описание отсутствует
+      - Связи: __init__, SdkConnection, FtpConnection, super
+      - Аргументы:
+        - `cli`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__()`
+    - `__del__` (приватный)
+      - Сигнатура: `__del__(self)`
+      - Описание: описание отсутствует
+      - Связи: close, list, keys
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__del__()`
+    - `_start_heart_beat_timer` (приватный)
+      - Сигнатура: `_start_heart_beat_timer(self)`
+      - Описание: описание отсутствует
+      - Связи: _send_heart_beat_msg
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._start_heart_beat_timer()`
+    - `_stop_heart_beat_timer` (приватный)
+      - Сигнатура: `_stop_heart_beat_timer(self)`
+      - Описание: описание отсутствует
+      - Связи: cancel
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._stop_heart_beat_timer()`
+    - `_send_heart_beat_msg` (приватный)
+      - Сигнатура: `_send_heart_beat_msg(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoSdkHeartBeat, Msg, host2byte, send_msg, Timer
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._send_heart_beat_msg()`
+    - `conf` (публичный)
+      - Сигнатура: `conf(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.conf()`
+    - `action_dispatcher` (публичный)
+      - Сигнатура: `action_dispatcher(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.action_dispatcher()`
+    - `ip` (публичный)
+      - Сигнатура: `ip(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.ip()`
+    - `conn_type` (публичный)
+      - Сигнатура: `conn_type(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.conn_type()`
+    - `proto_type` (публичный)
+      - Сигнатура: `proto_type(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.proto_type()`
+    - `chassis` (публичный)
+      - Сигнатура: `chassis(self)`
+      - Описание: 获取底盘模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.chassis()`
+    - `gimbal` (публичный)
+      - Сигнатура: `gimbal(self)`
+      - Описание: 获取云台模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.gimbal()`
+    - `blaster` (публичный)
+      - Сигнатура: `blaster(self)`
+      - Описание: 获取水弹枪模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.blaster()`
+    - `led` (публичный)
+      - Сигнатура: `led(self)`
+      - Описание: 获取灯效控制模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.led()`
+    - `vision` (публичный)
+      - Сигнатура: `vision(self)`
+      - Описание: 获取智能识别模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.vision()`
+    - `battery` (публичный)
+      - Сигнатура: `battery(self)`
+      - Описание: 获取电池模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.battery()`
+    - `camera` (публичный)
+      - Сигнатура: `camera(self)`
+      - Описание: 获取相机模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.camera()`
+    - `robotic_arm` (публичный)
+      - Сигнатура: `robotic_arm(self)`
+      - Описание: 获取机械臂模块对象
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.robotic_arm()`
+    - `dds` (публичный)
+      - Сигнатура: `dds(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.dds()`
+    - `servo` (публичный)
+      - Сигнатура: `servo(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.servo()`
+    - `sensor` (публичный)
+      - Сигнатура: `sensor(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.sensor()`
+    - `sensor_adaptor` (публичный)
+      - Сигнатура: `sensor_adaptor(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.sensor_adaptor()`
+    - `gripper` (публичный)
+      - Сигнатура: `gripper(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.gripper()`
+    - `armor` (публичный)
+      - Сигнатура: `armor(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.armor()`
+    - `uart` (публичный)
+      - Сигнатура: `uart(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.uart()`
+    - `ai_module` (публичный)
+      - Сигнатура: `ai_module(self)`
+      - Описание: описание отсутствует
+      - Связи: get_module
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.ai_module()`
+    - `is_initialized` (публичный)
+      - Сигнатура: `is_initialized(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.is_initialized()`
+    - `_scan_modules` (приватный)
+      - Сигнатура: `_scan_modules(self)`
+      - Описание: описание отсутствует
+      - Связи: Gimbal, Chassis, EPCamera, Blaster, Vision
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._scan_modules()`
+    - `get_module` (публичный)
+      - Сигнатура: `get_module(self, name)`
+      - Описание: 获取模块对象
+      - Связи: не выявлены
+      - Аргументы:
+        - `name`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 模块名称，字符串，如：chassis, gimbal, led, blaster, camera, battery, vision, etc.
+      - Пример: `obj.get_module(...)`
+    - `initialize` (публичный)
+      - Сигнатура: `initialize(self, conn_type=config.DEFAULT_CONN_TYPE, proto_type=config.DEFAULT_PROTO_TYPE, sn=None)`
+      - Описание: 初始化机器人
+      - Связи: ActionDispatcher, initialize, _scan_modules, _enable_sdk, reset
+      - Аргументы:
+        - `conn_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 连接建立类型: ap表示使用热点直连；sta表示使用组网连接，rndis表示使用USB连接
+        - `proto_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 通讯方式: tcp, udp
+        - `sn`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_robot.initialize(conn_type='rndis')` (`examples/01_robot/00_logger.py:30`)
+        - `ep_robot.initialize(conn_type="ap")` (`examples/01_robot/01_get_version.py:22`)
+    - `close` (публичный)
+      - Сигнатура: `close(self)`
+      - Описание: описание отсутствует
+      - Связи: stop, list, info, _enable_sdk, _stop_heart_beat_timer
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_robot.close()` (`examples/01_robot/00_logger.py:34`)
+        - `ep_robot.close()` (`examples/01_robot/01_get_version.py:27`)
+    - `_wait_for_connection` (приватный)
+      - Сигнатура: `_wait_for_connection(self, conn_type, proto_type, sn=None)`
+      - Описание: описание отсутствует
+      - Связи: request_connection, Connection, error, format
+      - Аргументы:
+        - `conn_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `proto_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `sn`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._wait_for_connection(..., ...)`
+    - `reset` (публичный)
+      - Сигнатура: `reset(self)`
+      - Описание: 重置机器人到初始默认状态
+      - Связи: _sub_node_reset, _sub_add_node, set_robot_mode, reset
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.reset()`
+    - `reset_robot_mode` (публичный)
+      - Сигнатура: `reset_robot_mode(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoSetRobotMode, Msg, host2byte, send_sync_msg, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.reset_robot_mode()`
+    - `set_robot_mode` (публичный)
+      - Сигнатура: `set_robot_mode(self, mode=GIMBAL_LEAD)`
+      - Описание: 设置机器人工作模式
+      - Связи: ProtoSetRobotMode, Msg, host2byte, send_sync_msg, reset_robot_mode
+      - Аргументы:
+        - `mode`: тип `не указан`; единицы `не указаны`; диапазон `enum/строка`; 机器人工作模式: free表示自由模式；chassis_lead表示云台跟随底盘模式；gimbal_lead表示底盘跟随云台模式
+      - Пример из examples:
+        - `ep_robot.set_robot_mode(mode=robot.GIMBAL_LEAD)` (`examples/01_robot/09_set_mode.py:24`)
+        - `ep.set_robot_mode(mode=robot.GIMBAL_LEAD)` (`examples/16_gamesystem/00_gamesystem.py:56`)
+    - `get_robot_mode` (публичный)
+      - Сигнатура: `get_robot_mode(self)`
+      - Описание: 获取机器人工作模式
+      - Связи: Msg, host2byte, ProtoGetRobotMode, send_sync_msg, get_proto
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_robot_mode()`
+    - `_enable_sdk` (приватный)
+      - Сигнатура: `_enable_sdk(self, enable=1)`
+      - Описание: 进入和退出SDK模式
+      - Связи: ProtoSetSdkMode, Msg, host2byte, send_sync_msg, warning
+      - Аргументы:
+        - `enable`: тип `не указан`; единицы `не указаны`; диапазон `True/False или 0/1`; 进入或退出SDK模式，1 为进入SDK模式，0 为退出SDK模式
+      - Пример: `obj._enable_sdk()`
+    - `get_version` (публичный)
+      - Сигнатура: `get_version(self)`
+      - Описание: 获取机器人固件版本号信息
+      - Связи: ProtoGetProductVersion, Msg, host2byte, send_sync_msg, get_proto
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `version = ep_robot.get_version()` (`examples/01_robot/00_logger.py:32`)
+        - `ep_version = ep_robot.get_version()` (`examples/01_robot/01_get_version.py:24`)
+    - `get_sn` (публичный)
+      - Сигнатура: `get_sn(self)`
+      - Описание: 获取机器人硬件SN信息
+      - Связи: ProtoGetSn, Msg, host2byte, send_sync_msg, get_proto
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `SN = ep_robot.get_sn()` (`examples/01_robot/02_get_sn.py:24`)
+        - `SN = tl_drone.get_sn()` (`examples/12_drone/03_get_sn.py:26`)
+    - `_sub_add_node` (приватный)
+      - Сигнатура: `_sub_add_node(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoSubscribeAddNode, Msg, host2byte, send_sync_msg, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._sub_add_node()`
+    - `_sub_node_reset` (приватный)
+      - Сигнатура: `_sub_node_reset(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoSubNodeReset, Msg, host2byte, send_sync_msg, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._sub_node_reset()`
+    - `play_audio` (публичный)
+      - Сигнатура: `play_audio(self, filename)`
+      - Описание: 播放本地音频文件
+      - Связи: format, upload, info, play_sound, exists
+      - Аргументы:
+        - `filename`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 播放音效的文件名，目前仅支持单通道，48KHz采样的wav格式文件
+      - Пример из examples:
+        - `ep_robot.play_audio(filename="demo1.wav").wait_for_completed()` (`examples/01_robot/03_play_audio.py:27`)
+        - `ep_robot.play_audio(filename="demo2.wav").wait_for_completed()` (`examples/01_robot/03_play_audio.py:28`)
+    - `play_sound` (публичный)
+      - Сигнатура: `play_sound(self, sound_id, times=1)`
+      - Описание: 播放系统音效
+      - Связи: RobotPlaySoundAction, send_action
+      - Аргументы:
+        - `sound_id`: тип `не указан`; единицы `не указаны`; диапазон `целое`; 系统音效ID值
+        - `times`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; 播放次数
+      - Пример из examples:
+        - `ep_robot.play_sound(robot.SOUND_ID_ATTACK).wait_for_completed()` (`examples/01_robot/03_play_sound.py:26`)
+        - `ep_robot.play_sound(robot.SOUND_ID_SHOOT).wait_for_completed()` (`examples/01_robot/03_play_sound.py:27`)
+
+### `src/robomaster/battery.py`
+
+#### Классы
+
+- **Класс `TelloBattery`** (публичный)
+  - Описание: 教育无人机 电池模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `get_battery` (публичный)
+      - Сигнатура: `get_battery(self)`
+      - Описание: 获取电池电量信息
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `battery_info = tl_battery.get_battery()` (`examples/12_drone/04_get_battery.py:27`)
+        - `robot_group.get_battery()` (`examples/15_multi_robot/multi_drone/02_basic.py:21`)
+    - `sub_battery_info` (публичный)
+      - Сигнатура: `sub_battery_info(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅电池信息
+      - Связи: TelloBatInfoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:(1,5,10) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 percent:
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_battery.sub_battery_info(5, sub_info_handler, ep_robot)` (`examples/08_battery/01_sub_battery.py:36`)
+        - `tl_drone.battery.sub_battery_info(freq=1, callback=sub_battery_info_handler)` (`examples/12_drone/18_sub_battery.py:32`)
+    - `unsub_battery_info` (публичный)
+      - Сигнатура: `unsub_battery_info(self)`
+      - Описание: 取消订阅飞机电池信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_battery.unsub_battery_info()` (`examples/08_battery/01_sub_battery.py:38`)
+        - `tl_drone.battery.unsub_battery_info()` (`examples/12_drone/18_sub_battery.py:36`)
+
+- **Класс `Battery`** (публичный)
+  - Описание: EP 电池模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `sub_battery_info` (публичный)
+      - Сигнатура: `sub_battery_info(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅电池信息
+      - Связи: BatterySubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:(1,5,10,20,50) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 percent:
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_battery.sub_battery_info(5, sub_info_handler, ep_robot)` (`examples/08_battery/01_sub_battery.py:36`)
+        - `tl_drone.battery.sub_battery_info(freq=1, callback=sub_battery_info_handler)` (`examples/12_drone/18_sub_battery.py:32`)
+    - `unsub_battery_info` (публичный)
+      - Сигнатура: `unsub_battery_info(self)`
+      - Описание: 取消电池订阅
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_battery.unsub_battery_info()` (`examples/08_battery/01_sub_battery.py:38`)
+        - `tl_drone.battery.unsub_battery_info()` (`examples/12_drone/18_sub_battery.py:36`)
+
+### `src/robomaster/flight.py`
+
+#### Классы
+
+- **Класс `FlightAction`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self, text_cmd, **kw)`
+  - Аргументы конструктора:
+    - `text_cmd`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+    - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, text_cmd, **kw)`
+      - Описание: описание отсутствует
+      - Связи: __init__, print, format, super
+      - Аргументы:
+        - `text_cmd`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `encode` (публичный)
+      - Сигнатура: `encode(self)`
+      - Описание: описание отсутствует
+      - Связи: _action_proto_cls
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.encode()`
+    - `update_from_push` (публичный)
+      - Сигнатура: `update_from_push(self, proto)`
+      - Описание: описание отсутствует
+      - Связи: _update_action_state, info, warning, format, vars
+      - Аргументы:
+        - `proto`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.update_from_push(...)`
+
+- **Класс `Flight`** (публичный)
+  - Описание: 教育无人机 飞行器模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `takeoff` (публичный)
+      - Сигнатура: `takeoff(self, retry=True)`
+      - Описание: 自动起飞
+      - Связи: FlightAction, send_action, range, format
+      - Аргументы:
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.takeoff().wait_for_completed()` (`examples/12_drone/05_takeoff_land.py:28`)
+        - `tl_flight.takeoff().wait_for_completed()` (`examples/12_drone/06_rotate.py:28`)
+    - `land` (публичный)
+      - Сигнатура: `land(self, retry=True)`
+      - Описание: 自动降落
+      - Связи: FlightAction, send_action, range, format
+      - Аргументы:
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.land().wait_for_completed()` (`examples/12_drone/05_takeoff_land.py:29`)
+        - `tl_flight.land().wait_for_completed()` (`examples/12_drone/06_rotate.py:35`)
+    - `up` (публичный)
+      - Сигнатура: `up(self, distance=0, retry=True)`
+      - Описание: 向上飞distance厘米，指相对距离
+      - Связи: fly
+      - Аргументы:
+        - `distance`: тип `не указан`; единицы `см`; диапазон `>0, зависит от API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.up(distance=20).wait_for_completed()` (`examples/12_drone/08_up_down.py:31`)
+        - `robot_group.up(50).wait_for_completed()` (`examples/15_multi_robot/multi_drone/04_flight.py:23`)
+    - `down` (публичный)
+      - Сигнатура: `down(self, distance=0, retry=True)`
+      - Описание: 向下飞distance厘米，指相对距离
+      - Связи: fly
+      - Аргументы:
+        - `distance`: тип `не указан`; единицы `см`; диапазон `>0, зависит от API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.down(distance=20).wait_for_completed()` (`examples/12_drone/08_up_down.py:32`)
+        - `robot_group.down(50).wait_for_completed()` (`examples/15_multi_robot/multi_drone/04_flight.py:22`)
+    - `forward` (публичный)
+      - Сигнатура: `forward(self, distance=0, retry=True)`
+      - Описание: 向前飞行distance厘米，指相对距离
+      - Связи: fly
+      - Аргументы:
+        - `distance`: тип `не указан`; единицы `см`; диапазон `>0, зависит от API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.forward(distance=50).wait_for_completed()` (`examples/12_drone/07_forward_backward.py:31`)
+        - `robot_group.forward(100).wait_for_completed()` (`examples/15_multi_robot/multi_drone/03_takeoff_land.py:22`)
+    - `backward` (публичный)
+      - Сигнатура: `backward(self, distance=0, retry=True)`
+      - Описание: 向后飞行distance厘米， 指相对距离
+      - Связи: fly
+      - Аргументы:
+        - `distance`: тип `не указан`; единицы `см`; диапазон `>0, зависит от API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.backward(distance=50).wait_for_completed()` (`examples/12_drone/07_forward_backward.py:32`)
+        - `robot_group.backward(100).wait_for_completed()` (`examples/15_multi_robot/multi_drone/03_takeoff_land.py:28`)
+    - `left` (публичный)
+      - Сигнатура: `left(self, distance=0, retry=True)`
+      - Описание: 向左飞行distance厘米， 指相对距离
+      - Связи: fly
+      - Аргументы:
+        - `distance`: тип `не указан`; единицы `см`; диапазон `>0, зависит от API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.left(distance=50).wait_for_completed()` (`examples/12_drone/09_left_right.py:31`)
+        - `robot_group.left(50).wait_for_completed()` (`examples/15_multi_robot/multi_drone/04_flight.py:28`)
+    - `right` (публичный)
+      - Сигнатура: `right(self, distance=0, retry=True)`
+      - Описание: 向右飞行distance厘米， 指相对距离
+      - Связи: fly
+      - Аргументы:
+        - `distance`: тип `не указан`; единицы `см`; диапазон `>0, зависит от API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.right(distance=50).wait_for_completed()` (`examples/12_drone/09_left_right.py:32`)
+        - `robot_group.right(50).wait_for_completed()` (`examples/15_multi_robot/multi_drone/04_flight.py:26`)
+    - `fly` (публичный)
+      - Сигнатура: `fly(self, direction=FORWARD, distance=0, retry=True)`
+      - Описание: 控制飞机向指定方向飞行指定距离。
+      - Связи: format, FlightAction, send_action, range
+      - Аргументы:
+        - `direction`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `distance`: тип `не указан`; единицы `см`; диапазон `>0, зависит от API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.fly()`
+    - `rotate` (публичный)
+      - Сигнатура: `rotate(self, angle=0, retry=True)`
+      - Описание: 控制飞机旋转指定角度
+      - Связи: format, FlightAction, send_action, range
+      - Аргументы:
+        - `angle`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.rotate(angle=180).wait_for_completed()` (`examples/12_drone/06_rotate.py:31`)
+        - `tl_flight.rotate(angle=-180).wait_for_completed()` (`examples/12_drone/06_rotate.py:32`)
+    - `flip_forward` (публичный)
+      - Сигнатура: `flip_forward(self, retry=True)`
+      - Описание: 控制飞机向前翻滚
+      - Связи: flip
+      - Аргументы:
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.flip_forward().wait_for_completed()` (`examples/12_drone/12_flip.py:31`)
+    - `flip_backward` (публичный)
+      - Сигнатура: `flip_backward(self, retry=True)`
+      - Описание: 控制飞机向后翻滚
+      - Связи: flip
+      - Аргументы:
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.flip_backward().wait_for_completed()` (`examples/12_drone/12_flip.py:32`)
+    - `flip_left` (публичный)
+      - Сигнатура: `flip_left(self, retry=True)`
+      - Описание: 控制飞机向左翻滚
+      - Связи: flip
+      - Аргументы:
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.flip_left().wait_for_completed()` (`examples/12_drone/12_flip.py:33`)
+    - `flip_right` (публичный)
+      - Сигнатура: `flip_right(self, retry=True)`
+      - Описание: 控制飞机向右翻滚
+      - Связи: flip
+      - Аргументы:
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.flip_right().wait_for_completed()` (`examples/12_drone/12_flip.py:34`)
+    - `flip` (публичный)
+      - Сигнатура: `flip(self, direction='f', retry=True)`
+      - Описание: 控制飞机向指定方向翻滚
+      - Связи: format, FlightAction, send_action, range
+      - Аргументы:
+        - `direction`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; string: 飞机翻转的方向， ’l‘ 向左翻滚，’r‘ 向右翻滚，’f‘ 向前翻滚， ’b‘ 向后翻滚
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.flip()`
+    - `throw_fly` (публичный)
+      - Сигнатура: `throw_fly(self)`
+      - Описание: 控制飞机抛飞
+      - Связи: FlightAction, send_action
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.throw_fly()`
+    - `go` (публичный)
+      - Сигнатура: `go(self, x, y, z, speed=10, mid=None, retry=True)`
+      - Описание: 控制飞机以设置速度飞向指定坐标位置
+      - Связи: format, FlightAction, send_action, range
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `mid`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.go(x=100, y=100, z=30, speed=30).wait_for_completed()` (`examples/12_drone/10_go.py:31`)
+        - `tl_flight.go(x=-100, y=-100, z=-30, speed=30).wait_for_completed()` (`examples/12_drone/10_go.py:32`)
+    - `move` (публичный)
+      - Сигнатура: `move(self, x=0, y=0, z=0, speed=10, mid=None, retry=True)`
+      - Описание: 飞机相对位置的控制
+      - Связи: get_status, info, go, error, format
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `mid`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_chassis.move(x=x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:31`)
+        - `ep_chassis.move(x=-x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:34`)
+    - `moveto` (публичный)
+      - Сигнатура: `moveto(self, yaw=0, retry=True)`
+      - Описание: 控制飞机旋转到挑战卡坐标系中指定的绝对角度
+      - Связи: get_status, debug, info, rotate, format
+      - Аргументы:
+        - `yaw`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_gimbal.moveto(pitch=0, yaw=0).wait_for_completed()` (`examples/03_gimbal/01_move.py:32`)
+        - `ep_gimbal.moveto(pitch=15, yaw=90, pitch_speed=50, yaw_speed=100).wait_for_completed()` (`examples/03_gimbal/01_move.py:35`)
+    - `rc` (публичный)
+      - Сигнатура: `rc(self, a=0, b=0, c=0, d=0)`
+      - Описание: 控制飞机遥控器的四个杆量
+      - Связи: format, TextProtoDrone, TextMsg, send_async_msg, warning
+      - Аргументы:
+        - `a`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; float:[-100, 100] 横滚
+        - `b`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; float:[-100, 100] 俯仰
+        - `c`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; float:[-100, 100] 油门
+        - `d`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; float:[-100, 100] 偏航
+      - Пример из examples:
+        - `tl_flight.rc(a=20, b=0, c=0, d=0)` (`examples/12_drone/13_rc.py:31`)
+        - `tl_flight.rc(a=-20, b=0, c=0, d=0)` (`examples/12_drone/13_rc.py:35`)
+    - `curve` (публичный)
+      - Сигнатура: `curve(self, x1=0, y1=0, z1=0, x2=0, y2=0, z2=0, speed=20, mid=None, retry=True)`
+      - Описание: 以设置速度飞弧线，经过对应坐标系中的(x1, y1, z1)点到（x2, y2, z2）点
+      - Связи: format, FlightAction, send_action, range
+      - Аргументы:
+        - `x1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `y1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `z1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `x2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `y2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `z2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `mid`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.curve(x1=60, y1=60, z1=0, x2=120, y2=0, z2=30, speed=30).wait_for_completed()` (`examples/12_drone/11_curve.py:32`)
+        - `tl_flight.curve(x1=-60, y1=60, z1=0, x2=-120, y2=0, z2=-30, speed=30).wait_for_completed()` (`examples/12_drone/11_curve.py:33`)
+    - `stop` (публичный)
+      - Сигнатура: `stop(self, retry=True)`
+      - Описание: 停止rc运动并悬停，任何时候都可以
+      - Связи: FlightAction, send_action, range, format
+      - Аргументы:
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.stop()`
+    - `jump` (публичный)
+      - Сигнатура: `jump(self, x=0, y=0, z=0, speed=20, yaw=0, mid1='m-1', mid2='m-1', retry=True)`
+      - Описание: 飞行器飞往mid1坐标系的(x, y, z)点后悬停，识别mid2的挑战卡，飞到mid2坐标系下(0, 0, z)的位置并且旋转到设定的yaw值
+      - Связи: format, FlightAction, send_action, range
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `yaw`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+        - `mid1`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+        - `mid2`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+        - `retry`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_flight.jump(x=0, y=0, z=100, speed=20, yaw=90, mid1="m1", mid2="m2").wait_for_completed()` (`examples/12_drone/15_jump.py:33`)
+        - `tl_flight.jump(x=0, y=0, z=100, speed=20, yaw=-90, mid1="m1", mid2="m2").wait_for_completed()` (`examples/12_drone/15_jump.py:34`)
+    - `set_speed` (публичный)
+      - Сигнатура: `set_speed(self, speed=0)`
+      - Описание: 设置当前飞行速度
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, get_proto
+      - Аргументы:
+        - `speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float:[10, 100]，飞行速度，单位 cm/s
+      - Пример: `obj.set_speed()`
+    - `mission_pad_on` (публичный)
+      - Сигнатура: `mission_pad_on(self)`
+      - Описание: 打开挑战卡探测
+      - Связи: _pad_detection
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `tl_flight.mission_pad_on()` (`examples/12_drone/14_mission_pad.py:30`)
+        - `tl_flight.mission_pad_on()` (`examples/12_drone/15_jump.py:28`)
+    - `mission_pad_off` (публичный)
+      - Сигнатура: `mission_pad_off(self)`
+      - Описание: 关闭挑战卡探测
+      - Связи: _pad_detection
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `tl_flight.mission_pad_off()` (`examples/12_drone/14_mission_pad.py:45`)
+        - `tl_flight.mission_pad_off()` (`examples/12_drone/15_jump.py:37`)
+    - `_pad_detection` (приватный)
+      - Сигнатура: `_pad_detection(self, on_off=1)`
+      - Описание: 挑战卡检测功能开启/关闭的底层控制接口
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - `on_off`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 1], 0 关闭挑战卡检测功能，1 打开挑战卡检测功能
+      - Пример: `obj._pad_detection()`
+    - `motor_on` (публичный)
+      - Сигнатура: `motor_on(self)`
+      - Описание: 控制飞机转桨
+      - Связи: FlightAction, send_action
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.motor_on()`
+    - `motor_off` (публичный)
+      - Сигнатура: `motor_off(self)`
+      - Описание: 控制飞机停桨
+      - Связи: FlightAction, send_action
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.motor_off()`
+    - `get_speed` (публичный)
+      - Сигнатура: `get_speed(self)`
+      - Описание: 获取当前设置速度
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.get_speed()`
+    - `sub_attitude` (публичный)
+      - Сигнатура: `sub_attitude(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅飞机姿态信息
+      - Связи: TelloAttiInfoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:(1, 5, 10)，订阅数据的频率
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入数据处理的回掉函数
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+      - Пример из examples:
+        - `ep_chassis.sub_attitude(freq=10, callback=sub_attitude_info_handler)` (`examples/02_chassis/04_sub_attitude.py:33`)
+        - `ep_chassis.sub_attitude(freq=5, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:36`)
+    - `unsub_attitude` (публичный)
+      - Сигнатура: `unsub_attitude(self)`
+      - Описание: 取消订阅飞机姿态信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_attitude()` (`examples/02_chassis/04_sub_attitude.py:36`)
+        - `ep_chassis.unsub_attitude()` (`examples/02_chassis/09_sub_all.py:52`)
+    - `sub_imu` (публичный)
+      - Сигнатура: `sub_imu(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅飞机陀螺仪信息
+      - Связи: TelloImuInfoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:(1, 5, 10)，订阅数据的频率
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入数据处理的回掉函数
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数参数
+      - Пример из examples:
+        - `ep_chassis.sub_imu(freq=5, callback=sub_imu_info_handler)` (`examples/02_chassis/06_sub_imu.py:35`)
+        - `ep_chassis.sub_imu(freq=10, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:39`)
+    - `unsub_imu` (публичный)
+      - Сигнатура: `unsub_imu(self)`
+      - Описание: 取消订阅飞机陀螺仪信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_imu()` (`examples/02_chassis/06_sub_imu.py:37`)
+        - `ep_chassis.unsub_imu()` (`examples/02_chassis/09_sub_all.py:51`)
+
+
+## Chassis
+
+### `src/robomaster/chassis.py`
+
+#### Классы
+
+- **Класс `ChassisMoveAction`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self, x=0, y=0, z=0, spd_xy=0, spd_z=0, **kw)`
+  - Аргументы конструктора:
+    - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+    - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+    - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+    - `spd_xy`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+    - `spd_z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `не указаны`; описание отсутствует
+    - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, x=0, y=0, z=0, spd_xy=0, spd_z=0, **kw)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `spd_xy`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `spd_z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `не указаны`; описание отсутствует
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__()`
+    - `__repr__` (приватный)
+      - Сигнатура: `__repr__(self)`
+      - Описание: описание отсутствует
+      - Связи: format
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__repr__()`
+    - `encode` (публичный)
+      - Сигнатура: `encode(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoPositionMove, val2proto, int, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.encode()`
+    - `update_from_push` (публичный)
+      - Сигнатура: `update_from_push(self, proto)`
+      - Описание: описание отсутствует
+      - Связи: _update_action_state, proto2val, info, format
+      - Аргументы:
+        - `proto`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.update_from_push(...)`
+
+- **Класс `Chassis`** (публичный)
+  - Описание: EP 底盘模块，可以控制底盘的速度、位置、订阅底盘的数据，控制麦克纳姆轮等操作
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `stop` (публичный)
+      - Сигнатура: `stop(self)`
+      - Описание: описание отсутствует
+      - Связи: stop, is_alive, cancel, super
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.stop()`
+    - `_set_mode` (приватный)
+      - Сигнатура: `_set_mode(self, mode)`
+      - Описание: описание отсутствует
+      - Связи: ProtoChassisSetWorkMode, _send_sync_proto
+      - Аргументы:
+        - `mode`: тип `не указан`; единицы `не указаны`; диапазон `enum/строка`; описание отсутствует
+      - Пример: `obj._set_mode(...)`
+    - `_get_mode` (приватный)
+      - Сигнатура: `_get_mode(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoChassisGetWorkMode, _send_sync_proto
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._get_mode()`
+    - `stick_overlay` (публичный)
+      - Сигнатура: `stick_overlay(self, fusion_mode=0)`
+      - Описание: 设置底盘的杆量叠加模式
+      - Связи: ProtoChassisStickOverlay, _send_sync_proto
+      - Аргументы:
+        - `fusion_mode`: тип `не указан`; единицы `не указаны`; диапазон `enum/строка`; int:[0,1,2]  0 = 关闭SDK的杆量叠加, 1 = 使能杆量叠加,速度正方向为车身坐标系, 2 = 使能SDK模式,速度正方向为云台朝向
+      - Пример из examples:
+        - `ep.chassis.stick_overlay(1)` (`examples/16_gamesystem/00_gamesystem.py:55`)
+    - `drive_wheels` (публичный)
+      - Сигнатура: `drive_wheels(self, w1=0, w2=0, w3=0, w4=0, timeout=None)`
+      - Описание: 设置麦轮转速
+      - Связи: ProtoSetWheelSpeed, val2proto, _send_sync_proto, Timer, start
+      - Аргументы:
+        - `w1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[-1000,1000]，右前麦轮速度，以车头方向前进旋转为正方向，单位 rpm
+        - `w2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[-1000,1000]，左前麦轮速度，以车头方向前进旋转为正方向，单位 rpm
+        - `w3`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[-1000,1000]，左后麦轮速度，以车头方向前进旋转为正方向，单位 rpm
+        - `w4`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[-1000,1000]，右后麦轮速度，以车头方向前进旋转为正方向，单位 rpm
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; float:(0,inf)，超过指定时间内未收到麦轮转速指令，主动控制机器人停止，单位 s
+      - Пример из examples:
+        - `ep_chassis.drive_wheels(w1=speed, w2=0, w3=0, w4=0)` (`examples/02_chassis/02_wheel.py:33`)
+        - `ep_chassis.drive_wheels(w1=0, w2=speed, w3=0, w4=0)` (`examples/02_chassis/02_wheel.py:37`)
+    - `_auto_stop_timer` (приватный)
+      - Сигнатура: `_auto_stop_timer(self, api='drive_speed')`
+      - Описание: описание отсутствует
+      - Связи: info, drive_speed, drive_wheels, warning, format
+      - Аргументы:
+        - `api`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._auto_stop_timer()`
+    - `drive_speed` (публичный)
+      - Сигнатура: `drive_speed(self, x=0.0, y=0.0, z=0.0, timeout=None)`
+      - Описание: 设置底盘速度，立即生效
+      - Связи: ProtoChassisSpeedMode, val2proto, info, _send_sync_proto, format
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float:[-3.5,3.5]，x 轴向运动速度即前进速度，单位 m/s
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float:[-3.5,3.5]，y 轴向运动速度即横移速度，单位 m/s
+        - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float:[-600,600]，z 轴向运动速度即旋转速度，单位 °/s
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; float:(0,inf)，超过指定时间内未收到麦轮转速指令，主动控制机器人停止，单位 s
+      - Пример из examples:
+        - `ep_chassis.drive_speed(x=x_val, y=0, z=0, timeout=5)` (`examples/02_chassis/03_speed.py:32`)
+        - `ep_chassis.drive_speed(x=-x_val, y=0, z=0, timeout=5)` (`examples/02_chassis/03_speed.py:36`)
+    - `set_pwm_value` (публичный)
+      - Сигнатура: `set_pwm_value(self, pwm1=None, pwm2=None, pwm3=None, pwm4=None, pwm5=None, pwm6=None)`
+      - Описание: 设置PWM输出占空比
+      - Связи: ProtoChassisPwmPercent, _send_sync_proto, val2proto
+      - Аргументы:
+        - `pwm1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0,100]，pwm输出占空比，单位%
+        - `pwm2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0,100]，pwm输出占空比，单位%
+        - `pwm3`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0,100]，pwm输出占空比，单位%
+        - `pwm4`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0,100]，pwm输出占空比，单位%
+        - `pwm5`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0,100]，pwm输出占空比，单位%
+        - `pwm6`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0,100]，pwm输出占空比，单位%
+      - Пример из examples:
+        - `ep_chassis.set_pwm_value(pwm1=20,pwm2=20,pwm3=20,pwm4=20,pwm5=20,pwm6=20)` (`examples/02_chassis/11_pwm.py:29`)
+    - `set_pwm_freq` (публичный)
+      - Сигнатура: `set_pwm_freq(self, pwm1=None, pwm2=None, pwm3=None, pwm4=None, pwm5=None, pwm6=None)`
+      - Описание: 设置PWM输出频率
+      - Связи: ProtoChassisPwmFreq, _send_sync_proto, val2proto
+      - Аргументы:
+        - `pwm1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `pwm2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `pwm3`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `pwm4`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `pwm5`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `pwm6`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_chassis.set_pwm_freq(pwm1=50,pwm2=50,pwm3=50,pwm4=50,pwm5=50,pwm6=50)` (`examples/02_chassis/11_pwm.py:27`)
+    - `move` (публичный)
+      - Сигнатура: `move(self, x=0, y=0, z=0, xy_speed=0.5, z_speed=30)`
+      - Описание: 控制底盘运动当指定位置，坐标轴原点为当前位置
+      - Связи: ChassisMoveAction, send_action
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float: [-5,5]，x轴向运动距离，单位 m
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float: [-5,5]，y轴向运动距离，单位 m
+        - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float: [-1800,1800]，z轴向旋转角度，单位 °
+        - `xy_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [0.5,2]，xy轴向运动速度，单位 m/s
+        - `z_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [10,540]，z轴向旋转速度，单位 °/s
+      - Пример из examples:
+        - `ep_chassis.move(x=x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:31`)
+        - `ep_chassis.move(x=-x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:34`)
+    - `sub_position` (публичный)
+      - Сигнатура: `sub_position(self, cs=0, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘位置信息
+      - Связи: PositionSubject, add_subject_info
+      - Аргументы:
+        - `cs`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int: [0,1] 设置底盘位置的坐标系，0 机器人当前位置，1 机器人上电位置
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (x, y, z):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_chassis.sub_position(freq=10, callback=sub_position_handler)` (`examples/02_chassis/05_sub_position.py:33`)
+        - `ep_chassis.sub_position(freq=1, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:33`)
+    - `unsub_position` (публичный)
+      - Сигнатура: `unsub_position(self)`
+      - Описание: 取消订阅底盘位置信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_position()` (`examples/02_chassis/05_sub_position.py:35`)
+        - `ep_chassis.unsub_position()` (`examples/02_chassis/09_sub_all.py:53`)
+    - `sub_attitude` (публичный)
+      - Сигнатура: `sub_attitude(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘姿态信息
+      - Связи: AttiInfoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (yaw, pitch, roll)：
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_chassis.sub_attitude(freq=10, callback=sub_attitude_info_handler)` (`examples/02_chassis/04_sub_attitude.py:33`)
+        - `ep_chassis.sub_attitude(freq=5, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:36`)
+    - `unsub_attitude` (публичный)
+      - Сигнатура: `unsub_attitude(self)`
+      - Описание: 取消订阅底盘姿态信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_attitude()` (`examples/02_chassis/04_sub_attitude.py:36`)
+        - `ep_chassis.unsub_attitude()` (`examples/02_chassis/09_sub_all.py:52`)
+    - `sub_status` (публичный)
+      - Сигнатура: `sub_status(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘状态信息
+      - Связи: SaStatusSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (static_flag, up_hill, down_hill, on_slope, is_pickup, slip_flag,         impact_x, impact_y, impact_z, roll_over, hill_static):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_chassis.sub_status(freq=5, callback=sub_status_info_handler)` (`examples/02_chassis/07_sub_status.py:38`)
+        - `ep_chassis.sub_status(freq=50, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:45`)
+    - `unsub_status` (публичный)
+      - Сигнатура: `unsub_status(self)`
+      - Описание: 取消订阅底盘状态信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_status()` (`examples/02_chassis/07_sub_status.py:40`)
+        - `ep_chassis.unsub_status()` (`examples/02_chassis/09_sub_all.py:49`)
+    - `sub_imu` (публичный)
+      - Сигнатура: `sub_imu(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘IMU陀螺仪信息
+      - Связи: ImuSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_chassis.sub_imu(freq=5, callback=sub_imu_info_handler)` (`examples/02_chassis/06_sub_imu.py:35`)
+        - `ep_chassis.sub_imu(freq=10, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:39`)
+    - `unsub_imu` (публичный)
+      - Сигнатура: `unsub_imu(self)`
+      - Описание: 取消订阅底盘IMU陀螺仪信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_imu()` (`examples/02_chassis/06_sub_imu.py:37`)
+        - `ep_chassis.unsub_imu()` (`examples/02_chassis/09_sub_all.py:51`)
+    - `sub_mode` (публичный)
+      - Сигнатура: `sub_mode(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘模式信息
+      - Связи: ChassisModeSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 mode:
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример: `obj.sub_mode()`
+    - `unsub_mode` (публичный)
+      - Сигнатура: `unsub_mode(self)`
+      - Описание: 取消订阅底盘模式信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.unsub_mode()`
+    - `sub_esc` (публичный)
+      - Сигнатура: `sub_esc(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘电调信息
+      - Связи: EscSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (speed[4], angle[4], timestamp, state):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_chassis.sub_esc(freq=5, callback=sub_esc_info_handler)` (`examples/02_chassis/08_sub_esc.py:34`)
+        - `ep_chassis.sub_esc(freq=20, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:42`)
+    - `unsub_esc` (публичный)
+      - Сигнатура: `unsub_esc(self)`
+      - Описание: 取消订阅电调信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_esc()` (`examples/02_chassis/08_sub_esc.py:37`)
+        - `ep_chassis.unsub_esc()` (`examples/02_chassis/09_sub_all.py:50`)
+    - `sub_velocity` (публичный)
+      - Сигнатура: `sub_velocity(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘加速度信息
+      - Связи: VelocitySubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:(1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据（vgx, vgy, vgz, vbx, vby, vbz)：
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример: `obj.sub_velocity()`
+    - `unsub_velocity` (публичный)
+      - Сигнатура: `unsub_velocity(self)`
+      - Описание: 取消订阅底盘加速度信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.unsub_velocity()`
+    - `_sub_sbus` (приватный)
+      - Сигнатура: `_sub_sbus(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅底盘SBUS信息
+      - Связи: SbusSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (connect_status, sbus_channel[16]):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример: `obj._sub_sbus()`
+    - `_unsub_sbus` (приватный)
+      - Сигнатура: `_unsub_sbus(self)`
+      - Описание: 取消订阅SBUS信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._unsub_sbus()`
+
+
+## Gimbal
+
+### `src/robomaster/gimbal.py`
+
+#### Классы
+
+- **Класс `GimbalMoveAction`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30, coord=COORDINATE_YCPN, **kw)`
+  - Аргументы конструктора:
+    - `pitch`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+    - `yaw`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+    - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+    - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+    - `coord`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+    - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30, coord=COORDINATE_YCPN, **kw)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `pitch`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+        - `yaw`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+        - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `coord`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__()`
+    - `__repr__` (приватный)
+      - Сигнатура: `__repr__(self)`
+      - Описание: описание отсутствует
+      - Связи: format
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__repr__()`
+    - `encode` (публичный)
+      - Сигнатура: `encode(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoGimbalRotate, val2proto
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.encode()`
+    - `update_from_push` (публичный)
+      - Сигнатура: `update_from_push(self, proto)`
+      - Описание: 推送消息更新Action状态
+      - Связи: info, _changeto_state, float, format, warning
+      - Аргументы:
+        - `proto`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.update_from_push(...)`
+
+- **Класс `GimbalRecenterAction`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self, pitch_speed=100, yaw_speed=100, **kw)`
+  - Аргументы конструктора:
+    - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+    - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+    - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, pitch_speed=100, yaw_speed=100, **kw)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__()`
+    - `__repr__` (приватный)
+      - Сигнатура: `__repr__(self)`
+      - Описание: описание отсутствует
+      - Связи: format
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__repr__()`
+    - `encode` (публичный)
+      - Сигнатура: `encode(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoGimbalRecenter
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.encode()`
+    - `update_from_push` (публичный)
+      - Сигнатура: `update_from_push(self, proto)`
+      - Описание: 推送消息更新Action状态
+      - Связи: _update_action_state, info, float, format
+      - Аргументы:
+        - `proto`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.update_from_push(...)`
+
+- **Класс `Gimbal`** (публичный)
+  - Описание: EP 云台模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `suspend` (публичный)
+      - Сигнатура: `suspend(self)`
+      - Описание: 控制云台进入休眠状态
+      - Связи: ProtoGimbalCtrl, Msg, send_async_msg, warning, format
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_gimbal.suspend()` (`examples/03_gimbal/03_control.py:29`)
+    - `resume` (публичный)
+      - Сигнатура: `resume(self)`
+      - Описание: 控制云台从休眠状态中恢复
+      - Связи: ProtoGimbalCtrl, Msg, send_async_msg, warning, format
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_gimbal.resume()` (`examples/03_gimbal/03_control.py:33`)
+    - `drive_speed` (публичный)
+      - Сигнатура: `drive_speed(self, pitch_speed=30.0, yaw_speed=30.0)`
+      - Описание: 控制以一定速度转动
+      - Связи: ProtoGimbalCtrlSpeed, val2proto, _send_async_proto
+      - Аргументы:
+        - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [-360, 360]，pitch轴速度，单位 °/s
+        - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [-360, 360]，yaw 轴速度，单位 °/s
+      - Пример из examples:
+        - `ep_chassis.drive_speed(x=x_val, y=0, z=0, timeout=5)` (`examples/02_chassis/03_speed.py:32`)
+        - `ep_chassis.drive_speed(x=-x_val, y=0, z=0, timeout=5)` (`examples/02_chassis/03_speed.py:36`)
+    - `recenter` (публичный)
+      - Сигнатура: `recenter(self, pitch_speed=60, yaw_speed=60)`
+      - Описание: 控制云台回中
+      - Связи: GimbalRecenterAction, send_action
+      - Аргументы:
+        - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [-360, 360]，pitch轴速度，单位 °/s
+        - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [-360, 360]，yaw 轴速度，单位 °/s
+      - Пример из examples:
+        - `ep_gimbal.recenter().wait_for_completed()` (`examples/03_gimbal/04_recenter.py:32`)
+        - `ep_gimbal.recenter(pitch_speed=100, yaw_speed=100).wait_for_completed()` (`examples/03_gimbal/04_recenter.py:38`)
+    - `_set_work_mode` (приватный)
+      - Сигнатура: `_set_work_mode(self, mode)`
+      - Описание: описание отсутствует
+      - Связи: ProtoGimbalSetWorkMode, _send_sync_proto
+      - Аргументы:
+        - `mode`: тип `не указан`; единицы `не указаны`; диапазон `enum/строка`; описание отсутствует
+      - Пример: `obj._set_work_mode(...)`
+    - `move` (публичный)
+      - Сигнатура: `move(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30)`
+      - Описание: 控制云台运动到指定位置，坐标轴原点为当前位置
+      - Связи: val2proto, GimbalMoveAction, send_action
+      - Аргументы:
+        - `pitch`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; float: [-55, 55]，pitch 轴角度，单位 °
+        - `yaw`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; float: [-55, 55]，yaw 轴角度，单位 °
+        - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [0, 540]，pitch 轴运动速速，单位 °/s
+        - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; float: [0, 540]，yaw 轴运动速度，单位 °/s
+      - Пример из examples:
+        - `ep_chassis.move(x=x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:31`)
+        - `ep_chassis.move(x=-x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:34`)
+    - `moveto` (публичный)
+      - Сигнатура: `moveto(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30)`
+      - Описание: 控制云台运动到指定位置，坐标轴原点为上电位置
+      - Связи: val2proto, GimbalMoveAction, send_action
+      - Аргументы:
+        - `pitch`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; int: [-25, 30]，pitch 轴角度，单位 °
+        - `yaw`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; int: [-250, 250]，yaw 轴角度，单位 °
+        - `pitch_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; int: [0, 540]，pitch 轴运动速度，单位 °
+        - `yaw_speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; int: [0, 540]，yaw 轴运动速度，单位 °
+      - Пример из examples:
+        - `ep_gimbal.moveto(pitch=0, yaw=0).wait_for_completed()` (`examples/03_gimbal/01_move.py:32`)
+        - `ep_gimbal.moveto(pitch=15, yaw=90, pitch_speed=50, yaw_speed=100).wait_for_completed()` (`examples/03_gimbal/01_move.py:35`)
+    - `sub_angle` (публичный)
+      - Сигнатура: `sub_angle(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅云台姿态角信息
+      - Связи: GimbalPosSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (pitch_angle, yaw_angle, pitch_ground_angle, yaw_ground_angle):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_gimbal.sub_angle(freq=5, callback=sub_data_handler)` (`examples/03_gimbal/05_sub_angle.py:34`)
+    - `unsub_angle` (публичный)
+      - Сигнатура: `unsub_angle(self)`
+      - Описание: 取消云台姿态角订阅
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_gimbal.unsub_angle()` (`examples/03_gimbal/05_sub_angle.py:38`)
+
+
+## Camera
+
+### `src/robomaster/camera.py`
+
+#### Классы
+
+- **Класс `Camera`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: LiveView
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `start_video_stream` (публичный)
+      - Сигнатура: `start_video_stream(self, display=True)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - `display`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_camera.start_video_stream(display=True, resolution=camera.STREAM_360P)` (`examples/04_camera/01_video_with_display.py:29`)
+        - `ep_camera.start_video_stream(display=False)` (`examples/04_camera/02_video_strategy.py:30`)
+    - `stop_video_stream` (публичный)
+      - Сигнатура: `stop_video_stream(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_camera.stop_video_stream()` (`examples/04_camera/01_video_with_display.py:31`)
+        - `ep_camera.stop_video_stream()` (`examples/04_camera/02_video_strategy.py:37`)
+    - `read_video_frame` (публичный)
+      - Сигнатура: `read_video_frame(self, timeout=3, strategy='pipeline')`
+      - Описание: 读取一帧视频流帧
+      - Связи: read_video_frame
+      - Аргументы:
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; float: (0, inf)，超时时间，超过指定timeout时间后函数返回
+        - `strategy`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("pipeline", "newest") 读取帧策略：pipeline 流水线依次读取，newest 获取最新的一帧数据，        注意会清空老的数据帧队列
+      - Пример: `obj.read_video_frame()`
+    - `read_cv2_image` (публичный)
+      - Сигнатура: `read_cv2_image(self, timeout=3, strategy='pipeline')`
+      - Описание: 读取一帧视频流帧
+      - Связи: read_video_frame, array
+      - Аргументы:
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; float: (0, inf)，超时参数，在timeout时间内未获取到视频流帧，函数返回
+        - `strategy`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("pipeline", "newest")，读取帧策略：pipeline 依次读取缓存的帧信息，newest 获取最新的一帧        数据，会清空旧的数据帧
+      - Пример из examples:
+        - `img = ep_camera.read_cv2_image(strategy="newest")` (`examples/04_camera/02_video_strategy.py:32`)
+        - `img = ep_camera.read_cv2_image()` (`examples/04_camera/03_video_without_display.py:30`)
+
+- **Класс `TelloCamera`** (публичный)
+  - Описание: 教育无人机 摄像机模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `__del__` (приватный)
+      - Сигнатура: `__del__(self)`
+      - Описание: описание отсутствует
+      - Связи: stop
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__del__()`
+    - `conf` (публичный)
+      - Сигнатура: `conf(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.conf()`
+    - `start_video_stream` (публичный)
+      - Сигнатура: `start_video_stream(self, display=True)`
+      - Описание: 开启视频流
+      - Связи: _video_stream, start_video_stream
+      - Аргументы:
+        - `display`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; bool, 是否显示视频流
+      - Пример из examples:
+        - `ep_camera.start_video_stream(display=True, resolution=camera.STREAM_360P)` (`examples/04_camera/01_video_with_display.py:29`)
+        - `ep_camera.start_video_stream(display=False)` (`examples/04_camera/02_video_strategy.py:30`)
+    - `stop_video_stream` (публичный)
+      - Сигнатура: `stop_video_stream(self)`
+      - Описание: описание отсутствует
+      - Связи: stop_video_stream, _video_stream
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_camera.stop_video_stream()` (`examples/04_camera/01_video_with_display.py:31`)
+        - `ep_camera.stop_video_stream()` (`examples/04_camera/02_video_strategy.py:37`)
+    - `_video_stream` (приватный)
+      - Сигнатура: `_video_stream(self, on_off=1)`
+      - Описание: описание отсутствует
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, warning, get_proto
+      - Аргументы:
+        - `on_off`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._video_stream()`
+    - `stop` (публичный)
+      - Сигнатура: `stop(self)`
+      - Описание: описание отсутствует
+      - Связи: _stop_video_stream, stop
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.stop()`
+    - `set_fps` (публичный)
+      - Сигнатура: `set_fps(self, fps)`
+      - Описание: 设置飞机视频帧率
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, get_proto
+      - Аргументы:
+        - `fps`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 需要设置的帧率，[high, middle, low]
+      - Пример из examples:
+        - `tl_camera.set_fps("high")` (`examples/12_drone/16_video_stream.py:27`)
+    - `set_bitrate` (публичный)
+      - Сигнатура: `set_bitrate(self, bitrate)`
+      - Описание: 设置飞机传输码率
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, get_proto
+      - Аргументы:
+        - `bitrate`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 需要设置的传输码率，[0, 6]
+      - Пример из examples:
+        - `tl_camera.set_bitrate(6)` (`examples/12_drone/16_video_stream.py:29`)
+    - `set_resolution` (публичный)
+      - Сигнатура: `set_resolution(self, resolution)`
+      - Описание: 设置飞机视频分辨率
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, get_proto
+      - Аргументы:
+        - `resolution`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 需要设置的视频分辨率，[high, low]
+      - Пример из examples:
+        - `tl_camera.set_resolution("high")` (`examples/12_drone/16_video_stream.py:28`)
+    - `set_down_vision` (публичный)
+      - Сигнатура: `set_down_vision(self, setting)`
+      - Описание: 设置飞机图像源
+      - Связи: format, print, TextProtoDrone, TextMsg, send_sync_msg
+      - Аргументы:
+        - `setting`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.set_down_vision(...)`
+
+- **Класс `EPCamera`** (публичный)
+  - Описание: EP 摄像机模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `__del__` (приватный)
+      - Сигнатура: `__del__(self)`
+      - Описание: описание отсутствует
+      - Связи: stop
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__del__()`
+    - `conf` (публичный)
+      - Сигнатура: `conf(self)`
+      - Описание: 相机参数配置
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.conf()`
+    - `audio_stream_addr` (публичный)
+      - Сигнатура: `audio_stream_addr(self)`
+      - Описание: 机器人音频流地址
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.audio_stream_addr()`
+    - `video_stream_addr` (публичный)
+      - Сигнатура: `video_stream_addr(self)`
+      - Описание: 机器人视频流地址
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.video_stream_addr()`
+    - `start_video_stream` (публичный)
+      - Сигнатура: `start_video_stream(self, display=True, resolution='720p')`
+      - Описание: 开启视频流
+      - Связи: _stream_sdk, _video_stream, start_video_stream, error
+      - Аргументы:
+        - `display`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; bool，是否显示视频流
+        - `resolution`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("360p", "540p", "720p")，设置图传分辨率尺寸
+      - Пример из examples:
+        - `ep_camera.start_video_stream(display=True, resolution=camera.STREAM_360P)` (`examples/04_camera/01_video_with_display.py:29`)
+        - `ep_camera.start_video_stream(display=False)` (`examples/04_camera/02_video_strategy.py:30`)
+    - `stop_video_stream` (публичный)
+      - Сигнатура: `stop_video_stream(self)`
+      - Описание: 停止视频流
+      - Связи: _video_stream, stop_video_stream, warning, _stream_sdk
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_camera.stop_video_stream()` (`examples/04_camera/01_video_with_display.py:31`)
+        - `ep_camera.stop_video_stream()` (`examples/04_camera/02_video_strategy.py:37`)
+    - `start_audio_stream` (публичный)
+      - Сигнатура: `start_audio_stream(self)`
+      - Описание: 开启音频流
+      - Связи: _stream_sdk, _audio_stream, start_audio_stream, error
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_camera.start_audio_stream()` (`examples/04_camera/04_audio_without_playing.py:54`)
+    - `stop_audio_stream` (публичный)
+      - Сигнатура: `stop_audio_stream(self)`
+      - Описание: 停止音频流
+      - Связи: _audio_stream, stop_audio_stream, warning, _stream_sdk
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_camera.stop_audio_stream()` (`examples/04_camera/04_audio_without_playing.py:57`)
+    - `read_audio_frame` (публичный)
+      - Сигнатура: `read_audio_frame(self, timeout=1)`
+      - Описание: 读取一段音频流信息
+      - Связи: read_audio_frame
+      - Аргументы:
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; float: (0, inf)，超时时间，超过指定timeout时间后函数返回
+      - Пример из examples:
+        - `frame = ep_camera.read_audio_frame()` (`examples/04_camera/04_audio_without_playing.py:33`)
+    - `record_audio` (публичный)
+      - Сигнатура: `record_audio(self, save_file='output.wav', seconds=5, sample_rate=48000)`
+      - Описание: 录制音频，保存到本地，支持wav格式，单通道
+      - Связи: start_audio_stream, time, open, setparams, close
+      - Аргументы:
+        - `save_file`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 本地文件路径，目前仅支持wav格式
+        - `seconds`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 录制时间
+        - `sample_rate`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 采样率
+      - Пример из examples:
+        - `ep_camera.record_audio(save_file="output.wav", seconds=5, sample_rate=16000)` (`examples/04_camera/05_record_audio.py:26`)
+    - `_stream_sdk` (приватный)
+      - Сигнатура: `_stream_sdk(self, on_off=1, resolution='720p')`
+      - Описание: 控制媒体流sdk模式
+      - Связи: ProtoStreamCtrl, _send_sync_proto, error, format, warning
+      - Аргументы:
+        - `on_off`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 1 表示进入SDK模式，0 表示退出SDK模式
+        - `resolution`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._stream_sdk()`
+    - `_video_stream` (приватный)
+      - Сигнатура: `_video_stream(self, on_off=1, resolution='720p')`
+      - Описание: описание отсутствует
+      - Связи: ProtoStreamCtrl, _send_sync_proto, error, warning, format
+      - Аргументы:
+        - `on_off`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `resolution`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._video_stream()`
+    - `_audio_stream` (приватный)
+      - Сигнатура: `_audio_stream(self, on_off=1)`
+      - Описание: описание отсутствует
+      - Связи: ProtoStreamCtrl, _send_sync_proto, error, format
+      - Аргументы:
+        - `on_off`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._audio_stream()`
+    - `stop` (публичный)
+      - Сигнатура: `stop(self)`
+      - Описание: 停止
+      - Связи: stop_video_stream, stop_audio_stream, stop
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.stop()`
+    - `take_photo` (публичный)
+      - Сигнатура: `take_photo(self)`
+      - Описание: 拍照
+      - Связи: ProtoTakePhoto, _send_sync_proto
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.take_photo()`
+    - `_set_zoom` (приватный)
+      - Сигнатура: `_set_zoom(self, zoom=1.0)`
+      - Описание: 设置变焦参数
+      - Связи: ProtoSetZoom, _send_sync_proto
+      - Аргументы:
+        - `zoom`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 变焦值
+      - Пример: `obj._set_zoom()`
+
+
+## Blaster
+
+### `src/robomaster/blaster.py`
+
+#### Классы
+
+- **Класс `Blaster`** (публичный)
+  - Описание: EP 发射器模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `fire` (публичный)
+      - Сигнатура: `fire(self, fire_type=WATER_FIRE, times=1)`
+      - Описание: 发射器发射
+      - Связи: ProtoBlasterFire, val2proto, _send_sync_proto, warning, format
+      - Аргументы:
+        - `fire_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("water", "ir")， 发射器发射类型，水弹、红外弹
+        - `times`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; 发射次数
+      - Пример из examples:
+        - `ep_blaster.fire(times=1)` (`examples/06_blaster/01_fire.py:29`)
+        - `ep_blaster.fire(fire_type=blaster.WATER_FIRE, times=3)` (`examples/06_blaster/01_fire.py:33`)
+    - `set_led` (публичный)
+      - Сигнатура: `set_led(self, brightness=255, effect=LED_ON)`
+      - Описание: 设置发射器灯效
+      - Связи: ProtoBlasterSetLed, check, _send_sync_proto, warning, format
+      - Аргументы:
+        - `brightness`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0,255]，亮度
+        - `effect`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:("on", "off")，on 表示常亮，off 表示常灭
+      - Пример из examples:
+        - `ep_blaster.set_led(brightness=2, effect=blaster.LED_ON)` (`examples/06_blaster/02_led.py:30`)
+        - `ep_blaster.set_led(brightness=4, effect=blaster.LED_ON)` (`examples/06_blaster/02_led.py:32`)
+
+
+## LED
+
+### `src/robomaster/led.py`
+
+#### Классы
+
+- **Класс `Led`** (публичный)
+  - Описание: EP 装甲灯模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `set_led` (публичный)
+      - Сигнатура: `set_led(self, comp=COMP_ALL, r=0, g=0, b=0, effect=EFFECT_ON, freq=1)`
+      - Описание: 设置整机装甲灯效
+      - Связи: ProtoSetSystemLed, val2proto, _send_sync_proto, host2byte, int
+      - Аргументы:
+        - `comp`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("all", "top_all", "top_right", "top_left", "bottom_all", "bottom_front",         "bottom_back", "bottom_left", "bottom_right") 灯效部位，all: 所有装甲灯；top_all:云台所有装甲灯；        top_right: 云台右侧装甲灯；top_left: 云台左侧装甲灯; bottom_all: 底盘所有装甲灯；bottom_front: 前装甲灯；        bottom_back: 后装甲灯；bottom_left: 左装甲灯；bottom_right: 右装甲灯
+        - `r`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int: [0~255]，RGB红色分量值
+        - `g`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int: [0~255]，RGB绿色分量值
+        - `b`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int: [0~255]，RGB蓝色分量值
+        - `effect`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("on", "off", "flash", "breath", "scrolling") 灯效类型，on:常亮；off:常灭；flash:闪烁；        breath:呼吸；scrolling:跑马灯（仅对云台灯有效）
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int: [1, 10]，闪烁频率，仅对闪烁灯效有效
+      - Пример из examples:
+        - `ep_blaster.set_led(brightness=2, effect=blaster.LED_ON)` (`examples/06_blaster/02_led.py:30`)
+        - `ep_blaster.set_led(brightness=4, effect=blaster.LED_ON)` (`examples/06_blaster/02_led.py:32`)
+    - `set_gimbal_led` (публичный)
+      - Сигнатура: `set_gimbal_led(self, comp=COMP_TOP_ALL, r=255, g=255, b=255, led_list=[0, 1, 2, 3], effect=EFFECT_ON)`
+      - Описание: 设置云台灯效
+      - Связи: ProtoSetSystemLed, range, val2proto, _send_sync_proto, len
+      - Аргументы:
+        - `comp`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("top_all", "top_left", "top_right")，云台部位
+        - `r`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int: [0, 255]，RGB红色分量值
+        - `g`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int: [0, 255]，RGB绿色分量值
+        - `b`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int: [0, 255]，RGB蓝色分量值
+        - `led_list`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; list [idx0, idx1, ...]，idx：int[0,7] 云台灯序号列表.
+        - `effect`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("on", "off")，灯效类型
+      - Пример из examples:
+        - `ep_led.set_gimbal_led(comp=led.COMP_TOP_ALL, r=255, g=25, b=25,` (`examples/07_led/02_set_gimbal_led.py:36`)
+
+- **Класс `TelloLed`** (публичный)
+  - Описание: 教育无人机 扩展LED模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `set_led` (публичный)
+      - Сигнатура: `set_led(self, r=0, g=255, b=0)`
+      - Описание: 设置扩展模块led颜色
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, error
+      - Аргументы:
+        - `r`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int:[0, 255], 扩展led红色通道的强度
+        - `g`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int:[0, 255], 扩展led绿色通道的强度
+        - `b`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int:[0, 255], 扩展led蓝色通道的强度
+      - Пример из examples:
+        - `ep_blaster.set_led(brightness=2, effect=blaster.LED_ON)` (`examples/06_blaster/02_led.py:30`)
+        - `ep_blaster.set_led(brightness=4, effect=blaster.LED_ON)` (`examples/06_blaster/02_led.py:32`)
+    - `set_led_breath` (публичный)
+      - Сигнатура: `set_led_breath(self, freq=1, r=0, g=255, b=0)`
+      - Описание: 设置扩展模块led以指定的颜色与频率实现呼吸效果
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, error
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0.1, 2.5], 扩展led呼吸模式下的频率，共十档，随着数字增大速度变快
+        - `r`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int:[0, 255], 扩展led红色通道的强度
+        - `g`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int:[0, 255], 扩展led绿色通道的强度
+        - `b`: тип `не указан`; единицы `интенсивность цвета`; диапазон `0..255`; int:[0, 255], 扩展led蓝色通道的强度
+      - Пример: `obj.set_led_breath()`
+    - `set_led_blink` (публичный)
+      - Сигнатура: `set_led_blink(self, freq=5, r1=0, g1=255, b1=0, r2=0, g2=255, b2=255)`
+      - Описание: 设置扩展模块led以制定的两种颜色与频率实现闪烁效果
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, error
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0.1, 10], 扩展ked闪烁模式下的频率， 共十档，随着数字增大速度变快
+        - `r1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 255], 第一种颜色的红色通道的强度
+        - `g1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 255], 第一种颜色的绿色通道的强度
+        - `b1`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 255], 第一种颜色的蓝色通道的强度
+        - `r2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 255], 第二种颜色的红色通道的强度
+        - `g2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 255], 第二种颜色的绿色通道的强度
+        - `b2`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 255], 第二种颜色的蓝色通道的强度
+      - Пример: `obj.set_led_blink()`
+    - `set_mled_bright` (публичный)
+      - Сигнатура: `set_mled_bright(self, bright=255)`
+      - Описание: 设置点阵屏的亮度
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, error
+      - Аргументы:
+        - `bright`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[0, 255] 点阵屏的亮度
+      - Пример: `obj.set_mled_bright()`
+    - `set_mled_boot` (публичный)
+      - Сигнатура: `set_mled_boot(self, display_graph)`
+      - Описание: 设置点阵屏的开机画面
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, error
+      - Аргументы:
+        - `display_graph`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; string: 长度最大为64，点阵屏显示图案的编码字符串，每个字符解读为二进制后对应位置的led点的状态，
+      - Пример: `obj.set_mled_boot(...)`
+    - `set_mled_sc` (публичный)
+      - Сигнатура: `set_mled_sc(self)`
+      - Описание: 清除点阵屏开机显示画面
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, error, get_proto
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.set_mled_sc()`
+    - `set_mled_char` (публичный)
+      - Сигнатура: `set_mled_char(self, color='r', display_char='0')`
+      - Описание: 控制扩展点阵屏模块，显示输入的字符
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, error
+      - Аргументы:
+        - `color`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `display_char`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `tl_drone.led.set_mled_char('r', num)` (`examples/12_drone/21_mled.py:37`)
+        - `tl_drone.led.set_mled_char(color='b', display_char='A')` (`examples/12_drone/21_mled.py:41`)
+    - `set_mled_graph` (публичный)
+      - Сигнатура: `set_mled_graph(self, display_graph)`
+      - Описание: 用户自定义扩展点阵屏显示图案
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, warning
+      - Аргументы:
+        - `display_graph`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; string: 长度最大为64，点阵屏显示图案的编码字符串，每个字符解读为二进制后对应位置的led点的状态，
+      - Пример из examples:
+        - `tl_drone.led.set_mled_graph(mled_smile1)` (`examples/12_drone/21_mled.py:30`)
+        - `tl_drone.led.set_mled_graph(mled_smile2)` (`examples/12_drone/21_mled.py:32`)
+    - `set_mled_char_scroll` (публичный)
+      - Сигнатура: `set_mled_char_scroll(self, direction='l', color='r', freq=1.5, display_str='DJI')`
+      - Описание: 控制扩展点阵屏滚动显示字符串
+      - Связи: format, _set_mled_scroll
+      - Аргументы:
+        - `direction`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `color`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `display_str`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.set_mled_char_scroll()`
+    - `set_mled_graph_scroll` (публичный)
+      - Сигнатура: `set_mled_graph_scroll(self, direction='l', freq=1.5, display_graph=TELLO_DISPLAY_GRAPH)`
+      - Описание: 控制扩展点阵屏滚动显示图像
+      - Связи: format, _set_mled_scroll
+      - Аргументы:
+        - `direction`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `display_graph`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.set_mled_graph_scroll()`
+    - `_set_mled_scroll` (приватный)
+      - Сигнатура: `_set_mled_scroll(self, cmd)`
+      - Описание: 控制扩展点阵屏滚动显示
+      - Связи: TextProtoDrone, TextMsg, send_sync_msg, error, get_proto
+      - Аргументы:
+        - `cmd`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._set_mled_scroll(...)`
+
+
+## Vision
+
+### `src/robomaster/vision.py`
+
+#### Классы
+
+- **Класс `Vision`** (публичный)
+  - Описание: EP 视觉识别模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `reset` (публичный)
+      - Сигнатура: `reset(self)`
+      - Описание: описание отсутствует
+      - Связи: _disable_detection
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.reset()`
+    - `_id2marker` (приватный)
+      - Сигнатура: `_id2marker(marker_id)`
+      - Описание: ID转换为Marker字符
+      - Связи: str, chr, warning, format
+      - Аргументы:
+        - `marker_id`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+      - Пример: `obj._id2marker(...)`
+    - `_type2info` (приватный)
+      - Сигнатура: `_type2info(det_type)`
+      - Описание: описание отсутствует
+      - Связи: warning, format
+      - Аргументы:
+        - `det_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._type2info(...)`
+    - `_id2gesture` (приватный)
+      - Сигнатура: `_id2gesture(gus_id)`
+      - Описание: описание отсутствует
+      - Связи: warning, format
+      - Аргументы:
+        - `gus_id`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+      - Пример: `obj._id2gesture(...)`
+    - `sub_detect_info` (публичный)
+      - Сигнатура: `sub_detect_info(self, name, color=None, callback=None, *args, **kw)`
+      - Описание: 订阅智能识别消息
+      - Связи: _get_sdk_function, _enable_detection, error, VisionPushEvent, ProtoVisionDetectInfo
+      - Аргументы:
+        - `name`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("person", "gesture", "line", "marker", "robot")，person 行人，gesture 手势，line 线识别，        marker 标签识别，robot 机器人识别
+        - `color`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:("red", "green", "blue"): 指定识别颜色，仅线识别和标签识别时生效
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (list(rect_info)):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `result = ep_vision.sub_detect_info(name="marker", callback=on_detect_marker)` (`examples/05_vision/01_marker.py:69`)
+        - `result = ep_vision.sub_detect_info(name="line", color="blue", callback=on_detect_line)` (`examples/05_vision/02_line.py:61`)
+    - `unsub_detect_info` (публичный)
+      - Сигнатура: `unsub_detect_info(self, name)`
+      - Описание: 取消智能订阅消息
+      - Связи: _get_sdk_function, _disable_detection, warning, format
+      - Аргументы:
+        - `name`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: ("person", "gesture", "line", "marker", "robot")，取消的智能识别功能
+      - Пример из examples:
+        - `result = ep_vision.unsub_detect_info(name="marker")` (`examples/05_vision/01_marker.py:80`)
+        - `result = ep_vision.unsub_detect_info(name="line")` (`examples/05_vision/02_line.py:70`)
+    - `_enable_detection` (приватный)
+      - Сигнатура: `_enable_detection(self, name)`
+      - Описание: 开启视觉检测功能
+      - Связи: ProtoVisionDetectEnable, Msg, send_sync_msg, warning, format
+      - Аргументы:
+        - `name`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 检测功能的类型
+      - Пример: `obj._enable_detection(...)`
+    - `_disable_detection` (приватный)
+      - Сигнатура: `_disable_detection(self, func_mask)`
+      - Описание: 关闭视觉对应类型的检测功能
+      - Связи: ProtoVisionDetectEnable, Msg, send_sync_msg, warning, format
+      - Аргументы:
+        - `func_mask`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 视觉检测功能类型
+      - Пример: `obj._disable_detection(...)`
+    - `_get_sdk_function` (приватный)
+      - Сигнатура: `_get_sdk_function(self)`
+      - Описание: 获取视觉检测的功能类型
+      - Связи: ProtoVisionDetectStatus, Msg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj._get_sdk_function()`
+    - `_set_color` (приватный)
+      - Сигнатура: `_set_color(self, name, color)`
+      - Описание: описание отсутствует
+      - Связи: ProtoVisionSetColor, _send_sync_proto, warning, format
+      - Аргументы:
+        - `name`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `color`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._set_color(..., ...)`
+
+
+## Sensors
+
+### `src/robomaster/sensor.py`
+
+#### Классы
+
+- **Класс `DistanceSensor`** (публичный)
+  - Описание: EP 距离传感器模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `sub_distance` (публичный)
+      - Сигнатура: `sub_distance(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅距离传感器测量的距离信息
+      - Связи: TofSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 订阅数据的频率，支持的订阅频率为1、5、10、20、50hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入数据处理的回调函数，回调函数的参数为：
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入参数。
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_sensor.sub_distance(freq=5, callback=sub_data_handler)` (`examples/14_sensor/02_tof_data.py:32`)
+    - `unsub_distance` (публичный)
+      - Сигнатура: `unsub_distance(self)`
+      - Описание: 取消距离传感器的信息订阅。
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_sensor.unsub_distance()` (`examples/14_sensor/02_tof_data.py:34`)
+
+- **Класс `SensorAdaptor`** (публичный)
+  - Описание: EP 传感器板模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `get_adc` (публичный)
+      - Сигнатура: `get_adc(self, id=1, port=1)`
+      - Описание: 传感器板adc值获取
+      - Связи: ProtoSensorGetData, Msg, host2byte, send_sync_msg, get_proto
+      - Аргументы:
+        - `id`: тип `не указан`; единицы `не указаны`; диапазон `целое`; int[1,8]，传感器板编号
+        - `port`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[1,2]，传感器板端口号
+      - Пример из examples:
+        - `adc = ep_sensor_adaptor.get_adc(id=1, port=1)` (`examples/14_sensor/01_get_data.py:27`)
+    - `get_io` (публичный)
+      - Сигнатура: `get_io(self, id=1, port=1)`
+      - Описание: 传感器板io电平值获取
+      - Связи: ProtoSensorGetData, Msg, host2byte, send_sync_msg, get_proto
+      - Аргументы:
+        - `id`: тип `не указан`; единицы `не указаны`; диапазон `целое`; int[1,8], 传感器板编号
+        - `port`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[1,2], 传感器板端口号
+      - Пример из examples:
+        - `io = ep_sensor_adaptor.get_io(id=1, port=1)` (`examples/14_sensor/01_get_data.py:31`)
+    - `get_pulse_period` (публичный)
+      - Сигнатура: `get_pulse_period(self, id=1, port=1)`
+      - Описание: 传感器板电平持续时间获取
+      - Связи: ProtoSensorGetData, Msg, host2byte, send_sync_msg, get_proto
+      - Аргументы:
+        - `id`: тип `не указан`; единицы `не указаны`; диапазон `целое`; int[1,8], 传感器板编号
+        - `port`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int:[1,2], 传感器板端口号
+      - Пример из examples:
+        - `duration = ep_sensor_adaptor.get_pulse_period(id=1, port=1)` (`examples/14_sensor/01_get_data.py:35`)
+    - `sub_adapter` (публичный)
+      - Сигнатура: `sub_adapter(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅传感器转接板信息
+      - Связи: AdapterSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 订阅数据的频率，支持的订阅频率为1、5、10、20、50hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入数据处理的回调函数，回调函数的参数为：
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 传入参数。
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_sensor.sub_adapter(freq=5, callback=sub_data_handler)` (`examples/14_sensor/03_io_data.py:32`)
+    - `unsub_adapter` (публичный)
+      - Сигнатура: `unsub_adapter(self)`
+      - Описание: 取消传感器转接板的信息订阅。
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_sensor.unsub_adapter()` (`examples/14_sensor/03_io_data.py:34`)
+
+- **Класс `TelloDistanceSensor`** (публичный)
+  - Описание: 教育无人机 距离传感器模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `get_ext_tof` (публичный)
+      - Сигнатура: `get_ext_tof(self)`
+      - Описание: 获取扩展模块tof传感器的数值
+      - Связи: format, TextProtoDrone, TextMsg, send_sync_msg, warning
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `tof_info = tl_drone.sensor.get_ext_tof()` (`examples/12_drone/22_tof.py:27`)
+
+### `src/robomaster/servo.py`
+
+#### Классы
+
+- **Класс `ServoSetAngleAction`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self, index=0, angle=0, **kw)`
+  - Аргументы конструктора:
+    - `index`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+    - `angle`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+    - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, index=0, angle=0, **kw)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `index`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `angle`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; описание отсутствует
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__()`
+    - `__repr__` (приватный)
+      - Сигнатура: `__repr__(self)`
+      - Описание: описание отсутствует
+      - Связи: format
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__repr__()`
+    - `encode` (публичный)
+      - Сигнатура: `encode(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoServoCtrlSet
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.encode()`
+    - `update_from_push` (публичный)
+      - Сигнатура: `update_from_push(self, proto)`
+      - Описание: описание отсутствует
+      - Связи: _update_action_state, info, format
+      - Аргументы:
+        - `proto`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.update_from_push(...)`
+
+- **Класс `Servo`** (публичный)
+  - Описание: EP 舵机模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `moveto` (публичный)
+      - Сигнатура: `moveto(self, index=0, angle=0)`
+      - Описание: 舵机绝对位置移动
+      - Связи: ServoSetAngleAction, send_action
+      - Аргументы:
+        - `index`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int [1, 3]，舵机编号
+        - `angle`: тип `не указан`; единицы `градусы (°)`; диапазон `ограничено API`; int: [-180, 180]，舵机旋转角度，单位（°）
+      - Пример из examples:
+        - `ep_gimbal.moveto(pitch=0, yaw=0).wait_for_completed()` (`examples/03_gimbal/01_move.py:32`)
+        - `ep_gimbal.moveto(pitch=15, yaw=90, pitch_speed=50, yaw_speed=100).wait_for_completed()` (`examples/03_gimbal/01_move.py:35`)
+    - `drive_speed` (публичный)
+      - Сигнатура: `drive_speed(self, index=0, speed=0)`
+      - Описание: описание отсутствует
+      - Связи: ProtoServoModeSet, Msg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - `index`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `speed`: тип `не указан`; единицы `скорость`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_chassis.drive_speed(x=x_val, y=0, z=0, timeout=5)` (`examples/02_chassis/03_speed.py:32`)
+        - `ep_chassis.drive_speed(x=-x_val, y=0, z=0, timeout=5)` (`examples/02_chassis/03_speed.py:36`)
+    - `pause` (публичный)
+      - Сигнатура: `pause(self, index=0)`
+      - Описание: 停止
+      - Связи: ProtoServoControl, Msg, send_sync_msg, get_proto, warning
+      - Аргументы:
+        - `index`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int: [1, 3]，舵机编号
+      - Пример из examples:
+        - `ep_gripper.pause()` (`examples/11_gripper/01_open_close.py:31`)
+        - `ep_gripper.pause()` (`examples/11_gripper/01_open_close.py:36`)
+    - `get_angle` (публичный)
+      - Сигнатура: `get_angle(self, index=1)`
+      - Описание: 获取舵机角度值
+      - Связи: ProtoServoGetAngle, Msg, print, send_sync_msg, get_proto
+      - Аргументы:
+        - `index`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int: [1，3]，舵机编号
+      - Пример: `obj.get_angle()`
+    - `sub_servo_info` (публичный)
+      - Сигнатура: `sub_servo_info(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅舵机角度信息
+      - Связи: ServoSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (valid[4], speed[4], angle[4]):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример: `obj.sub_servo_info()`
+    - `unsub_servo_info` (публичный)
+      - Сигнатура: `unsub_servo_info(self)`
+      - Описание: 取消订阅舵机的角度信息
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.unsub_servo_info()`
+
+### `src/robomaster/gripper.py`
+
+#### Классы
+
+- **Класс `Gripper`** (публичный)
+  - Описание: EP 机械爪模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `reset` (публичный)
+      - Сигнатура: `reset(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.reset()`
+    - `open` (публичный)
+      - Сигнатура: `open(self, power=50)`
+      - Описание: 控制机械爪张开
+      - Связи: ProtoGripperCtrl, val2proto, _send_sync_proto, host2byte
+      - Аргументы:
+        - `power`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int: [1, 100]，控制出力
+      - Пример из examples:
+        - `img = Image.open(QRCODE_NAME)` (`examples/01_robot/05_sta_conn_helper.py:32`)
+        - `playing_stream = audio_player.open(format=pyaudio.paInt16,` (`examples/04_camera/04_audio_without_playing.py:27`)
+    - `close` (публичный)
+      - Сигнатура: `close(self, power=50)`
+      - Описание: 控制机械爪关闭
+      - Связи: ProtoGripperCtrl, val2proto, _send_sync_proto, host2byte
+      - Аргументы:
+        - `power`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; int: [1, 100]，控制出力
+      - Пример из examples:
+        - `ep_robot.close()` (`examples/01_robot/00_logger.py:34`)
+        - `ep_robot.close()` (`examples/01_robot/01_get_version.py:27`)
+    - `pause` (публичный)
+      - Сигнатура: `pause(self)`
+      - Описание: 控制机械爪停止
+      - Связи: ProtoGripperCtrl, _send_sync_proto, host2byte
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_gripper.pause()` (`examples/11_gripper/01_open_close.py:31`)
+        - `ep_gripper.pause()` (`examples/11_gripper/01_open_close.py:36`)
+    - `sub_status` (публичный)
+      - Сигнатура: `sub_status(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅夹爪的状态信息
+      - Связи: GripperSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (status):
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_chassis.sub_status(freq=5, callback=sub_status_info_handler)` (`examples/02_chassis/07_sub_status.py:38`)
+        - `ep_chassis.sub_status(freq=50, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:45`)
+    - `unsub_status` (публичный)
+      - Сигнатура: `unsub_status(self)`
+      - Описание: 取消夹爪状态信息订阅
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_status()` (`examples/02_chassis/07_sub_status.py:40`)
+        - `ep_chassis.unsub_status()` (`examples/02_chassis/09_sub_all.py:49`)
+
+
+## Robotic Arm
+
+### `src/robomaster/robotic_arm.py`
+
+#### Классы
+
+- **Класс `RoboticArmMoveAction`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self, x=0, y=0, z=0, mode=0, **kw)`
+  - Аргументы конструктора:
+    - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+    - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+    - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+    - `mode`: тип `не указан`; единицы `не указаны`; диапазон `enum/строка`; описание отсутствует
+    - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, x=0, y=0, z=0, mode=0, **kw)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `z`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; описание отсутствует
+        - `mode`: тип `не указан`; единицы `не указаны`; диапазон `enum/строка`; описание отсутствует
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__()`
+    - `__repr__` (приватный)
+      - Сигнатура: `__repr__(self)`
+      - Описание: описание отсутствует
+      - Связи: format
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__repr__()`
+    - `encode` (публичный)
+      - Сигнатура: `encode(self)`
+      - Описание: описание отсутствует
+      - Связи: ProtoRoboticArmMoveCtrl, val2proto
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.encode()`
+    - `update_from_push` (публичный)
+      - Сигнатура: `update_from_push(self, proto)`
+      - Описание: описание отсутствует
+      - Связи: _update_action_state, info, format
+      - Аргументы:
+        - `proto`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.update_from_push(...)`
+
+- **Класс `RoboticArm`** (публичный)
+  - Описание: EP 机械臂 模块
+  - Конструктор: `__init__(self, robot)`
+  - Аргументы конструктора:
+    - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self, robot)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - `robot`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.__init__(...)`
+    - `reset` (публичный)
+      - Сигнатура: `reset(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.reset()`
+    - `recenter` (публичный)
+      - Сигнатура: `recenter(self)`
+      - Описание: 控制机械臂回中
+      - Связи: moveto
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_gimbal.recenter().wait_for_completed()` (`examples/03_gimbal/04_recenter.py:32`)
+        - `ep_gimbal.recenter(pitch_speed=100, yaw_speed=100).wait_for_completed()` (`examples/03_gimbal/04_recenter.py:38`)
+    - `move` (публичный)
+      - Сигнатура: `move(self, x=0, y=0)`
+      - Описание: 机械臂相对位置移动
+      - Связи: RoboticArmMoveAction, send_action
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float, x轴运动距离，向前移动为正方向，单位 mm
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float, y轴运动距离，向上移动为正方向，单位 mm
+      - Пример из examples:
+        - `ep_chassis.move(x=x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:31`)
+        - `ep_chassis.move(x=-x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()` (`examples/02_chassis/01_move.py:34`)
+    - `moveto` (публичный)
+      - Сигнатура: `moveto(self, x=0, y=0)`
+      - Описание: 机械臂绝对位置移动
+      - Связи: RoboticArmMoveAction, send_action
+      - Аргументы:
+        - `x`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float, x轴运动距离，向前移动为正方向，单位 mm
+        - `y`: тип `не указан`; единицы `координаты (обычно м)`; диапазон `зависит от API`; float, y轴运动距离，向上移动为正方向，单位 mm
+      - Пример из examples:
+        - `ep_gimbal.moveto(pitch=0, yaw=0).wait_for_completed()` (`examples/03_gimbal/01_move.py:32`)
+        - `ep_gimbal.moveto(pitch=15, yaw=90, pitch_speed=50, yaw_speed=100).wait_for_completed()` (`examples/03_gimbal/01_move.py:35`)
+    - `sub_position` (публичный)
+      - Сигнатура: `sub_position(self, freq=5, callback=None, *args, **kw)`
+      - Описание: 订阅机械臂的位置信息
+      - Связи: ArmSubject, add_subject_info
+      - Аргументы:
+        - `freq`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; enum:(1,5,10,20,50) 设置数据订阅数据的推送频率，单位 Hz
+        - `callback`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 回调函数，返回数据 (pos_x, pos_y)：
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 可变参数
+        - `**kw`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; 关键字参数
+      - Пример из examples:
+        - `ep_chassis.sub_position(freq=10, callback=sub_position_handler)` (`examples/02_chassis/05_sub_position.py:33`)
+        - `ep_chassis.sub_position(freq=1, callback=sub_info_handler)` (`examples/02_chassis/09_sub_all.py:33`)
+    - `unsub_position` (публичный)
+      - Сигнатура: `unsub_position(self)`
+      - Описание: 取消机械臂位置信息订阅
+      - Связи: del_subject_info
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_chassis.unsub_position()` (`examples/02_chassis/05_sub_position.py:35`)
+        - `ep_chassis.unsub_position()` (`examples/02_chassis/09_sub_all.py:53`)
+
+
+## Multi-robot control
+
+### `src/multi_robomaster/multi_robot.py`
+
+#### Классы
+
+- **Класс `MultiRobotBase`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self)`
+  - Аргументы конструктора:
+    - нет аргументов
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__init__()`
+    - `__del__` (приватный)
+      - Сигнатура: `__del__(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__del__()`
+    - `initialize` (публичный)
+      - Сигнатура: `initialize(self, robot_num)`
+      - Описание: scan all robots and init its
+      - Связи: _scan_multi_robot, len, error, Exception, initialize
+      - Аргументы:
+        - `robot_num`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_robot.initialize(conn_type='rndis')` (`examples/01_robot/00_logger.py:30`)
+        - `ep_robot.initialize(conn_type="ap")` (`examples/01_robot/01_get_version.py:22`)
+    - `close` (публичный)
+      - Сигнатура: `close(self)`
+      - Описание: описание отсутствует
+      - Связи: close
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_robot.close()` (`examples/01_robot/00_logger.py:34`)
+        - `ep_robot.close()` (`examples/01_robot/01_get_version.py:27`)
+    - `all_robots` (публичный)
+      - Сигнатура: `all_robots(self)`
+      - Описание: описание отсутствует
+      - Связи: не выявлены
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.all_robots()`
+    - `robots_num` (публичный)
+      - Сигнатура: `robots_num(self)`
+      - Описание: описание отсутствует
+      - Связи: len
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.robots_num()`
+    - `groups_num` (публичный)
+      - Сигнатура: `groups_num(self)`
+      - Описание: описание отсутствует
+      - Связи: len
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.groups_num()`
+    - `_scan_multi_robot` (приватный)
+      - Сигнатура: `_scan_multi_robot(self, num=0)`
+      - Описание: Automatic scanning of robots in the network
+      - Связи: не выявлены
+      - Аргументы:
+        - `num`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._scan_multi_robot()`
+    - `reset_all_robot` (публичный)
+      - Сигнатура: `reset_all_robot(self)`
+      - Описание: описание отсутствует
+      - Связи: reset
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.reset_all_robot()`
+    - `number_id_by_sn` (публичный)
+      - Сигнатура: `number_id_by_sn(self, *args)`
+      - Описание: number id by SN
+      - Связи: get_robots_sn, info, len, keys, Exception
+      - Аргументы:
+        - `*args`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; [id, SN] id int, SN str
+      - Пример из examples:
+        - `multi_drone.number_id_by_sn([0, robot_sn_list[0]], [1, robot_sn_list[1]])` (`examples/15_multi_robot/multi_drone/02_basic.py:33`)
+        - `multi_drone.number_id_by_sn([0, robot_sn_list[0]], [1, robot_sn_list[1]])` (`examples/15_multi_robot/multi_drone/03_takeoff_land.py:38`)
+    - `build_group` (публичный)
+      - Сигнатура: `build_group(self, robot_id_list)`
+      - Описание: build a group that contains input robots
+      - Связи: не выявлены
+      - Аргументы:
+        - `robot_id_list`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+      - Пример из examples:
+        - `tello_group = multi_drone.build_group([0, 1])` (`examples/15_multi_robot/multi_drone/02_basic.py:34`)
+        - `multi_drone_group1 = multi_drone.build_group([0])` (`examples/15_multi_robot/multi_drone/03_takeoff_land.py:39`)
+    - `remove_group` (публичный)
+      - Сигнатура: `remove_group(self, group_list)`
+      - Описание: remove group from MultiRobot obj
+      - Связи: warning, remove, info, format
+      - Аргументы:
+        - `group_list`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.remove_group(...)`
+    - `run` (публичный)
+      - Сигнатура: `run(self, *exec_list)`
+      - Описание: Execute the action from the input list
+      - Связи: info, items, format, tuple, Thread
+      - Аргументы:
+        - `*exec_list`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; [robot_group, action_task]...
+      - Пример из examples:
+        - `myqr.run(words=info)` (`examples/01_robot/05_sta_conn_helper.py:30`)
+        - `multi_drone.run([tello_group, basic_task])` (`examples/15_multi_robot/multi_drone/02_basic.py:35`)
+
+- **Класс `MultiEP`** (публичный)
+  - Описание: S1_EP
+  - Конструктор: `__init__(self)`
+  - Аргументы конструктора:
+    - нет аргументов
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self)`
+      - Описание: описание отсутствует
+      - Связи: __init__, super
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__init__()`
+    - `initialize` (публичный)
+      - Сигнатура: `initialize(self, proto_type=config.DEFAULT_PROTO_TYPE)`
+      - Описание: scan all robots and init its
+      - Связи: _scan_multi_robot, len, error, Exception, initialize
+      - Аргументы:
+        - `proto_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_robot.initialize(conn_type='rndis')` (`examples/01_robot/00_logger.py:30`)
+        - `ep_robot.initialize(conn_type="ap")` (`examples/01_robot/01_get_version.py:22`)
+    - `_scan_multi_robot` (приватный)
+      - Сигнатура: `_scan_multi_robot(self, proto_type=config.DEFAULT_PROTO_TYPE)`
+      - Описание: Automatic scanning of robots in the network
+      - Связи: scan_robot_ip_list, enumerate, SdkConnection, ProtoSetSdkConnection, host2byte
+      - Аргументы:
+        - `proto_type`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._scan_multi_robot()`
+    - `build_group` (публичный)
+      - Сигнатура: `build_group(self, robot_id_list)`
+      - Описание: build a group that contains input robots
+      - Связи: check_robots_id, RMGroup, initialize, append, info
+      - Аргументы:
+        - `robot_id_list`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+      - Пример из examples:
+        - `tello_group = multi_drone.build_group([0, 1])` (`examples/15_multi_robot/multi_drone/02_basic.py:34`)
+        - `multi_drone_group1 = multi_drone.build_group([0])` (`examples/15_multi_robot/multi_drone/03_takeoff_land.py:39`)
+    - `set_all_robots_mode` (публичный)
+      - Сигнатура: `set_all_robots_mode(self, mode='gimbal_lead')`
+      - Описание: :param mode: free, gimbal_lead, chassis_lead
+      - Связи: items, set_robot_mode, print
+      - Аргументы:
+        - `mode`: тип `не указан`; единицы `не указаны`; диапазон `enum/строка`; free, gimbal_lead, chassis_lead
+      - Пример: `obj.set_all_robots_mode()`
+    - `number_id` (публичный)
+      - Сигнатура: `number_id(self)`
+      - Описание: Manually number of all the robots entered at initialization.
+      - Связи: _number_prompt
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.number_id()`
+
+- **Класс `MultiDrone`** (публичный)
+  - Описание: описание отсутствует
+  - Конструктор: `__init__(self)`
+  - Аргументы конструктора:
+    - нет аргументов
+  - Методы:
+    - `__init__` (приватный)
+      - Сигнатура: `__init__(self)`
+      - Описание: описание отсутствует
+      - Связи: TelloClient
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.__init__()`
+    - `initialize` (публичный)
+      - Сигнатура: `initialize(self, robot_num=0)`
+      - Описание: описание отсутствует
+      - Связи: start, scan_multi_robot
+      - Аргументы:
+        - `robot_num`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `ep_robot.initialize(conn_type='rndis')` (`examples/01_robot/00_logger.py:30`)
+        - `ep_robot.initialize(conn_type="ap")` (`examples/01_robot/01_get_version.py:22`)
+    - `close` (публичный)
+      - Сигнатура: `close(self)`
+      - Описание: описание отсутствует
+      - Связи: close
+      - Аргументы:
+        - нет аргументов
+      - Пример из examples:
+        - `ep_robot.close()` (`examples/01_robot/00_logger.py:34`)
+        - `ep_robot.close()` (`examples/01_robot/01_get_version.py:27`)
+    - `_scan_multi_robot` (приватный)
+      - Сигнатура: `_scan_multi_robot(self, num=0)`
+      - Описание: описание отсутствует
+      - Связи: initialize
+      - Аргументы:
+        - `num`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj._scan_multi_robot()`
+    - `reset_all_robot` (публичный)
+      - Сигнатура: `reset_all_robot()`
+      - Описание: описание отсутствует
+      - Связи: warning, format, _getframe
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.reset_all_robot()`
+    - `all_robots` (публичный)
+      - Сигнатура: `all_robots()`
+      - Описание: описание отсутствует
+      - Связи: warning, format, _getframe
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.all_robots()`
+    - `robots_num` (публичный)
+      - Сигнатура: `robots_num(self)`
+      - Описание: описание отсутствует
+      - Связи: len
+      - Аргументы:
+        - нет аргументов
+      - Пример: `obj.robots_num()`
+    - `run` (публичный)
+      - Сигнатура: `run(self, *exec_list)`
+      - Описание: описание отсутствует
+      - Связи: check_group_host, items, info, TelloAction, Thread
+      - Аргументы:
+        - `*exec_list`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `myqr.run(words=info)` (`examples/01_robot/05_sta_conn_helper.py:30`)
+        - `multi_drone.run([tello_group, basic_task])` (`examples/15_multi_robot/multi_drone/02_basic.py:35`)
+    - `build_group` (публичный)
+      - Сигнатура: `build_group(self, robot_id_group_list)`
+      - Описание: описание отсутствует
+      - Связи: check_robots_id, TelloGroup, append, Exception
+      - Аргументы:
+        - `robot_id_group_list`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+      - Пример из examples:
+        - `tello_group = multi_drone.build_group([0, 1])` (`examples/15_multi_robot/multi_drone/02_basic.py:34`)
+        - `multi_drone_group1 = multi_drone.build_group([0])` (`examples/15_multi_robot/multi_drone/03_takeoff_land.py:39`)
+    - `send_command` (публичный)
+      - Сигнатура: `send_command(self, text, host_list=None)`
+      - Описание: описание отсутствует
+      - Связи: TelloProtocol, send
+      - Аргументы:
+        - `text`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+        - `host_list`: тип `не указан`; единицы `не указаны`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.send_command(...)`
+    - `_get_sn` (приватный)
+      - Сигнатура: `_get_sn(self, timeout=0)`
+      - Описание: описание отсутствует
+      - Связи: send_command, time, qsize, empty, get
+      - Аргументы:
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `drone_ip_list = multi_drone._get_sn(timeout=10)` (`examples/15_multi_robot/multi_drone/01_scan_ip.py:24`)
+    - `number_id_by_sn` (публичный)
+      - Сигнатура: `number_id_by_sn(self, *id_sn, timeout=3)`
+      - Описание: описание отсутствует
+      - Связи: _get_sn, Exception, get, isinstance, format
+      - Аргументы:
+        - `*id_sn`: тип `не указан`; единицы `не указаны`; диапазон `целое`; описание отсутствует
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; описание отсутствует
+      - Пример из examples:
+        - `multi_drone.number_id_by_sn([0, robot_sn_list[0]], [1, robot_sn_list[1]])` (`examples/15_multi_robot/multi_drone/02_basic.py:33`)
+        - `multi_drone.number_id_by_sn([0, robot_sn_list[0]], [1, robot_sn_list[1]])` (`examples/15_multi_robot/multi_drone/03_takeoff_land.py:38`)
+    - `number_id_to_all_drone` (публичный)
+      - Сигнатура: `number_id_to_all_drone(self, timeout=10)`
+      - Описание: описание отсутствует
+      - Связи: _get_sn, enumerate, items
+      - Аргументы:
+        - `timeout`: тип `не указан`; единицы `секунды (с)`; диапазон `не указаны`; описание отсутствует
+      - Пример: `obj.number_id_to_all_drone()`
+
+
+## Использованные examples
+
+- `examples/00_general/01_sdk_version.py`
+- `examples/01_robot/00_logger.py`
+- `examples/01_robot/01_get_version.py`
+- `examples/01_robot/02_get_sn.py`
+- `examples/01_robot/03_play_audio.py`
+- `examples/01_robot/03_play_sound.py`
+- `examples/01_robot/04_ap_conn.py`
+- `examples/01_robot/05_sta_conn.py`
+- `examples/01_robot/05_sta_conn_helper.py`
+- `examples/01_robot/05_sta_conn_sn.py`
+- `examples/01_robot/06_rndis_conn.py`
+- `examples/01_robot/07_tcp_protocol.py`
+- `examples/01_robot/08_udp_protocol.py`
+- `examples/01_robot/09_set_mode.py`
+- `examples/02_chassis/01_move.py`
+- `examples/02_chassis/02_wheel.py`
+- `examples/02_chassis/03_speed.py`
+- `examples/02_chassis/04_sub_attitude.py`
+- `examples/02_chassis/05_sub_position.py`
+- `examples/02_chassis/06_sub_imu.py`
+- `examples/02_chassis/07_sub_status.py`
+- `examples/02_chassis/08_sub_esc.py`
+- `examples/02_chassis/09_sub_all.py`
+- `examples/02_chassis/10_serial.py`
+- `examples/02_chassis/11_pwm.py`
+- `examples/03_gimbal/01_move.py`
+- `examples/03_gimbal/02_speed.py`
+- `examples/03_gimbal/03_control.py`
+- `examples/03_gimbal/04_recenter.py`
+- `examples/03_gimbal/05_sub_angle.py`
+- `examples/04_camera/01_video_with_display.py`
+- `examples/04_camera/02_video_strategy.py`
+- `examples/04_camera/03_video_without_display.py`
+- `examples/04_camera/04_audio_without_playing.py`
+- `examples/04_camera/05_record_audio.py`
+- `examples/05_vision/01_marker.py`
+- `examples/05_vision/02_line.py`
+- `examples/05_vision/03_person.py`
+- `examples/05_vision/04_robot.py`
+- `examples/05_vision/05_gesture.py`
+- `examples/06_blaster/01_fire.py`
+- `examples/06_blaster/02_led.py`
+- `examples/07_led/01_set_led.py`
+- `examples/07_led/02_set_gimbal_led.py`
+- `examples/08_battery/01_sub_battery.py`
+- `examples/09_armor/01_hit_event.py`
+- `examples/09_armor/02_ir_event.py`
+- `examples/10_robotic_arm/01_move.py`
+- `examples/10_robotic_arm/02_sub_position.py`
+- `examples/11_gripper/01_open_close.py`
+- `examples/11_gripper/02_sub_status.py`
+- `examples/12_drone/00_logger.py`
+- `examples/12_drone/01_ap_conn.py`
+- `examples/12_drone/02_get_version.py`
+- `examples/12_drone/03_get_sn.py`
+- `examples/12_drone/04_get_battery.py`
+- `examples/12_drone/05_takeoff_land.py`
+- `examples/12_drone/06_rotate.py`
+- `examples/12_drone/07_forward_backward.py`
+- `examples/12_drone/08_up_down.py`
+- `examples/12_drone/09_left_right.py`
+- `examples/12_drone/10_go.py`
+- `examples/12_drone/11_curve.py`
+- `examples/12_drone/12_flip.py`
+- `examples/12_drone/13_rc.py`
+- `examples/12_drone/14_mission_pad.py`
+- `examples/12_drone/15_jump.py`
+- `examples/12_drone/16_video_stream.py`
+- `examples/12_drone/17_sub_info.py`
+- `examples/12_drone/18_sub_battery.py`
+- `examples/12_drone/19_sub_flight.py`
+- `examples/12_drone/20_led.py`
+- `examples/12_drone/21_mled.py`
+- `examples/12_drone/22_tof.py`
+- `examples/12_drone/23_set_sta.py`
+- `examples/12_drone/24_get_ssid.py`
+- `examples/13_servo/01_set_angle.py`
+- `examples/14_sensor/01_get_data.py`
+- `examples/14_sensor/02_tof_data.py`
+- `examples/14_sensor/03_io_data.py`
+- `examples/15_multi_robot/multi_drone/01_scan_ip.py`
+- `examples/15_multi_robot/multi_drone/02_basic.py`
+- `examples/15_multi_robot/multi_drone/03_takeoff_land.py`
+- `examples/15_multi_robot/multi_drone/04_flight.py`
+- `examples/15_multi_robot/multi_drone/05_go.py`
+- `examples/15_multi_robot/multi_drone/06_led.py`
+- `examples/15_multi_robot/multi_drone/07_takeoff_order.py`
+- `examples/15_multi_robot/multi_ep/01_scan_robot_sn.py`
+- `examples/15_multi_robot/multi_ep/02_two_ep_demo.py`
+- `examples/15_multi_robot/multi_ep/03_six_ep_demo.py`
+- `examples/16_gamesystem/00_gamesystem.py`
+- `examples/17_ai_module/00_ai_module_ep.py`
+- `examples/17_ai_module/01_ai_module_tt.py`

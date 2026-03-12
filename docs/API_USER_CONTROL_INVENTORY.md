@@ -1,0 +1,8119 @@
+# RoboMaster SDK: полный инвентарь API управления роботами
+
+> Автоматически сгенерированный обзор по исходникам `src/robomaster` и `src/multi_robomaster`. Включены публичные и приватные (`_`) элементы.
+
+## Ключевые точки инициализации/подключения/завершения
+
+- `multi_robomaster.multi_group:RobotGroupBase.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_group:RobotGroupBase.initialize` — Описание отсутствует в docstring
+- `multi_robomaster.multi_group:RMGroup.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_group:SingleDroneInGroup.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_group:SingleDroneInGroup.close` — Описание отсутствует в docstring
+- `multi_robomaster.multi_group:TelloGroup.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_group:TelloGroup.init` — Описание отсутствует в docstring
+- `multi_robomaster.multi_module:MultiAction.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_module:TelloDispatcher.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_module:MultiModule.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_module:MultiRmModule.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_module:MultiRmModule.close` — gripper
+- `multi_robomaster.multi_module:TelloAction.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_robot:MultiRobotBase.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_robot:MultiRobotBase.initialize` — scan all robots and init its
+- `multi_robomaster.multi_robot:MultiRobotBase.close` — Описание отсутствует в docstring
+- `multi_robomaster.multi_robot:MultiEP.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_robot:MultiEP.initialize` — scan all robots and init its
+- `multi_robomaster.multi_robot:MultiDrone.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.multi_robot:MultiDrone.initialize` — Описание отсутствует в docstring
+- `multi_robomaster.multi_robot:MultiDrone.close` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloProtocol.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloProtocol.init` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloConnection.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloConnection.start` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloConnection.pre_close` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloConnection.close` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloClient.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloClient.start` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloClient.close` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloStatus.__init__` — Описание отсутствует в docstring
+- `multi_robomaster.tool:TelloThread.__init__` — Описание отсутствует в docstring
+- `robomaster.action:_AutoRegisterAction.__init__` — Описание отсутствует в docstring
+- `robomaster.action:Action.__init__` — Описание отсутствует в docstring
+- `robomaster.action:TextAction.__init__` — Описание отсутствует в docstring
+- `robomaster.action:ActionDispatcher.__init__` — Описание отсутствует в docstring
+- `robomaster.action:ActionDispatcher.initialize` — Описание отсутствует в docstring
+- `robomaster.ai_module:AiModuleEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.ai_module:AiModule.__init__` — Описание отсутствует в docstring
+- `robomaster.ai_module:AiModule.init_ai_module` — Описание отсутствует в docstring
+- `robomaster.ai_module:TelloAIInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.ai_module:TelloAI.__init__` — Описание отсутствует в docstring
+- `robomaster.armor:ArmorHitEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.armor:IrHitEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.armor:Armor.__init__` — Описание отсутствует в docstring
+- `robomaster.battery:TelloBatInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.battery:BatterySubject.__init__` — Описание отсутствует в docstring
+- `robomaster.battery:TelloBattery.__init__` — Описание отсутствует в docstring
+- `robomaster.battery:Battery.__init__` — Описание отсутствует в docstring
+- `robomaster.blaster:Blaster.__init__` — Описание отсутствует в docstring
+- `robomaster.camera:Camera.__init__` — Описание отсутствует в docstring
+- `robomaster.camera:Camera.start_video_stream` — Описание отсутствует в docstring
+- `robomaster.camera:Camera.stop_video_stream` — Описание отсутствует в docstring
+- `robomaster.camera:TelloCamera.__init__` — Описание отсутствует в docstring
+- `robomaster.camera:TelloCamera.start_video_stream` — 开启视频流
+- `robomaster.camera:TelloCamera.stop_video_stream` — Описание отсутствует в docstring
+- `robomaster.camera:TelloCamera.stop` — Описание отсутствует в docstring
+- `robomaster.camera:EPCamera.__init__` — Описание отсутствует в docstring
+- `robomaster.camera:EPCamera.start_video_stream` — 开启视频流
+- `robomaster.camera:EPCamera.stop_video_stream` — 停止视频流
+- `robomaster.camera:EPCamera.start_audio_stream` — 开启音频流
+- `robomaster.camera:EPCamera.stop_audio_stream` — 停止音频流
+- `robomaster.camera:EPCamera.stop` — 停止
+- `robomaster.chassis:ChassisMoveAction.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:PositionSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:AttiInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:ChassisModeSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:SbusSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:VelocitySubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:EscSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:ImuSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:SaStatusSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:Chassis.__init__` — Описание отсутствует в docstring
+- `robomaster.chassis:Chassis.stop` — Описание отсутствует в docstring
+- `robomaster.chassis:Chassis._auto_stop_timer` — Описание отсутствует в docstring
+- `robomaster.client:EventIdentify.__init__` — Описание отсутствует в docstring
+- `robomaster.client:MsgHandler.__init__` — Описание отсутствует в docstring
+- `robomaster.client:Client.__init__` — Описание отсутствует в docstring
+- `robomaster.client:Client.initialize` — Описание отсутствует в docstring
+- `robomaster.client:Client.start` — Описание отсутствует в docstring
+- `robomaster.client:Client.stop` — Описание отсутствует в docstring
+- `robomaster.client:TextClient.__init__` — Описание отсутствует в docstring
+- `robomaster.client:TextClient.initialize` — Описание отсутствует в docstring
+- `robomaster.client:TextClient.start` — Описание отсутствует в docstring
+- `robomaster.client:TextClient.stop` — Описание отсутствует в docstring
+- `robomaster.config:Config.__init__` — Описание отсутствует в docstring
+- `robomaster.conn:BaseConnection.__init__` — Описание отсутствует в docstring
+- `robomaster.conn:BaseConnection.close` — Описание отсутствует в docstring
+- `robomaster.conn:Connection.__init__` — Описание отсутствует в docstring
+- `robomaster.conn:SdkConnection.__init__` — Описание отсутствует в docstring
+- `robomaster.conn:SdkConnection.request_connection` — Описание отсутствует в docstring
+- `robomaster.conn:StreamConnection.__init__` — Описание отсутствует в docstring
+- `robomaster.conn:StreamConnection.connect` — Описание отсутствует в docstring
+- `robomaster.conn:StreamConnection.disconnect` — Описание отсутствует в docstring
+- `robomaster.conn:ConnectionHelper.__init__` — Описание отсутствует в docstring
+- `robomaster.conn:ConnectionHelper.wait_for_connection` — Описание отсутствует в docstring
+- `robomaster.conn:FtpConnection.__init__` — Описание отсутствует в docstring
+- `robomaster.conn:FtpConnection.connect` — Описание отсутствует в docstring
+- `robomaster.conn:FtpConnection.stop` — Описание отсутствует в docstring
+- `robomaster.dds:_AutoRegisterSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.dds:Subject.__init__` — Описание отсутствует в docstring
+- `robomaster.dds:Subscriber.__init__` — Описание отсутствует в docstring
+- `robomaster.dds:Subscriber.start` — Описание отсутствует в docstring
+- `robomaster.dds:Subscriber.stop` — Описание отсутствует в docstring
+- `robomaster.dds:TelloSubscriber.__init__` — Описание отсутствует в docstring
+- `robomaster.dds:TelloSubscriber.start` — Описание отсутствует в docstring
+- `robomaster.dds:TelloSubscriber.stop` — Описание отсутствует в docstring
+- `robomaster.event:Dispatcher.__init__` — Описание отсутствует в docstring
+- `robomaster.flight:FlightAction.__init__` — Описание отсутствует в docstring
+- `robomaster.flight:TelloAttiInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.flight:TelloImuInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.flight:Flight.__init__` — Описание отсутствует в docstring
+- `robomaster.flight:Flight.stop` — 停止rc运动并悬停，任何时候都可以
+- `robomaster.gimbal:GimbalMoveAction.__init__` — Описание отсутствует в docstring
+- `robomaster.gimbal:GimbalRecenterAction.__init__` — Описание отсутствует в docstring
+- `robomaster.gimbal:GimbalPosSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.gimbal:Gimbal.__init__` — Описание отсутствует в docstring
+- `robomaster.gripper:GripperSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.gripper:Gripper.__init__` — Описание отсутствует в docstring
+- `robomaster.gripper:Gripper.close` — 控制机械爪关闭
+- `robomaster.led:Led.__init__` — Описание отсутствует в docstring
+- `robomaster.led:TelloLed.__init__` — Описание отсутствует в docstring
+- `robomaster.media:LiveView.__init__` — Описание отсутствует в docstring
+- `robomaster.media:LiveView.stop` — Описание отсутствует в docstring
+- `robomaster.media:LiveView.start_video_stream` — Описание отсутствует в docstring
+- `robomaster.media:LiveView.stop_video_stream` — Описание отсутствует в docstring
+- `robomaster.media:LiveView.start_audio_stream` — Описание отсутствует в docstring
+- `robomaster.media:LiveView.stop_audio_stream` — Описание отсутствует в docstring
+- `robomaster.module:_AutoRegisterModule.__init__` — Описание отсутствует в docstring
+- `robomaster.module:Module.__init__` — Описание отсутствует в docstring
+- `robomaster.module:Module.start` — Описание отсутствует в docstring
+- `robomaster.module:Module.stop` — Описание отсутствует в docstring
+- `robomaster.protocol:_AutoRegisterProto.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoData.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:MsgBase.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:Msg.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:TextMsg.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGetVersion.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGetProductVersion.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGetSn.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoTakePhoto.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetZoom.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGetZoom.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetWhiteBalance.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoFcSubInfoReq.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisStickOverlay.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGimbalCtrlSpeed.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoArmorHitEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoIrHitEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGameMsgEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetArmorParam.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisWheelSpeed.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetSystemLed.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetRobotMode.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGetRobotMode.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoBlasterFire.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoBlasterSetLed.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetSdkMode.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoStreamCtrl.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetSdkConnection.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSdkHeartBeat.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoAiModuleEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoUwbModuleEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGimbalSetWorkMode.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGimbalCtrl.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoPlaySound.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSoundPush.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGimbalRotate.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGimbalActionPush.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGimbalRecenter.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoVisionDetectStatus.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoVisionSetColor.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoPositionMove.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoPositionPush.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSetWheelSpeed.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisSetWorkMode.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisSpeedMode.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisPwmPercent.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisPwmFreq.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisSerialSet.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoChassisSerialMsgSend.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoVisionDetectEnable.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoVisionDetectInfo.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSubscribeAddNode.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSubNodeReset.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoDelMsg.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoAddSubMsg.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoPushPeriodMsg.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoGripperCtrl.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoRoboticArmMove.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoRoboticArmGetPostion.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoSensorGetData.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoServoModeSet.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoServoControl.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoServoGetAngle.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoServoCtrlSet.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoServoCtrlPush.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoRoboticArmMoveCtrl.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoRoboticArmMovePush.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:ProtoRoboticAiInit.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:TextProtoData.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:TextProtoDrone.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:TextProtoDronePush.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:TelloDdsProto.__init__` — Описание отсутствует в docstring
+- `robomaster.protocol:STAConnInfo.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:RobotPlaySoundAction.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:TelloTempInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:TelloTofInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:TelloDroneInfoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:TelloStatusSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:RobotBase.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:Drone.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:Drone.start` — Описание отсутствует в docstring
+- `robomaster.robot:Drone.search_stop` — Описание отсутствует в docstring
+- `robomaster.robot:Drone.initialize` — Описание отсутствует в docstring
+- `robomaster.robot:Drone.close` — 停止drone对象
+- `robomaster.robot:Robot.__init__` — Описание отсутствует в docstring
+- `robomaster.robot:Robot._start_heart_beat_timer` — Описание отсутствует в docstring
+- `robomaster.robot:Robot._stop_heart_beat_timer` — Описание отсутствует в docstring
+- `robomaster.robot:Robot.is_initialized` — Описание отсутствует в docstring
+- `robomaster.robot:Robot.initialize` — 初始化机器人
+- `robomaster.robot:Robot.close` — Описание отсутствует в docstring
+- `robomaster.robot:Robot._wait_for_connection` — Описание отсутствует в docstring
+- `robomaster.robotic_arm:ArmSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.robotic_arm:RoboticArmMoveAction.__init__` — Описание отсутствует в docstring
+- `robomaster.robotic_arm:RoboticArm.__init__` — Описание отсутствует в docstring
+- `robomaster.sensor:TofSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.sensor:AdapterSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.sensor:DistanceSensor.__init__` — Описание отсутствует в docstring
+- `robomaster.sensor:SensorAdaptor.__init__` — Описание отсутствует в docstring
+- `robomaster.sensor:TelloDistanceSensor.__init__` — Описание отсутствует в docstring
+- `robomaster.servo:ServoSubject.__init__` — Описание отсутствует в docstring
+- `robomaster.servo:ServoSetAngleAction.__init__` — Описание отсутствует в docstring
+- `robomaster.servo:Servo.__init__` — Описание отсутствует в docstring
+- `robomaster.uart:Uart.__init__` — Описание отсутствует в docstring
+- `robomaster.uart:Uart.start` — Описание отсутствует в docstring
+- `robomaster.uart:Uart.stop` — Описание отсутствует в docstring
+- `robomaster.util:UnitChecker.__init__` — Описание отсутствует в docstring
+- `robomaster.util:UnitChecker.start` — Описание отсутствует в docstring
+- `robomaster.vision:VisionPushEvent.__init__` — Описание отсутствует в docstring
+- `robomaster.vision:Vision.__init__` — Описание отсутствует в docstring
+
+## Модуль `multi_robomaster.__init__`
+
+### Функции модуля
+
+#### `enable_logging_to_file` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `enable_logging_to_file()`
+- **Аргументы:**
+  - Нет.
+- **Пример:** `enable_logging_to_file()`
+
+
+## Модуль `multi_robomaster.multi_group`
+
+### Классы
+
+### `RobotGroupBase` 
+- **Кратко:** robot group object
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robots_group_list, all_robots_dict)`
+  - **Аргументы конструктора:**
+    - `robots_group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `all_robots_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `RobotGroupBase(..., ...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robots_group_list, all_robots_dict)`
+    - Приватный: да
+    - Аргументы:
+      - `robots_group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `all_robots_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ...)`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `initialize` : Описание отсутствует.
+    - Сигнатура: `initialize(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.initialize()`
+  - `get_robot` : Get robot by robot-id
+    - Сигнатура: `get_robot(self, robot_id)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+    - Пример: `obj.get_robot(1)`
+  - `robots_num` : Описание отсутствует.
+    - Сигнатура: `robots_num(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.robots_num()`
+  - `all_robots_dict` : Описание отсутствует.
+    - Сигнатура: `all_robots_dict(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.all_robots_dict()`
+  - `_scan_group_module` (приватный): Описание отсутствует.
+    - Сигнатура: `_scan_group_module(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._scan_group_module()`
+  - `get_group_module` : Get group module by name
+    - Сигнатура: `get_group_module(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+    - Пример: `obj.get_group_module(...)`
+  - `robots_id_list` : Описание отсутствует.
+    - Сигнатура: `robots_id_list(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.robots_id_list()`
+  - `append` : Add robots to the group
+    - Сигнатура: `append(self, robots_id_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `robots_id_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+    - Пример: `obj.append(1)`
+  - `remove` : remove the robots from robot group
+    - Сигнатура: `remove(self, robots_id_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `robots_id_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.remove(1)`
+  - `execute_action` : Executive function for non-instantaneous action
+    - Сигнатура: `execute_action(self, action_name, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `action_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: which action need exec.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: the action key params.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.execute_action(True)`
+  - `execute_command` : Executive function for instantaneous action
+    - Сигнатура: `execute_command(self, command_name, *input_args, **input_kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `command_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: which command need send.
+      - `*input_args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**input_kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.execute_command(...)`
+  - `get_sn` : 获取组内机器的sn编号
+    - Сигнатура: `get_sn(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_sn()`
+### `RMGroup` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robots_group_list, all_robots_dict)`
+  - **Аргументы конструктора:**
+    - `robots_group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `all_robots_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `RMGroup(..., ...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robots_group_list, all_robots_dict)`
+    - Приватный: да
+    - Аргументы:
+      - `robots_group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `all_robots_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ...)`
+  - `_scan_group_module` (приватный): Описание отсутствует.
+    - Сигнатура: `_scan_group_module(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._scan_group_module()`
+  - `set_group_robots_mode` : Описание отсутствует.
+    - Сигнатура: `set_group_robots_mode(self, mode='free')`
+    - Приватный: нет
+    - Аргументы:
+      - `mode`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_group_robots_mode()`
+  - `play_sound` : robots in group play sound
+    - Сигнатура: `play_sound(self, sound_id, times=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `sound_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `times`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.play_sound(1)`
+  - `chassis` : Get chassis obj
+    - Сигнатура: `chassis(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.chassis()`
+  - `gimbal` : Get gimbal obj
+    - Сигнатура: `gimbal(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.gimbal()`
+  - `blaster` : Get blaster obj
+    - Сигнатура: `blaster(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.blaster()`
+  - `led` : Get led obj
+    - Сигнатура: `led(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.led()`
+  - `robotic_arm` : Get arm obj
+    - Сигнатура: `robotic_arm(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.robotic_arm()`
+  - `sensor` : Get sensor obj
+    - Сигнатура: `sensor(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sensor()`
+  - `gripper` : Get gripper obj
+    - Сигнатура: `gripper(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.gripper()`
+### `SingleDroneInGroup` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, client, _robot_id, _robot_sn, _robot_host)`
+  - **Аргументы конструктора:**
+    - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_sn`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `SingleDroneInGroup(..., 1, ..., "192.168.2.1")`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, client, _robot_id, _robot_sn, _robot_host)`
+    - Приватный: да
+    - Аргументы:
+      - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_sn`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., 1, ..., "192.168.2.1")`
+  - `close` : Описание отсутствует.
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `send_command` : Описание отсутствует.
+    - Сигнатура: `send_command(self, command)`
+    - Приватный: нет
+    - Аргументы:
+      - `command`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_command(...)`
+### `TelloGroup` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, client, robot_id_group_list, _robot_id_dict={}, _robot_host_dict={})`
+  - **Аргументы конструктора:**
+    - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `robot_id_group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_id_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_host_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloGroup(..., 1)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, client, robot_id_group_list, _robot_id_dict={}, _robot_host_dict={})`
+    - Приватный: да
+    - Аргументы:
+      - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `robot_id_group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_id_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_host_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., 1)`
+  - `init` : Описание отсутствует.
+    - Сигнатура: `init(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.init()`
+  - `get_sn` : find sn in group
+    - Сигнатура: `get_sn(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_sn()`
+  - `robot_group_host_list` : Описание отсутствует.
+    - Сигнатура: `robot_group_host_list(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.robot_group_host_list()`
+  - `get_robot` : get Drone obj
+    - Сигнатура: `get_robot(self, robot_id)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.get_robot(1)`
+
+## Модуль `multi_robomaster.multi_module`
+
+### Классы
+
+### `MultiAction` 
+- **Кратко:** Action manager for multi robots
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robots_action_dict)`
+  - **Аргументы конструктора:**
+    - `robots_action_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `MultiAction(True)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robots_action_dict)`
+    - Приватный: да
+    - Аргументы:
+      - `robots_action_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(True)`
+  - `wait_for_completed` : Wait for all robots to complete their actions
+    - Сигнатура: `wait_for_completed(self, timeout=8)`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: Add up the wait times for all the cars..
+    - Пример: `obj.wait_for_completed()`
+### `TelloDispatcher` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, client, event, _robot_host_dict)`
+  - **Аргументы конструктора:**
+    - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `event`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_host_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloDispatcher(..., ..., "192.168.2.1")`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, client, event, _robot_host_dict)`
+    - Приватный: да
+    - Аргументы:
+      - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `event`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_host_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ..., "192.168.2.1")`
+  - `action_host_list` : Описание отсутствует.
+    - Сигнатура: `action_host_list(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.action_host_list()`
+  - `action_host_list` : Описание отсутствует.
+    - Сигнатура: `action_host_list(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.action_host_list(...)`
+  - `wait_for_completed` : Описание отсутствует.
+    - Сигнатура: `wait_for_completed(self, timeout=10)`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.wait_for_completed()`
+### `MultiModule` 
+- **Кратко:** multi-robot`s module object
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot_group, module_name)`
+  - **Аргументы конструктора:**
+    - `robot_group`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `module_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `MultiModule(..., ...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot_group, module_name)`
+    - Приватный: да
+    - Аргументы:
+      - `robot_group`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `module_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ...)`
+  - `name` : Описание отсутствует.
+    - Сигнатура: `name(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.name()`
+  - `execute_action` : Executive function for non-instantaneous action
+    - Сигнатура: `execute_action(self, action_name, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `action_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: which action need exec.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: the action key params.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.execute_action(True)`
+  - `execute_command` : Executive function for instantaneous action
+    - Сигнатура: `execute_command(self, command_name, *input_args, **input_kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `command_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: which command need send.
+      - `*input_args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**input_kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.execute_command(...)`
+### `MultiRmModule` 
+- **Кратко:** Robomaster module
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot_group, module_name)`
+  - **Аргументы конструктора:**
+    - `robot_group`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `module_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `MultiRmModule(..., ...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot_group, module_name)`
+    - Приватный: да
+    - Аргументы:
+      - `robot_group`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `module_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ...)`
+  - `recenter` : gimbal recenter
+    - Сигнатура: `recenter(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.recenter()`
+  - `suspend` : gimbal suspend
+    - Сигнатура: `suspend(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.suspend()`
+  - `resume` : gimbal resume
+    - Сигнатура: `resume(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.resume()`
+  - `drive_wheels` : chassis drive wheels
+    - Сигнатура: `drive_wheels(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.drive_wheels()`
+  - `drive_speed` : chassis drive speed
+    - Сигнатура: `drive_speed(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.drive_speed()`
+  - `fire` : blaster fire
+    - Сигнатура: `fire(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.fire()`
+  - `move` : gimbal & chassis move
+    - Сигнатура: `move(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.move()`
+  - `moveto` : gimbal & chassis moveto
+    - Сигнатура: `moveto(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.moveto()`
+  - `set_led` : blaster & armor led
+    - Сигнатура: `set_led(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_led()`
+  - `close` : gripper
+    - Сигнатура: `close(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.close()`
+  - `open` : gripper
+    - Сигнатура: `open(self, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.open()`
+  - `pause` : gripper
+    - Сигнатура: `pause(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pause()`
+### `TelloAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, client, _robot_id_dict, _robot_sn_dict, _robot_host_dict)`
+  - **Аргументы конструктора:**
+    - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_id_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_sn_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `_robot_host_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloAction(..., 1, ..., "192.168.2.1")`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, client, _robot_id_dict, _robot_sn_dict, _robot_host_dict)`
+    - Приватный: да
+    - Аргументы:
+      - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_id_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_sn_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `_robot_host_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., 1, ..., "192.168.2.1")`
+  - `action_group` : Описание отсутствует.
+    - Сигнатура: `action_group(self, robot_group)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_group`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.action_group(...)`
+  - `send_command` : Описание отсутствует.
+    - Сигнатура: `send_command(self, command)`
+    - Приватный: нет
+    - Аргументы:
+      - `command`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_command(...)`
+  - `send_custom_command` : Описание отсутствует.
+    - Сигнатура: `send_custom_command(self, command_host_list, action='go')`
+    - Приватный: нет
+    - Аргументы:
+      - `command_host_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `action`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_custom_command("192.168.2.1")`
+  - `get_sn` : 获取sn
+    - Сигнатура: `get_sn(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_sn()`
+  - `get_battery` : 获取电量
+    - Сигнатура: `get_battery(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_battery()`
+  - `takeoff` : 自动起飞
+    - Сигнатура: `takeoff(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.takeoff()`
+  - `land` : 自动降落
+    - Сигнатура: `land(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.land()`
+  - `up` : 向上飞distance厘米，指相对距离
+    - Сигнатура: `up(self, distance, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.up(...)`
+  - `down` : 向下飞distance厘米，指相对距离
+    - Сигнатура: `down(self, distance, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.down(...)`
+  - `forward` : 向前飞distance厘米，指相对距离
+    - Сигнатура: `forward(self, distance, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.forward(...)`
+  - `backward` : 向后飞distance厘米，指相对距离
+    - Сигнатура: `backward(self, distance, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.backward(...)`
+  - `left` : 向左飞distance厘米，指相对距离
+    - Сигнатура: `left(self, distance, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.left(...)`
+  - `right` : 向右飞distance厘米，指相对距离
+    - Сигнатура: `right(self, distance, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.right(...)`
+  - `fly` : 控制飞机向指定方向飞行指定距离。
+    - Сигнатура: `fly(self, _action, distance, retry)`
+    - Приватный: нет
+    - Аргументы:
+      - `_action`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.fly(True, ..., 0)`
+  - `rotate` : 控制飞机旋转指定角度
+    - Сигнатура: `rotate(self, angle=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `angle`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.rotate()`
+  - `flip_forward` : 控制飞机向前翻滚
+    - Сигнатура: `flip_forward(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_forward()`
+  - `flip_backward` : 控制飞机向后翻滚
+    - Сигнатура: `flip_backward(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_backward()`
+  - `flip_left` : 控制飞机向左翻滚
+    - Сигнатура: `flip_left(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_left()`
+  - `flip_right` : 控制飞机向右翻滚
+    - Сигнатура: `flip_right(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_right()`
+  - `flip` : 控制飞机向指定方向翻滚
+    - Сигнатура: `flip(self, direction='f', retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `direction`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: string: 飞机翻转的方向， ’l‘ 向左翻滚，’r‘ 向右翻滚，’f‘ 向前翻滚， ’b‘ 向后翻滚.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip()`
+  - `go` : 控制飞机以设置速度飞向指定坐标位置
+    - Сигнатура: `go(self, go_dict)`
+    - Приватный: нет
+    - Аргументы:
+      - `go_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.go(...)`
+  - `mission_pad_on` : 开启视觉识别
+    - Сигнатура: `mission_pad_on(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.mission_pad_on()`
+  - `mission_pad_off` : 关闭视觉识别
+    - Сигнатура: `mission_pad_off(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.mission_pad_off()`
+  - `motor_on` : 开启静置转桨
+    - Сигнатура: `motor_on(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.motor_on()`
+  - `motor_off` : 开启静置转桨
+    - Сигнатура: `motor_off(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.motor_off()`
+  - `set_led` : 设置扩展模块led颜色
+    - Сигнатура: `set_led(self, r=0, g=255, b=0, command_dict=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `r`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led红色通道的强度.
+      - `g`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led绿色通道的强度.
+      - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led蓝色通道的强度.
+      - `command_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: dict, 多飞机的自定义显示.
+    - Пример: `obj.set_led()`
+  - `set_led_breath` : 设置扩展模块led以指定的颜色与频率实现呼吸效果
+    - Сигнатура: `set_led_breath(self, freq=1, r=0, g=255, b=0, command_dict=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `0.1, 2.5`; описание: int:[0.1, 2.5], 扩展led呼吸模式下的频率，共十档，随着数字增大速度变快.
+      - `r`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led红色通道的强度.
+      - `g`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led绿色通道的强度.
+      - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led蓝色通道的强度.
+      - `command_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: dict, 多飞机的自定义显示.
+    - Пример: `obj.set_led_breath()`
+  - `set_led_blink` : 设置扩展模块led以制定的两种颜色与频率实现闪烁效果
+    - Сигнатура: `set_led_blink(self, freq=5, r1=0, g1=255, b1=0, r2=0, g2=255, b2=255, command_dict=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `0.1, 10`; описание: int:[0.1, 10], 扩展ked闪烁模式下的频率， 共十档，随着数字增大速度变快.
+      - `r1`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第一种颜色的红色通道的强度.
+      - `g1`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第一种颜色的绿色通道的强度.
+      - `b1`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第一种颜色的蓝色通道的强度.
+      - `r2`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第二种颜色的红色通道的强度.
+      - `g2`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第二种颜色的绿色通道的强度.
+      - `b2`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第二种颜色的蓝色通道的强度.
+      - `command_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: dict, 多飞机的自定义显示.
+    - Пример: `obj.set_led_blink()`
+  - `set_mled_bright` : 设置点阵屏的亮度
+    - Сигнатура: `set_mled_bright(self, bright=255)`
+    - Приватный: нет
+    - Аргументы:
+      - `bright`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255] 点阵屏的亮度.
+    - Пример: `obj.set_mled_bright()`
+  - `set_mled_boot` : 设置点阵屏的开机画面
+    - Сигнатура: `set_mled_boot(self, display_graph)`
+    - Приватный: нет
+    - Аргументы:
+      - `display_graph`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: string: 长度最大为64，点阵屏显示图案的编码字符串，每个字符解读为二进制后对应位置的led点的状态，.
+    - Пример: `obj.set_mled_boot(0)`
+  - `set_mled_sc` : 清除点阵屏开机显示画面
+    - Сигнатура: `set_mled_sc(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.set_mled_sc()`
+  - `set_mled_char` : 控制扩展点阵屏模块，显示输入的字符
+    - Сигнатура: `set_mled_char(self, color='r', display_char='0', command_dict=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `color`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `display_char`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `command_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: dict, 多飞机的自定义显示.
+    - Пример: `obj.set_mled_char()`
+  - `set_mled_graph` : 用户自定义扩展点阵屏显示图案
+    - Сигнатура: `set_mled_graph(self, display_graph, command_dict=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `display_graph`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: string: 长度最大为64，点阵屏显示图案的编码字符串，每个字符解读为二进制后对应位置的led点的状态，.
+      - `command_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: dict, 多飞机的自定义显示.
+    - Пример: `obj.set_mled_graph(0)`
+  - `set_mled_char_scroll` : 控制扩展点阵屏滚动显示字符串
+    - Сигнатура: `set_mled_char_scroll(self, direction='l', color='r', freq=1.5, display_str='DJI')`
+    - Приватный: нет
+    - Аргументы:
+      - `direction`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `color`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `display_str`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_mled_char_scroll()`
+  - `set_mled_graph_scroll` : 控制扩展点阵屏滚动显示图像
+    - Сигнатура: `set_mled_graph_scroll(self, direction='l', freq=1.5, display_graph=led.TELLO_DISPLAY_GRAPH)`
+    - Приватный: нет
+    - Аргументы:
+      - `direction`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `display_graph`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_mled_graph_scroll()`
+  - `_set_mled_scroll` (приватный): 控制扩展点阵屏滚动显示
+    - Сигнатура: `_set_mled_scroll(self, cmd)`
+    - Приватный: да
+    - Аргументы:
+      - `cmd`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._set_mled_scroll(...)`
+  - `set_custom_text` : Описание отсутствует.
+    - Сигнатура: `set_custom_text(self, text='', command_dict=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `text`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `command_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_custom_text()`
+  - `_custom_drone_command` (приватный): Описание отсутствует.
+    - Сигнатура: `_custom_drone_command(self, command_dict, cmd_formatter)`
+    - Приватный: да
+    - Аргументы:
+      - `command_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `cmd_formatter`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._custom_drone_command(..., ...)`
+
+## Модуль `multi_robomaster.multi_robot`
+
+### Классы
+
+### `MultiRobotBase` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `MultiRobotBase()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `initialize` : scan all robots and init its
+    - Сигнатура: `initialize(self, robot_num)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.initialize(...)`
+  - `close` : Описание отсутствует.
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `all_robots` : Описание отсутствует.
+    - Сигнатура: `all_robots(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.all_robots()`
+  - `robots_num` : Описание отсутствует.
+    - Сигнатура: `robots_num(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.robots_num()`
+  - `groups_num` : Описание отсутствует.
+    - Сигнатура: `groups_num(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.groups_num()`
+  - `_scan_multi_robot` (приватный): Automatic scanning of robots in the network
+    - Сигнатура: `_scan_multi_robot(self, num=0)`
+    - Приватный: да
+    - Аргументы:
+      - `num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+    - Пример: `obj._scan_multi_robot()`
+  - `reset_all_robot` : Описание отсутствует.
+    - Сигнатура: `reset_all_robot(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset_all_robot()`
+  - `number_id_by_sn` : number id by SN
+    - Сигнатура: `number_id_by_sn(self, *args)`
+    - Приватный: нет
+    - Аргументы:
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `id, SN`; описание: [id, SN] id int, SN str.
+    - Пример: `obj.number_id_by_sn()`
+  - `build_group` : build a group that contains input robots
+    - Сигнатура: `build_group(self, robot_id_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_id_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.build_group(1)`
+  - `remove_group` : remove group from MultiRobot obj
+    - Сигнатура: `remove_group(self, group_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+    - Пример: `obj.remove_group(...)`
+  - `run` : Execute the action from the input list
+    - Сигнатура: `run(self, *exec_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `*exec_list`: тип `не указан`; единицы `не указаны`; допустимые значения `robot_group, action_task`; описание: [robot_group, action_task]....
+    - Пример: `obj.run()`
+### `MultiEP` 
+- **Кратко:** S1_EP
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `MultiEP()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `initialize` : scan all robots and init its
+    - Сигнатура: `initialize(self, proto_type=config.DEFAULT_PROTO_TYPE)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.initialize()`
+  - `_scan_multi_robot` (приватный): Automatic scanning of robots in the network
+    - Сигнатура: `_scan_multi_robot(self, proto_type=config.DEFAULT_PROTO_TYPE)`
+    - Приватный: да
+    - Аргументы:
+      - `proto_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._scan_multi_robot()`
+  - `build_group` : build a group that contains input robots
+    - Сигнатура: `build_group(self, robot_id_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_id_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+    - Пример: `obj.build_group(1)`
+  - `set_all_robots_mode` : :param mode: free, gimbal_lead, chassis_lead
+    - Сигнатура: `set_all_robots_mode(self, mode='gimbal_lead')`
+    - Приватный: нет
+    - Аргументы:
+      - `mode`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: free, gimbal_lead, chassis_lead.
+    - Пример: `obj.set_all_robots_mode()`
+  - `number_id` : Manually number of all the robots entered at initialization.
+    - Сигнатура: `number_id(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.number_id()`
+### `MultiDrone` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `MultiDrone()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `initialize` : Описание отсутствует.
+    - Сигнатура: `initialize(self, robot_num=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.initialize()`
+  - `close` : Описание отсутствует.
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `_scan_multi_robot` (приватный): Описание отсутствует.
+    - Сигнатура: `_scan_multi_robot(self, num=0)`
+    - Приватный: да
+    - Аргументы:
+      - `num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._scan_multi_robot()`
+  - `reset_all_robot` : Описание отсутствует.
+    - Сигнатура: `reset_all_robot()`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset_all_robot()`
+  - `all_robots` : Описание отсутствует.
+    - Сигнатура: `all_robots()`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.all_robots()`
+  - `robots_num` : Описание отсутствует.
+    - Сигнатура: `robots_num(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.robots_num()`
+  - `run` : Описание отсутствует.
+    - Сигнатура: `run(self, *exec_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `*exec_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.run()`
+  - `build_group` : Описание отсутствует.
+    - Сигнатура: `build_group(self, robot_id_group_list)`
+    - Приватный: нет
+    - Аргументы:
+      - `robot_id_group_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.build_group(1)`
+  - `send_command` : Описание отсутствует.
+    - Сигнатура: `send_command(self, text, host_list=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `text`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `host_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_command(0)`
+  - `_get_sn` (приватный): Описание отсутствует.
+    - Сигнатура: `_get_sn(self, timeout=0)`
+    - Приватный: да
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._get_sn()`
+  - `number_id_by_sn` : Описание отсутствует.
+    - Сигнатура: `number_id_by_sn(self, *id_sn, timeout=3)`
+    - Приватный: нет
+    - Аргументы:
+      - `*id_sn`: тип `list`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.number_id_by_sn()`
+  - `number_id_to_all_drone` : Описание отсутствует.
+    - Сигнатура: `number_id_to_all_drone(self, timeout=10)`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.number_id_to_all_drone()`
+
+## Модуль `multi_robomaster.tool`
+
+### Функции модуля
+
+#### `get_func_name` 
+- **Кратко:** Get the name of the calling function
+- **Приватная:** нет
+- **Сигнатура:** `get_func_name()`
+- **Аргументы:**
+  - Нет.
+- **Пример:** `get_func_name()`
+
+#### `get_robots_sn` 
+- **Кратко:** Get the sn for the robots_list,
+- **Приватная:** нет
+- **Сигнатура:** `get_robots_sn(robots_list)`
+- **Аргументы:**
+  - `robots_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: which robots need to get sn.
+- **Пример:** `get_robots_sn(...)`
+
+#### `check_robot_id` 
+- **Кратко:** check to see if the robot id exists
+- **Приватная:** нет
+- **Сигнатура:** `check_robot_id(robot_id, robots_dict)`
+- **Аргументы:**
+  - `robot_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+  - `robots_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: the dict to search.
+- **Пример:** `check_robot_id(1, ...)`
+
+#### `check_robots_id` 
+- **Кратко:** check to see if the robots id in input list exist
+- **Приватная:** нет
+- **Сигнатура:** `check_robots_id(robots_id_list, robots_dict)`
+- **Аргументы:**
+  - `robots_id_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+  - `robots_dict`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: the dict to search.
+- **Пример:** `check_robots_id(1, ...)`
+
+#### `check_group_host` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `check_group_host(robot_group_host_list)`
+- **Аргументы:**
+  - `robot_group_host_list`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `check_group_host("192.168.2.1")`
+
+#### `get_subnets` 
+- **Кратко:** Look through the machine's internet connection and
+- **Приватная:** нет
+- **Сигнатура:** `get_subnets()`
+- **Аргументы:**
+  - Нет.
+- **Пример:** `get_subnets()`
+
+### Классы
+
+### `TelloProtocol` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, text=None, host=None, encoding='utf-8')`
+  - **Аргументы конструктора:**
+    - `text`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `encoding`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloProtocol()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, text=None, host=None, encoding='utf-8')`
+    - Приватный: да
+    - Аргументы:
+      - `text`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `encoding`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `init` : Описание отсутствует.
+    - Сигнатура: `init(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.init()`
+  - `text` : Описание отсутствует.
+    - Сигнатура: `text(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.text()`
+  - `host` : Описание отсутствует.
+    - Сигнатура: `host(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.host()`
+  - `host` : Описание отсутствует.
+    - Сигнатура: `host(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.host(...)`
+  - `text` : Описание отсутствует.
+    - Сигнатура: `text(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.text(...)`
+  - `_encode` (приватный): Описание отсутствует.
+    - Сигнатура: `_encode(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._encode()`
+  - `_decode` (приватный): Описание отсутствует.
+    - Сигнатура: `_decode(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._decode()`
+### `TelloConnection` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, local_ip=conn.get_local_ip(), local_port=8889)`
+  - **Аргументы конструктора:**
+    - `local_ip`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `local_port`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloConnection()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, local_ip=conn.get_local_ip(), local_port=8889)`
+    - Приватный: да
+    - Аргументы:
+      - `local_ip`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `local_port`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `pre_close` : Описание отсутствует.
+    - Сигнатура: `pre_close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pre_close()`
+  - `close` : Описание отсутствует.
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `recv` : Описание отсутствует.
+    - Сигнатура: `recv(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.recv()`
+  - `send` : Описание отсутствует.
+    - Сигнатура: `send(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send(...)`
+  - `_scan_host` (приватный): Find avaliable ip list in server's subnets
+    - Сигнатура: `_scan_host(self, num)`
+    - Приватный: да
+    - Аргументы:
+      - `num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: Number of Tello this method is expected to find.
+    - Пример: `obj._scan_host(...)`
+  - `scan_multi_robot` : Automatic scanning of robots in the network
+    - Сигнатура: `scan_multi_robot(self, num=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+    - Пример: `obj.scan_multi_robot()`
+  - `_scan_receive_task` (приватный): Listen to responses from the Tello when scan the devices.
+    - Сигнатура: `_scan_receive_task(self, num)`
+    - Приватный: да
+    - Аргументы:
+      - `num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._scan_receive_task(...)`
+### `TelloClient` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloClient()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `close` : Описание отсутствует.
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `recv` : Описание отсутствует.
+    - Сигнатура: `recv(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.recv()`
+  - `send` : Описание отсутствует.
+    - Сигнатура: `send(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send(...)`
+  - `scan_multi_robot` : Описание отсутствует.
+    - Сигнатура: `scan_multi_robot(self, num)`
+    - Приватный: нет
+    - Аргументы:
+      - `num`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.scan_multi_robot(...)`
+### `TelloStatus` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, cur_action)`
+  - **Аргументы конструктора:**
+    - `cur_action`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloStatus(True)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, cur_action)`
+    - Приватный: да
+    - Аргументы:
+      - `cur_action`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(True)`
+  - `judge` : Описание отсутствует.
+    - Сигнатура: `judge(proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.judge(...)`
+### `TelloThread` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, target, *args, **kwargs)`
+  - **Аргументы конструктора:**
+    - `target`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kwargs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloThread(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, target, *args, **kwargs)`
+    - Приватный: да
+    - Аргументы:
+      - `target`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kwargs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `run` : Описание отсутствует.
+    - Сигнатура: `run(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.run()`
+  - `get_result` : Описание отсутствует.
+    - Сигнатура: `get_result(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_result()`
+
+## Модуль `robomaster.__init__`
+
+### Функции модуля
+
+#### `enable_logging_to_file` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `enable_logging_to_file()`
+- **Аргументы:**
+  - Нет.
+- **Пример:** `enable_logging_to_file()`
+
+
+## Модуль `robomaster.action`
+
+### Функции модуля
+
+#### `_make_action_key` (приватная)
+- **Кратко:** Описание отсутствует.
+- **Приватная:** да
+- **Сигнатура:** `_make_action_key(cmdid, action_id)`
+- **Аргументы:**
+  - `cmdid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - `action_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `_make_action_key(1, 1)`
+
+### Классы
+
+### `_AutoRegisterAction` (приватный)
+- **Кратко:** hepler to automatically register Proto Class whereever they're defined
+- **Приватный класс:** да
+- **Конструктор:** `__init__(cls, name, bases, attrs, **kw)`
+  - **Аргументы конструктора:**
+    - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `_AutoRegisterAction(..., ..., ...)`
+- **Методы:**
+  - `__new__` (приватный): Описание отсутствует.
+    - Сигнатура: `__new__(mcs, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `mcs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__new__(..., ..., ..., ...)`
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(cls, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ..., ...)`
+### `Action` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, **kw)`
+  - **Аргументы конструктора:**
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Action()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `_get_next_action_id` (приватный): Описание отсутствует.
+    - Сигнатура: `_get_next_action_id(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._get_next_action_id()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `target` : Описание отсутствует.
+    - Сигнатура: `target(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.target()`
+  - `is_running` : 是否正在运行中。
+    - Сигнатура: `is_running(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.is_running()`
+  - `is_completed` : Описание отсутствует.
+    - Сигнатура: `is_completed(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.is_completed()`
+  - `_is_aborting` (приватный): 是否在取消任务状态中
+    - Сигнатура: `_is_aborting(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._is_aborting()`
+  - `has_succeeded` : 是否已经成功完成
+    - Сигнатура: `has_succeeded(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.has_succeeded()`
+  - `has_failed` : 是否已经执行失败
+    - Сигнатура: `has_failed(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.has_failed()`
+  - `failure_reason` : 获取执行失败原因
+    - Сигнатура: `failure_reason(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.failure_reason()`
+  - `state` : 返回当前任务动作状态。
+    - Сигнатура: `state(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.state()`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `make_action_key` : Описание отсутствует.
+    - Сигнатура: `make_action_key(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.make_action_key()`
+  - `_update_action_state` (приватный): Описание отсутствует.
+    - Сигнатура: `_update_action_state(self, proto_state)`
+    - Приватный: да
+    - Аргументы:
+      - `proto_state`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._update_action_state(...)`
+  - `_changeto_state` (приватный): 修改action状态
+    - Сигнатура: `_changeto_state(self, state)`
+    - Приватный: да
+    - Аргументы:
+      - `state`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._changeto_state(...)`
+  - `wait_for_completed` : 等待任务动作直到完成
+    - Сигнатура: `wait_for_completed(self, timeout=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 超时，在timeout前未完成任务动作，直接返回.
+    - Пример: `obj.wait_for_completed()`
+  - `_abort` (приватный): 取消任务动作
+    - Сигнатура: `_abort(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._abort()`
+  - `found_proto` : Описание отсутствует.
+    - Сигнатура: `found_proto(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.found_proto(...)`
+  - `found_action` : Описание отсутствует.
+    - Сигнатура: `found_action(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.found_action(...)`
+### `TextAction` 
+- **Кратко:** Blocking action in plaintext protocol
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, **kw)`
+  - **Аргументы конструктора:**
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TextAction()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `_update_action_state` (приватный): Описание отсутствует.
+    - Сигнатура: `_update_action_state(self, proto_state)`
+    - Приватный: да
+    - Аргументы:
+      - `proto_state`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._update_action_state(...)`
+  - `make_action_key` : Описание отсутствует.
+    - Сигнатура: `make_action_key(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.make_action_key()`
+  - `text_proto` : Описание отсутствует.
+    - Сигнатура: `text_proto(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.text_proto()`
+  - `text_proto` : Описание отсутствует.
+    - Сигнатура: `text_proto(self, text_cmd)`
+    - Приватный: нет
+    - Аргументы:
+      - `text_cmd`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.text_proto(0)`
+  - `found_proto` : Описание отсутствует.
+    - Сигнатура: `found_proto(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.found_proto(...)`
+  - `found_action` : Описание отсутствует.
+    - Сигнатура: `found_action(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.found_action(...)`
+### `ActionDispatcher` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, client=None)`
+  - **Аргументы конструктора:**
+    - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `ActionDispatcher()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, client=None)`
+    - Приватный: да
+    - Аргументы:
+      - `client`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `initialize` : Описание отсутствует.
+    - Сигнатура: `initialize(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.initialize()`
+  - `has_in_progress_actions` : 是否有正在执行的任务
+    - Сигнатура: `has_in_progress_actions(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.has_in_progress_actions()`
+  - `_on_recv` (приватный): Описание отсутствует.
+    - Сигнатура: `_on_recv(cls, self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._on_recv(...)`
+  - `get_msg_by_action` : Описание отсутствует.
+    - Сигнатура: `get_msg_by_action(self, action)`
+    - Приватный: нет
+    - Аргументы:
+      - `action`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.get_msg_by_action(True)`
+  - `send_action` : 发送任务动作命令
+    - Сигнатура: `send_action(self, action, action_type=ACTION_NOW)`
+    - Приватный: нет
+    - Аргументы:
+      - `action`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `action_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_action(True)`
+  - `_on_action_state_changed` (приватный): Описание отсутствует.
+    - Сигнатура: `_on_action_state_changed(cls, self, action, orgin, target)`
+    - Приватный: да
+    - Аргументы:
+      - `action`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `orgin`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `target`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._on_action_state_changed(True, ..., ...)`
+
+## Модуль `robomaster.ai_module`
+
+### Классы
+
+### `AiModuleEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `AiModuleEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `AiModule` 
+- **Кратко:** EP AI模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `AiModule(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `init_ai_module` : Описание отсутствует.
+    - Сигнатура: `init_ai_module(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.init_ai_module()`
+  - `sub_ai_event` : 订阅AI信息
+    - Сигнатура: `sub_ai_event(self, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 明文字符串:.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_ai_event()`
+  - `unsub_ai_event` : 取消AI数据订阅
+    - Сигнатура: `unsub_ai_event(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_ai_event()`
+### `TelloAIInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloAIInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `percent` : Описание отсутствует.
+    - Сигнатура: `percent(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.percent()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `TelloAI` 
+- **Кратко:** 教育无人机 AI模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloAI(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `get_ai` : 获取AI模块信息
+    - Сигнатура: `get_ai(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_ai()`
+  - `sub_ai_info` : 订阅AI信息
+    - Сигнатура: `sub_ai_info(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:(1,5,10) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 明文字符串:.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_ai_info()`
+  - `unsub_ai_info` : 取消订阅AI模块信息
+    - Сигнатура: `unsub_ai_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_ai_info()`
+
+## Модуль `robomaster.algo`
+
+### Функции модуля
+
+#### `crc8_calc` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `crc8_calc(data, crc=119)`
+- **Аргументы:**
+  - `data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - `crc`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `crc8_calc(...)`
+
+#### `crc16_calc` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `crc16_calc(data, crc=13970)`
+- **Аргументы:**
+  - `data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - `crc`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `crc16_calc(...)`
+
+#### `simple_encrypt` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `simple_encrypt(data)`
+- **Аргументы:**
+  - `data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `simple_encrypt(...)`
+
+
+## Модуль `robomaster.armor`
+
+### Классы
+
+### `ArmorHitEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ArmorHitEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `armor_id` : 上一次被击打的装甲板ID
+    - Сигнатура: `armor_id(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.armor_id()`
+  - `armor_comp` : 上一次被击打的装甲板部位
+    - Сигнатура: `armor_comp(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.armor_comp()`
+  - `hit_type` : 被击打类型
+    - Сигнатура: `hit_type(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.hit_type()`
+  - `strength` : Описание отсутствует.
+    - Сигнатура: `strength(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.strength()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `IrHitEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `IrHitEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `hit_times` : 受到红外打击的次数
+    - Сигнатура: `hit_times(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.hit_times()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `Armor` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Armor(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `sub_hit_event` : 打击事件订阅
+    - Сигнатура: `sub_hit_event(self, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数, 返回数据 (armor_id, hit_type)：.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_hit_event()`
+  - `sub_ir_event` : 红外打击事件订阅
+    - Сигнатура: `sub_ir_event(self, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数, 返回数据 (hit_cnt).
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_ir_event()`
+  - `unsub_hit_event` : 取消打击事件订阅
+    - Сигнатура: `unsub_hit_event(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_hit_event()`
+  - `unsub_ir_event` : 取消红外打击事件订阅
+    - Сигнатура: `unsub_ir_event(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_ir_event()`
+  - `set_hit_sensitivity` : 设置装甲灵敏度
+    - Сигнатура: `set_hit_sensitivity(self, comp=COMP_ALL, sensitivity=5)`
+    - Приватный: нет
+    - Аргументы:
+      - `comp`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:("all", "top_all", "bottom_all", "top_left", "top_right", "bottom_left",         "bottom_right", "bottom_front", "bottom_back")：要设置的装甲部位.
+      - `sensitivity`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 10`; описание: int:[0, 10] 灵敏度系数，系数越大灵敏度越低.
+    - Пример: `obj.set_hit_sensitivity()`
+  - `comp2id` : 装甲部位转换为装甲ID
+    - Сигнатура: `comp2id(comp)`
+    - Приватный: нет
+    - Аргументы:
+      - `comp`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum ("bottom_back", "bottom_front", "bottom_left", "bottom_right", "top_left", "top_right") 装甲部位.
+    - Пример: `obj.comp2id(...)`
+  - `id2comp` : 装甲ID转换为装甲部位
+    - Сигнатура: `id2comp(armor_id)`
+    - Приватный: нет
+    - Аргументы:
+      - `armor_id`: тип `не указан`; единицы `не указаны`; допустимые значения `1, 6`; описание: int [1, 6]，装甲ID.
+    - Пример: `obj.id2comp(1)`
+  - `_mask2comp` (приватный): Описание отсутствует.
+    - Сигнатура: `_mask2comp(comp_mask)`
+    - Приватный: да
+    - Аргументы:
+      - `comp_mask`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._mask2comp(...)`
+  - `_comp2mask` (приватный): Описание отсутствует.
+    - Сигнатура: `_comp2mask(comp)`
+    - Приватный: да
+    - Аргументы:
+      - `comp`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._comp2mask(...)`
+
+## Модуль `robomaster.battery`
+
+### Классы
+
+### `TelloBatInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloBatInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `percent` : Описание отсутствует.
+    - Сигнатура: `percent(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.percent()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.freq()`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self, in_freq)`
+    - Приватный: нет
+    - Аргументы:
+      - `in_freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.freq(10)`
+### `BatterySubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `BatterySubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `percent` : Описание отсутствует.
+    - Сигнатура: `percent(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.percent()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `TelloBattery` 
+- **Кратко:** 教育无人机 电池模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloBattery(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `get_battery` : 获取电池电量信息
+    - Сигнатура: `get_battery(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_battery()`
+  - `sub_battery_info` : 订阅电池信息
+    - Сигнатура: `sub_battery_info(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:(1,5,10) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 percent:.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_battery_info()`
+  - `unsub_battery_info` : 取消订阅飞机电池信息
+    - Сигнатура: `unsub_battery_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_battery_info()`
+### `Battery` 
+- **Кратко:** EP 电池模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Battery(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `sub_battery_info` : 订阅电池信息
+    - Сигнатура: `sub_battery_info(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:(1,5,10,20,50) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 percent:.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_battery_info()`
+  - `unsub_battery_info` : 取消电池订阅
+    - Сигнатура: `unsub_battery_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_battery_info()`
+
+## Модуль `robomaster.blaster`
+
+### Классы
+
+### `Blaster` 
+- **Кратко:** EP 发射器模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Blaster(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `fire` : 发射器发射
+    - Сигнатура: `fire(self, fire_type=WATER_FIRE, times=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `fire_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("water", "ir")， 发射器发射类型，水弹、红外弹.
+      - `times`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 发射次数.
+    - Пример: `obj.fire()`
+  - `set_led` : 设置发射器灯效
+    - Сигнатура: `set_led(self, brightness=255, effect=LED_ON)`
+    - Приватный: нет
+    - Аргументы:
+      - `brightness`: тип `не указан`; единицы `не указаны`; допустимые значения `0,255`; описание: int:[0,255]，亮度.
+      - `effect`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:("on", "off")，on 表示常亮，off 表示常灭.
+    - Пример: `obj.set_led()`
+
+## Модуль `robomaster.camera`
+
+### Классы
+
+### `Camera` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Camera(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `start_video_stream` : Описание отсутствует.
+    - Сигнатура: `start_video_stream(self, display=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `display`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.start_video_stream()`
+  - `stop_video_stream` : Описание отсутствует.
+    - Сигнатура: `stop_video_stream(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop_video_stream()`
+  - `read_video_frame` : 读取一帧视频流帧
+    - Сигнатура: `read_video_frame(self, timeout=3, strategy='pipeline')`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float: (0, inf)，超时时间，超过指定timeout时间后函数返回.
+      - `strategy`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("pipeline", "newest") 读取帧策略：pipeline 流水线依次读取，newest 获取最新的一帧数据，        注意会清空老的数据帧队列.
+    - Пример: `obj.read_video_frame()`
+  - `read_cv2_image` : 读取一帧视频流帧
+    - Сигнатура: `read_cv2_image(self, timeout=3, strategy='pipeline')`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float: (0, inf)，超时参数，在timeout时间内未获取到视频流帧，函数返回.
+      - `strategy`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("pipeline", "newest")，读取帧策略：pipeline 依次读取缓存的帧信息，newest 获取最新的一帧        数据，会清空旧的数据帧.
+    - Пример: `obj.read_cv2_image()`
+### `TelloCamera` 
+- **Кратко:** 教育无人机 摄像机模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloCamera(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `conf` : Описание отсутствует.
+    - Сигнатура: `conf(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.conf()`
+  - `start_video_stream` : 开启视频流
+    - Сигнатура: `start_video_stream(self, display=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `display`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: bool, 是否显示视频流.
+    - Пример: `obj.start_video_stream()`
+  - `stop_video_stream` : Описание отсутствует.
+    - Сигнатура: `stop_video_stream(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop_video_stream()`
+  - `_video_stream` (приватный): Описание отсутствует.
+    - Сигнатура: `_video_stream(self, on_off=1)`
+    - Приватный: да
+    - Аргументы:
+      - `on_off`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._video_stream()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `set_fps` : 设置飞机视频帧率
+    - Сигнатура: `set_fps(self, fps)`
+    - Приватный: нет
+    - Аргументы:
+      - `fps`: тип `не указан`; единицы `не указаны`; допустимые значения `high, middle, low`; описание: 需要设置的帧率，[high, middle, low].
+    - Пример: `obj.set_fps(...)`
+  - `set_bitrate` : 设置飞机传输码率
+    - Сигнатура: `set_bitrate(self, bitrate)`
+    - Приватный: нет
+    - Аргументы:
+      - `bitrate`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 6`; описание: 需要设置的传输码率，[0, 6].
+    - Пример: `obj.set_bitrate(...)`
+  - `set_resolution` : 设置飞机视频分辨率
+    - Сигнатура: `set_resolution(self, resolution)`
+    - Приватный: нет
+    - Аргументы:
+      - `resolution`: тип `не указан`; единицы `не указаны`; допустимые значения `high, low`; описание: 需要设置的视频分辨率，[high, low].
+    - Пример: `obj.set_resolution(True)`
+  - `set_down_vision` : 设置飞机图像源
+    - Сигнатура: `set_down_vision(self, setting)`
+    - Приватный: нет
+    - Аргументы:
+      - `setting`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_down_vision(...)`
+### `EPCamera` 
+- **Кратко:** EP 摄像机模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `EPCamera(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `conf` : 相机参数配置
+    - Сигнатура: `conf(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.conf()`
+  - `audio_stream_addr` : 机器人音频流地址
+    - Сигнатура: `audio_stream_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.audio_stream_addr()`
+  - `video_stream_addr` : 机器人视频流地址
+    - Сигнатура: `video_stream_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.video_stream_addr()`
+  - `start_video_stream` : 开启视频流
+    - Сигнатура: `start_video_stream(self, display=True, resolution='720p')`
+    - Приватный: нет
+    - Аргументы:
+      - `display`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: bool，是否显示视频流.
+      - `resolution`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("360p", "540p", "720p")，设置图传分辨率尺寸.
+    - Пример: `obj.start_video_stream()`
+  - `stop_video_stream` : 停止视频流
+    - Сигнатура: `stop_video_stream(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop_video_stream()`
+  - `start_audio_stream` : 开启音频流
+    - Сигнатура: `start_audio_stream(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start_audio_stream()`
+  - `stop_audio_stream` : 停止音频流
+    - Сигнатура: `stop_audio_stream(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop_audio_stream()`
+  - `read_audio_frame` : 读取一段音频流信息
+    - Сигнатура: `read_audio_frame(self, timeout=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float: (0, inf)，超时时间，超过指定timeout时间后函数返回.
+    - Пример: `obj.read_audio_frame()`
+  - `record_audio` : 录制音频，保存到本地，支持wav格式，单通道
+    - Сигнатура: `record_audio(self, save_file='output.wav', seconds=5, sample_rate=48000)`
+    - Приватный: нет
+    - Аргументы:
+      - `save_file`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 本地文件路径，目前仅支持wav格式.
+      - `seconds`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 录制时间.
+      - `sample_rate`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 采样率.
+    - Пример: `obj.record_audio()`
+  - `_stream_sdk` (приватный): 控制媒体流sdk模式
+    - Сигнатура: `_stream_sdk(self, on_off=1, resolution='720p')`
+    - Приватный: да
+    - Аргументы:
+      - `on_off`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 1 表示进入SDK模式，0 表示退出SDK模式.
+      - `resolution`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._stream_sdk()`
+  - `_video_stream` (приватный): Описание отсутствует.
+    - Сигнатура: `_video_stream(self, on_off=1, resolution='720p')`
+    - Приватный: да
+    - Аргументы:
+      - `on_off`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `resolution`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._video_stream()`
+  - `_audio_stream` (приватный): Описание отсутствует.
+    - Сигнатура: `_audio_stream(self, on_off=1)`
+    - Приватный: да
+    - Аргументы:
+      - `on_off`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._audio_stream()`
+  - `stop` : 停止
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `take_photo` : 拍照
+    - Сигнатура: `take_photo(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.take_photo()`
+  - `_set_zoom` (приватный): 设置变焦参数
+    - Сигнатура: `_set_zoom(self, zoom=1.0)`
+    - Приватный: да
+    - Аргументы:
+      - `zoom`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 变焦值.
+    - Пример: `obj._set_zoom()`
+
+## Модуль `robomaster.chassis`
+
+### Классы
+
+### `ChassisMoveAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, x=0, y=0, z=0, spd_xy=0, spd_z=0, **kw)`
+  - **Аргументы конструктора:**
+    - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `spd_xy`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `spd_z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `ChassisMoveAction()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, x=0, y=0, z=0, spd_xy=0, spd_z=0, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `spd_xy`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `spd_z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `update_from_push` : Описание отсутствует.
+    - Сигнатура: `update_from_push(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.update_from_push(...)`
+### `PositionSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, cs)`
+  - **Аргументы конструктора:**
+    - `cs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `PositionSubject(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, cs)`
+    - Приватный: да
+    - Аргументы:
+      - `cs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `position` : Описание отсутствует.
+    - Сигнатура: `position(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.position()`
+  - `data_info` : cs=0选用当前位置作为坐标原点，否则选用机器人上电时刻位置作为坐标原点
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `AttiInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `AttiInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `atti_info` : Описание отсутствует.
+    - Сигнатура: `atti_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.atti_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `ChassisModeSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ChassisModeSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `chassis_mode` : Описание отсутствует.
+    - Сигнатура: `chassis_mode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.chassis_mode()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `SbusSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `SbusSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `subs_data` : Описание отсутствует.
+    - Сигнатура: `subs_data(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.subs_data()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `VelocitySubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `VelocitySubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `vel_data` : Описание отсутствует.
+    - Сигнатура: `vel_data(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.vel_data()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `EscSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `EscSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `esc_info` : Описание отсутствует.
+    - Сигнатура: `esc_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.esc_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `ImuSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ImuSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `imu_info` : Описание отсутствует.
+    - Сигнатура: `imu_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.imu_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `SaStatusSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `SaStatusSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `sa_status` : Описание отсутствует.
+    - Сигнатура: `sa_status(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sa_status()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `Chassis` 
+- **Кратко:** EP 底盘模块，可以控制底盘的速度、位置、订阅底盘的数据，控制麦克纳姆轮等操作
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Chassis(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `_set_mode` (приватный): Описание отсутствует.
+    - Сигнатура: `_set_mode(self, mode)`
+    - Приватный: да
+    - Аргументы:
+      - `mode`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._set_mode("free")`
+  - `_get_mode` (приватный): Описание отсутствует.
+    - Сигнатура: `_get_mode(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._get_mode()`
+  - `stick_overlay` : 设置底盘的杆量叠加模式
+    - Сигнатура: `stick_overlay(self, fusion_mode=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `fusion_mode`: тип `не указан`; единицы `не указаны`; допустимые значения `0,1,2`; описание: int:[0,1,2]  0 = 关闭SDK的杆量叠加, 1 = 使能杆量叠加,速度正方向为车身坐标系, 2 = 使能SDK模式,速度正方向为云台朝向.
+    - Пример: `obj.stick_overlay()`
+  - `drive_wheels` : 设置麦轮转速
+    - Сигнатура: `drive_wheels(self, w1=0, w2=0, w3=0, w4=0, timeout=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `w1`: тип `не указан`; единицы `не указаны`; допустимые значения `-1000,1000`; описание: int:[-1000,1000]，右前麦轮速度，以车头方向前进旋转为正方向，单位 rpm.
+      - `w2`: тип `не указан`; единицы `не указаны`; допустимые значения `-1000,1000`; описание: int:[-1000,1000]，左前麦轮速度，以车头方向前进旋转为正方向，单位 rpm.
+      - `w3`: тип `не указан`; единицы `не указаны`; допустимые значения `-1000,1000`; описание: int:[-1000,1000]，左后麦轮速度，以车头方向前进旋转为正方向，单位 rpm.
+      - `w4`: тип `не указан`; единицы `не указаны`; допустимые значения `-1000,1000`; описание: int:[-1000,1000]，右后麦轮速度，以车头方向前进旋转为正方向，单位 rpm.
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float:(0,inf)，超过指定时间内未收到麦轮转速指令，主动控制机器人停止，单位 s.
+    - Пример: `obj.drive_wheels()`
+  - `_auto_stop_timer` (приватный): Описание отсутствует.
+    - Сигнатура: `_auto_stop_timer(self, api='drive_speed')`
+    - Приватный: да
+    - Аргументы:
+      - `api`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._auto_stop_timer()`
+  - `drive_speed` : 设置底盘速度，立即生效
+    - Сигнатура: `drive_speed(self, x=0.0, y=0.0, z=0.0, timeout=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `-3.5,3.5`; описание: float:[-3.5,3.5]，x 轴向运动速度即前进速度，单位 m/s.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `-3.5,3.5`; описание: float:[-3.5,3.5]，y 轴向运动速度即横移速度，单位 m/s.
+      - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `-600,600`; описание: float:[-600,600]，z 轴向运动速度即旋转速度，单位 °/s.
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float:(0,inf)，超过指定时间内未收到麦轮转速指令，主动控制机器人停止，单位 s.
+    - Пример: `obj.drive_speed()`
+  - `set_pwm_value` : 设置PWM输出占空比
+    - Сигнатура: `set_pwm_value(self, pwm1=None, pwm2=None, pwm3=None, pwm4=None, pwm5=None, pwm6=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `pwm1`: тип `не указан`; единицы `не указаны`; допустимые значения `0,100`; описание: int:[0,100]，pwm输出占空比，单位%.
+      - `pwm2`: тип `не указан`; единицы `не указаны`; допустимые значения `0,100`; описание: int:[0,100]，pwm输出占空比，单位%.
+      - `pwm3`: тип `не указан`; единицы `не указаны`; допустимые значения `0,100`; описание: int:[0,100]，pwm输出占空比，单位%.
+      - `pwm4`: тип `не указан`; единицы `не указаны`; допустимые значения `0,100`; описание: int:[0,100]，pwm输出占空比，单位%.
+      - `pwm5`: тип `не указан`; единицы `не указаны`; допустимые значения `0,100`; описание: int:[0,100]，pwm输出占空比，单位%.
+      - `pwm6`: тип `не указан`; единицы `не указаны`; допустимые значения `0,100`; описание: int:[0,100]，pwm输出占空比，单位%.
+    - Пример: `obj.set_pwm_value()`
+  - `set_pwm_freq` : 设置PWM输出频率
+    - Сигнатура: `set_pwm_freq(self, pwm1=None, pwm2=None, pwm3=None, pwm4=None, pwm5=None, pwm6=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `pwm1`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `pwm2`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `pwm3`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `pwm4`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `pwm5`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `pwm6`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_pwm_freq()`
+  - `move` : 控制底盘运动当指定位置，坐标轴原点为当前位置
+    - Сигнатура: `move(self, x=0, y=0, z=0, xy_speed=0.5, z_speed=30)`
+    - Приватный: нет
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `-5,5`; описание: float: [-5,5]，x轴向运动距离，单位 m.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `-5,5`; описание: float: [-5,5]，y轴向运动距离，单位 m.
+      - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `-1800,1800`; описание: float: [-1800,1800]，z轴向旋转角度，单位 °.
+      - `xy_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `0.5,2`; описание: float: [0.5,2]，xy轴向运动速度，单位 m/s.
+      - `z_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `10,540`; описание: float: [10,540]，z轴向旋转速度，单位 °/s.
+    - Пример: `obj.move()`
+  - `sub_position` : 订阅底盘位置信息
+    - Сигнатура: `sub_position(self, cs=0, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `cs`: тип `не указан`; единицы `не указаны`; допустимые значения `0,1`; описание: int: [0,1] 设置底盘位置的坐标系，0 机器人当前位置，1 机器人上电位置.
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (x, y, z):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_position()`
+  - `unsub_position` : 取消订阅底盘位置信息
+    - Сигнатура: `unsub_position(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_position()`
+  - `sub_attitude` : 订阅底盘姿态信息
+    - Сигнатура: `sub_attitude(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (yaw, pitch, roll)：.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_attitude()`
+  - `unsub_attitude` : 取消订阅底盘姿态信息
+    - Сигнатура: `unsub_attitude(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_attitude()`
+  - `sub_status` : 订阅底盘状态信息
+    - Сигнатура: `sub_status(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (static_flag, up_hill, down_hill, on_slope, is_pickup, slip_flag,         impact_x, impact_y, impact_z, roll_over, hill_static):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_status()`
+  - `unsub_status` : 取消订阅底盘状态信息
+    - Сигнатура: `unsub_status(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_status()`
+  - `sub_imu` : 订阅底盘IMU陀螺仪信息
+    - Сигнатура: `sub_imu(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (acc_x, acc_y, acc_z, gyro_x, gyro_y, gyro_z):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_imu()`
+  - `unsub_imu` : 取消订阅底盘IMU陀螺仪信息
+    - Сигнатура: `unsub_imu(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_imu()`
+  - `sub_mode` : 订阅底盘模式信息
+    - Сигнатура: `sub_mode(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 mode:.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_mode()`
+  - `unsub_mode` : 取消订阅底盘模式信息
+    - Сигнатура: `unsub_mode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_mode()`
+  - `sub_esc` : 订阅底盘电调信息
+    - Сигнатура: `sub_esc(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (speed[4], angle[4], timestamp, state):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_esc()`
+  - `unsub_esc` : 取消订阅电调信息
+    - Сигнатура: `unsub_esc(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_esc()`
+  - `sub_velocity` : 订阅底盘加速度信息
+    - Сигнатура: `sub_velocity(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:(1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据（vgx, vgy, vgz, vbx, vby, vbz)：.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_velocity()`
+  - `unsub_velocity` : 取消订阅底盘加速度信息
+    - Сигнатура: `unsub_velocity(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_velocity()`
+  - `_sub_sbus` (приватный): 订阅底盘SBUS信息
+    - Сигнатура: `_sub_sbus(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (connect_status, sbus_channel[16]):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj._sub_sbus()`
+  - `_unsub_sbus` (приватный): 取消订阅SBUS信息
+    - Сигнатура: `_unsub_sbus(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._unsub_sbus()`
+
+## Модуль `robomaster.client`
+
+### Классы
+
+### `EventIdentify` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `EventIdentify()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+### `MsgHandler` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, proto_data=None, req_cb=None, ack_cb=None)`
+  - **Аргументы конструктора:**
+    - `proto_data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `req_cb`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `ack_cb`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `MsgHandler()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, proto_data=None, req_cb=None, ack_cb=None)`
+    - Приватный: да
+    - Аргументы:
+      - `proto_data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `req_cb`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `ack_cb`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `proto_data` : Описание отсутствует.
+    - Сигнатура: `proto_data(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.proto_data()`
+  - `make_dict_key` : Описание отсутствует.
+    - Сигнатура: `make_dict_key(cmd_set, cmd_id)`
+    - Приватный: нет
+    - Аргументы:
+      - `cmd_set`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `cmd_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.make_dict_key(..., 1)`
+  - `dict_key` : Описание отсутствует.
+    - Сигнатура: `dict_key(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.dict_key()`
+### `Client` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, host=0, index=0, connect=None)`
+  - **Аргументы конструктора:**
+    - `host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `connect`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Client()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, host=0, index=0, connect=None)`
+    - Приватный: да
+    - Аргументы:
+      - `host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `connect`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `remote_addr` : Описание отсутствует.
+    - Сигнатура: `remote_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.remote_addr()`
+  - `add_handler` : Описание отсутствует.
+    - Сигнатура: `add_handler(self, obj, name, f)`
+    - Приватный: нет
+    - Аргументы:
+      - `obj`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `f`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_handler(..., ..., ...)`
+  - `remove_handler` : Описание отсутствует.
+    - Сигнатура: `remove_handler(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.remove_handler(...)`
+  - `initialize` : Описание отсутствует.
+    - Сигнатура: `initialize(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.initialize()`
+  - `hostbyte` : Описание отсутствует.
+    - Сигнатура: `hostbyte(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.hostbyte()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `send_msg` : Описание отсутствует.
+    - Сигнатура: `send_msg(self, msg)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_msg(...)`
+  - `send_sync_msg` : Описание отсутствует.
+    - Сигнатура: `send_sync_msg(self, msg, callback=None, timeout=3.0)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_sync_msg(...)`
+  - `resp_msg` : Описание отсутствует.
+    - Сигнатура: `resp_msg(self, msg)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.resp_msg(...)`
+  - `send` : Описание отсутствует.
+    - Сигнатура: `send(self, data)`
+    - Приватный: нет
+    - Аргументы:
+      - `data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send(...)`
+  - `send_async_msg` : Описание отсутствует.
+    - Сигнатура: `send_async_msg(self, msg)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_async_msg(...)`
+  - `is_ready` : Описание отсутствует.
+    - Сигнатура: `is_ready(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.is_ready()`
+  - `_recv_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_recv_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._recv_task()`
+  - `_dispatch_to_send_sync` (приватный): Описание отсутствует.
+    - Сигнатура: `_dispatch_to_send_sync(self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._dispatch_to_send_sync(...)`
+  - `_dispatch_to_callback` (приватный): Описание отсутствует.
+    - Сигнатура: `_dispatch_to_callback(self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._dispatch_to_callback(...)`
+  - `_make_ack_identify` (приватный): Описание отсутствует.
+    - Сигнатура: `_make_ack_identify(msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._make_ack_identify(...)`
+  - `_ack_register_identify` (приватный): Описание отсутствует.
+    - Сигнатура: `_ack_register_identify(self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._ack_register_identify(...)`
+  - `_ack_unregister_identify` (приватный): Описание отсутствует.
+    - Сигнатура: `_ack_unregister_identify(self, identify)`
+    - Приватный: да
+    - Аргументы:
+      - `identify`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._ack_unregister_identify(1)`
+  - `add_msg_handler` : Описание отсутствует.
+    - Сигнатура: `add_msg_handler(self, handler)`
+    - Приватный: нет
+    - Аргументы:
+      - `handler`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_msg_handler(...)`
+### `TextClient` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, conf)`
+  - **Аргументы конструктора:**
+    - `conf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TextClient(True)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, conf)`
+    - Приватный: да
+    - Аргументы:
+      - `conf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(True)`
+  - `initialize` : Описание отсутствует.
+    - Сигнатура: `initialize(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.initialize()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `check_is_dds_msg` : Описание отсутствует.
+    - Сигнатура: `check_is_dds_msg(self, msg)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.check_is_dds_msg(...)`
+  - `_recv_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_recv_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._recv_task()`
+  - `send` : Описание отсутствует.
+    - Сигнатура: `send(self, text)`
+    - Приватный: нет
+    - Аргументы:
+      - `text`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send(0)`
+  - `send_sync_msg` : Описание отсутствует.
+    - Сигнатура: `send_sync_msg(self, msg, callback=None, timeout=10)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_sync_msg(...)`
+  - `send_async_msg` : Описание отсутствует.
+    - Сигнатура: `send_async_msg(self, msg)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_async_msg(...)`
+  - `send_msg` : Описание отсутствует.
+    - Сигнатура: `send_msg(self, msg)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_msg(...)`
+  - `add_handler` : Описание отсутствует.
+    - Сигнатура: `add_handler(self, obj, name, f)`
+    - Приватный: нет
+    - Аргументы:
+      - `obj`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `f`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_handler(..., ..., ...)`
+  - `remove_handler` : Описание отсутствует.
+    - Сигнатура: `remove_handler(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.remove_handler(...)`
+  - `_dispatch_to_send_sync` (приватный): Описание отсутствует.
+    - Сигнатура: `_dispatch_to_send_sync(self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._dispatch_to_send_sync(...)`
+  - `_make_ack_identify` (приватный): Описание отсутствует.
+    - Сигнатура: `_make_ack_identify(self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._make_ack_identify(...)`
+
+## Модуль `robomaster.config`
+
+### Классы
+
+### `Config` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, name)`
+  - **Аргументы конструктора:**
+    - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Config(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, name)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `default_cmd_addr_port` : Описание отсутствует.
+    - Сигнатура: `default_cmd_addr_port(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.default_cmd_addr_port()`
+  - `product` : Описание отсутствует.
+    - Сигнатура: `product(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.product()`
+  - `product` : Описание отсутствует.
+    - Сигнатура: `product(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.product(...)`
+  - `default_robot_addr` : Описание отсутствует.
+    - Сигнатура: `default_robot_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.default_robot_addr()`
+  - `default_robot_addr` : Описание отсутствует.
+    - Сигнатура: `default_robot_addr(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.default_robot_addr(...)`
+  - `cmd_proto` : Описание отсутствует.
+    - Сигнатура: `cmd_proto(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.cmd_proto()`
+  - `cmd_proto` : Описание отсутствует.
+    - Сигнатура: `cmd_proto(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.cmd_proto(...)`
+  - `default_cmd_addr` : Описание отсутствует.
+    - Сигнатура: `default_cmd_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.default_cmd_addr()`
+  - `default_cmd_addr` : Описание отсутствует.
+    - Сигнатура: `default_cmd_addr(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.default_cmd_addr(...)`
+  - `default_sdk_addr` : Описание отсутствует.
+    - Сигнатура: `default_sdk_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.default_sdk_addr()`
+  - `default_sdk_addr` : Описание отсутствует.
+    - Сигнатура: `default_sdk_addr(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.default_sdk_addr(...)`
+  - `video_stream_addr` : Описание отсутствует.
+    - Сигнатура: `video_stream_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.video_stream_addr()`
+  - `video_stream_addr` : Описание отсутствует.
+    - Сигнатура: `video_stream_addr(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.video_stream_addr(...)`
+  - `video_stream_port` : Описание отсутствует.
+    - Сигнатура: `video_stream_port(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.video_stream_port()`
+  - `video_stream_port` : Описание отсутствует.
+    - Сигнатура: `video_stream_port(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.video_stream_port(...)`
+  - `video_stream_proto` : Описание отсутствует.
+    - Сигнатура: `video_stream_proto(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.video_stream_proto()`
+  - `video_stream_proto` : Описание отсутствует.
+    - Сигнатура: `video_stream_proto(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.video_stream_proto(...)`
+  - `audio_stream_addr` : Описание отсутствует.
+    - Сигнатура: `audio_stream_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.audio_stream_addr()`
+  - `audio_stream_addr` : Описание отсутствует.
+    - Сигнатура: `audio_stream_addr(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.audio_stream_addr(...)`
+  - `audio_stream_port` : Описание отсутствует.
+    - Сигнатура: `audio_stream_port(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.audio_stream_port()`
+  - `audio_stream_port` : Описание отсутствует.
+    - Сигнатура: `audio_stream_port(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.audio_stream_port(...)`
+
+## Модуль `robomaster.conn`
+
+### Функции модуля
+
+#### `get_local_ip` 
+- **Кратко:** 获取本地ip地址
+- **Приватная:** нет
+- **Сигнатура:** `get_local_ip()`
+- **Аргументы:**
+  - Нет.
+- **Пример:** `get_local_ip()`
+
+#### `get_sn_form_data` 
+- **Кратко:** 从 data 中获取 sn 字段
+- **Приватная:** нет
+- **Сигнатура:** `get_sn_form_data(data)`
+- **Аргументы:**
+  - `data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: .
+- **Пример:** `get_sn_form_data(...)`
+
+#### `scan_robot_ip` 
+- **Кратко:** 扫描机器人的IP地址
+- **Приватная:** нет
+- **Сигнатура:** `scan_robot_ip(user_sn=None, timeout=3.0)`
+- **Аргументы:**
+  - `user_sn`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `scan_robot_ip()`
+
+#### `scan_robot_ip_list` 
+- **Кратко:** 扫描局域网内的机器人IP地址
+- **Приватная:** нет
+- **Сигнатура:** `scan_robot_ip_list(timeout=3.0)`
+- **Аргументы:**
+  - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 超时时间.
+- **Пример:** `scan_robot_ip_list()`
+
+### Классы
+
+### `BaseConnection` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `BaseConnection()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `create` : Описание отсутствует.
+    - Сигнатура: `create(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.create()`
+  - `close` : Описание отсутствует.
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `recv` : Описание отсутствует.
+    - Сигнатура: `recv(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.recv()`
+  - `send` : Описание отсутствует.
+    - Сигнатура: `send(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send(...)`
+  - `send_self` : Описание отсутствует.
+    - Сигнатура: `send_self(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.send_self(...)`
+### `Connection` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, host_addr, target_addr, proto='v1', protocol=CONNECTION_PROTO_UDP)`
+  - **Аргументы конструктора:**
+    - `host_addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `target_addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `protocol`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Connection("192.168.2.1", ...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, host_addr, target_addr, proto='v1', protocol=CONNECTION_PROTO_UDP)`
+    - Приватный: да
+    - Аргументы:
+      - `host_addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `target_addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `protocol`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__("192.168.2.1", ...)`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `target_addr` : Описание отсутствует.
+    - Сигнатура: `target_addr(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.target_addr()`
+  - `protocol` : Описание отсутствует.
+    - Сигнатура: `protocol(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.protocol()`
+### `SdkConnection` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `SdkConnection()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `switch_remote_route` : Описание отсутствует.
+    - Сигнатура: `switch_remote_route(self, msg, remote_addr, timeout=5)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `remote_addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.switch_remote_route(..., ...)`
+  - `request_connection` : Описание отсутствует.
+    - Сигнатура: `request_connection(self, sdk_host, conn_type=None, proto_type=None, sn=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `sdk_host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `conn_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `proto_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `sn`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.request_connection("192.168.2.1")`
+### `StreamConnection` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `StreamConnection()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `connect` : Описание отсутствует.
+    - Сигнатура: `connect(self, addr, ip_proto='tcp')`
+    - Приватный: нет
+    - Аргументы:
+      - `addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `ip_proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.connect(...)`
+  - `disconnect` : Описание отсутствует.
+    - Сигнатура: `disconnect(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.disconnect()`
+  - `_recv_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_recv_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._recv_task()`
+  - `read_buf` : Описание отсутствует.
+    - Сигнатура: `read_buf(self, timeout=2)`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.read_buf()`
+### `ConnectionHelper` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ConnectionHelper()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `build_qrcode_string` : Описание отсутствует.
+    - Сигнатура: `build_qrcode_string(self, ssid='', password='')`
+    - Приватный: нет
+    - Аргументы:
+      - `ssid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `password`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.build_qrcode_string()`
+  - `get_qrcode_string` : Описание отсутствует.
+    - Сигнатура: `get_qrcode_string(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_qrcode_string()`
+  - `wait_for_connection` : Описание отсутствует.
+    - Сигнатура: `wait_for_connection(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.wait_for_connection()`
+### `FtpConnection` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `FtpConnection()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `connect` : Описание отсутствует.
+    - Сигнатура: `connect(self, ip)`
+    - Приватный: нет
+    - Аргументы:
+      - `ip`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.connect("192.168.2.1")`
+  - `upload` : Описание отсутствует.
+    - Сигнатура: `upload(self, src_file, target_file)`
+    - Приватный: нет
+    - Аргументы:
+      - `src_file`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `target_file`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.upload(..., ...)`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+
+## Модуль `robomaster.dds`
+
+### Классы
+
+### `_AutoRegisterSubject` (приватный)
+- **Кратко:** hepler to automatically register Proto Class whereever they're defined
+- **Приватный класс:** да
+- **Конструктор:** `__init__(cls, name, bases, attrs, **kw)`
+  - **Аргументы конструктора:**
+    - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `_AutoRegisterSubject(..., ..., ...)`
+- **Методы:**
+  - `__new__` (приватный): Описание отсутствует.
+    - Сигнатура: `__new__(mcs, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `mcs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__new__(..., ..., ..., ...)`
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(cls, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ..., ...)`
+### `Subject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `Subject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `set_callback` : Описание отсутствует.
+    - Сигнатура: `set_callback(self, callback, args, kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_callback(..., ..., ...)`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `exec` : Описание отсутствует.
+    - Сигнатура: `exec(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.exec()`
+### `SubHandler` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** унаследован/не определён явно.
+- **Методы:**
+  - Нет.
+### `Subscriber` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Subscriber(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `get_next_subject_id` : Описание отсутствует.
+    - Сигнатура: `get_next_subject_id(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_next_subject_id()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `_msg_recv` (приватный): Описание отсутствует.
+    - Сигнатура: `_msg_recv(cls, self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._msg_recv(...)`
+  - `_dispatch_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_dispatch_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._dispatch_task()`
+  - `add_cmd_filter` : Описание отсутствует.
+    - Сигнатура: `add_cmd_filter(self, cmd_set, cmd_id)`
+    - Приватный: нет
+    - Аргументы:
+      - `cmd_set`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `cmd_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_cmd_filter(..., 1)`
+  - `del_cmd_filter` : Описание отсутствует.
+    - Сигнатура: `del_cmd_filter(self, cmd_set, cmd_id)`
+    - Приватный: нет
+    - Аргументы:
+      - `cmd_set`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `cmd_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.del_cmd_filter(..., 1)`
+  - `add_subject_event_info` : 添加事件订阅
+    - Сигнатура: `add_subject_event_info(self, subject, callback=None, *args)`
+    - Приватный: нет
+    - Аргументы:
+      - `subject`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 事件订阅对应的subject.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 事件订阅对应的解析函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_subject_event_info(...)`
+  - `del_subject_event_info` : 删除事件订阅
+    - Сигнатура: `del_subject_event_info(self, subject)`
+    - Приватный: нет
+    - Аргументы:
+      - `subject`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 事件订阅对应的subject.
+    - Пример: `obj.del_subject_event_info(...)`
+  - `add_subject_info` : 请求数据订阅底层接口
+    - Сигнатура: `add_subject_info(self, subject, callback=None, *args)`
+    - Приватный: нет
+    - Аргументы:
+      - `subject`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 数据订阅对应subject.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据对应的解析函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_subject_info(...)`
+  - `del_subject_info` : 删除数据订阅消息
+    - Сигнатура: `del_subject_info(self, subject_name)`
+    - Приватный: нет
+    - Аргументы:
+      - `subject_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 要删除的订阅subject.
+    - Пример: `obj.del_subject_info(...)`
+### `TelloSubscriber` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloSubscriber(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `_msg_recv` (приватный): Описание отсутствует.
+    - Сигнатура: `_msg_recv(cls, self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._msg_recv(...)`
+  - `_dispatch_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_dispatch_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._dispatch_task()`
+  - `add_subject_info` : 请求数据订阅底层接口
+    - Сигнатура: `add_subject_info(self, subject, callback=None, *args)`
+    - Приватный: нет
+    - Аргументы:
+      - `subject`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 数据订阅对应subject.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据对应的解析函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_subject_info(...)`
+  - `del_subject_info` : 删除数据订阅消息
+    - Сигнатура: `del_subject_info(self, subject_name)`
+    - Приватный: нет
+    - Аргументы:
+      - `subject_name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 要删除的订阅subject.
+    - Пример: `obj.del_subject_info(...)`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.freq()`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self, in_freq)`
+    - Приватный: нет
+    - Аргументы:
+      - `in_freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.freq(10)`
+
+## Модуль `robomaster.event`
+
+### Классы
+
+### `Handler` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** унаследован/не определён явно.
+- **Методы:**
+  - Нет.
+### `Dispatcher` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `Dispatcher()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `add_handler` : Описание отсутствует.
+    - Сигнатура: `add_handler(self, obj, name, f)`
+    - Приватный: нет
+    - Аргументы:
+      - `obj`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `f`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.add_handler(..., ..., ...)`
+  - `remove_handler` : Описание отсутствует.
+    - Сигнатура: `remove_handler(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.remove_handler(...)`
+  - `dispatch` : Описание отсутствует.
+    - Сигнатура: `dispatch(self, msg, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.dispatch(...)`
+
+## Модуль `robomaster.exceptions`
+
+### Классы
+
+### `SDKException` 
+- **Кратко:** Base class of all SDK exceptions.
+- **Приватный класс:** нет
+- **Конструктор:** унаследован/не определён явно.
+- **Методы:**
+  - Нет.
+### `TimeOutError` 
+- **Кратко:** Remote Call Timeout.
+- **Приватный класс:** нет
+- **Конструктор:** унаследован/не определён явно.
+- **Методы:**
+  - Нет.
+### `OutOfRangeError` 
+- **Кратко:** Params Values OutOfRange.
+- **Приватный класс:** нет
+- **Конструктор:** унаследован/не определён явно.
+- **Методы:**
+  - Нет.
+### `ConnectionError` 
+- **Кратко:** Connection TimeOut.
+- **Приватный класс:** нет
+- **Конструктор:** унаследован/не определён явно.
+- **Методы:**
+  - Нет.
+
+## Модуль `robomaster.flight`
+
+### Классы
+
+### `FlightAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, text_cmd, **kw)`
+  - **Аргументы конструктора:**
+    - `text_cmd`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `FlightAction(0)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, text_cmd, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `text_cmd`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(0)`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `update_from_push` : Описание отсутствует.
+    - Сигнатура: `update_from_push(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.update_from_push(...)`
+### `TelloAttiInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloAttiInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `atti_info` : Описание отсутствует.
+    - Сигнатура: `atti_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.atti_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.freq()`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self, in_freq)`
+    - Приватный: нет
+    - Аргументы:
+      - `in_freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.freq(10)`
+### `TelloImuInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloImuInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `Imu_info` : Описание отсутствует.
+    - Сигнатура: `Imu_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.Imu_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.freq()`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self, in_freq)`
+    - Приватный: нет
+    - Аргументы:
+      - `in_freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.freq(10)`
+### `Flight` 
+- **Кратко:** 教育无人机 飞行器模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Flight(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `takeoff` : 自动起飞
+    - Сигнатура: `takeoff(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.takeoff()`
+  - `land` : 自动降落
+    - Сигнатура: `land(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.land()`
+  - `up` : 向上飞distance厘米，指相对距离
+    - Сигнатура: `up(self, distance=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.up()`
+  - `down` : 向下飞distance厘米，指相对距离
+    - Сигнатура: `down(self, distance=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.down()`
+  - `forward` : 向前飞行distance厘米，指相对距离
+    - Сигнатура: `forward(self, distance=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.forward()`
+  - `backward` : 向后飞行distance厘米， 指相对距离
+    - Сигнатура: `backward(self, distance=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.backward()`
+  - `left` : 向左飞行distance厘米， 指相对距离
+    - Сигнатура: `left(self, distance=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.left()`
+  - `right` : 向右飞行distance厘米， 指相对距离
+    - Сигнатура: `right(self, distance=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.right()`
+  - `fly` : 控制飞机向指定方向飞行指定距离。
+    - Сигнатура: `fly(self, direction=FORWARD, distance=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `direction`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `distance`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.fly()`
+  - `rotate` : 控制飞机旋转指定角度
+    - Сигнатура: `rotate(self, angle=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `angle`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.rotate()`
+  - `flip_forward` : 控制飞机向前翻滚
+    - Сигнатура: `flip_forward(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_forward()`
+  - `flip_backward` : 控制飞机向后翻滚
+    - Сигнатура: `flip_backward(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_backward()`
+  - `flip_left` : 控制飞机向左翻滚
+    - Сигнатура: `flip_left(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_left()`
+  - `flip_right` : 控制飞机向右翻滚
+    - Сигнатура: `flip_right(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip_right()`
+  - `flip` : 控制飞机向指定方向翻滚
+    - Сигнатура: `flip(self, direction='f', retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `direction`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: string: 飞机翻转的方向， ’l‘ 向左翻滚，’r‘ 向右翻滚，’f‘ 向前翻滚， ’b‘ 向后翻滚.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.flip()`
+  - `throw_fly` : 控制飞机抛飞
+    - Сигнатура: `throw_fly(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.throw_fly()`
+  - `go` : 控制飞机以设置速度飞向指定坐标位置
+    - Сигнатура: `go(self, x, y, z, speed=10, mid=None, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `mid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.go(0, 0, 0)`
+  - `move` : 飞机相对位置的控制
+    - Сигнатура: `move(self, x=0, y=0, z=0, speed=10, mid=None, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `mid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.move()`
+  - `moveto` : 控制飞机旋转到挑战卡坐标系中指定的绝对角度
+    - Сигнатура: `moveto(self, yaw=0, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `yaw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.moveto()`
+  - `rc` : 控制飞机遥控器的四个杆量
+    - Сигнатура: `rc(self, a=0, b=0, c=0, d=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `a`: тип `не указан`; единицы `не указаны`; допустимые значения `-100, 100`; описание: float:[-100, 100] 横滚.
+      - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `-100, 100`; описание: float:[-100, 100] 俯仰.
+      - `c`: тип `не указан`; единицы `не указаны`; допустимые значения `-100, 100`; описание: float:[-100, 100] 油门.
+      - `d`: тип `не указан`; единицы `не указаны`; допустимые значения `-100, 100`; описание: float:[-100, 100] 偏航.
+    - Пример: `obj.rc()`
+  - `curve` : 以设置速度飞弧线，经过对应坐标系中的(x1, y1, z1)点到（x2, y2, z2）点
+    - Сигнатура: `curve(self, x1=0, y1=0, z1=0, x2=0, y2=0, z2=0, speed=20, mid=None, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `x1`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `y1`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `z1`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `x2`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `y2`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `z2`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `mid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.curve()`
+  - `stop` : 停止rc运动并悬停，任何时候都可以
+    - Сигнатура: `stop(self, retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.stop()`
+  - `jump` : 飞行器飞往mid1坐标系的(x, y, z)点后悬停，识别mid2的挑战卡，飞到mid2坐标系下(0, 0, z)的位置并且旋转到设定的yaw值
+    - Сигнатура: `jump(self, x=0, y=0, z=0, speed=20, yaw=0, mid1='m-1', mid2='m-1', retry=True)`
+    - Приватный: нет
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `yaw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `mid1`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `mid2`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `retry`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.jump()`
+  - `set_speed` : 设置当前飞行速度
+    - Сигнатура: `set_speed(self, speed=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `speed`: тип `не указан`; единицы `не указаны`; допустимые значения `10, 100`; описание: float:[10, 100]，飞行速度，单位 cm/s.
+    - Пример: `obj.set_speed()`
+  - `mission_pad_on` : 打开挑战卡探测
+    - Сигнатура: `mission_pad_on(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.mission_pad_on()`
+  - `mission_pad_off` : 关闭挑战卡探测
+    - Сигнатура: `mission_pad_off(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.mission_pad_off()`
+  - `_pad_detection` (приватный): 挑战卡检测功能开启/关闭的底层控制接口
+    - Сигнатура: `_pad_detection(self, on_off=1)`
+    - Приватный: да
+    - Аргументы:
+      - `on_off`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 1`; описание: int:[0, 1], 0 关闭挑战卡检测功能，1 打开挑战卡检测功能.
+    - Пример: `obj._pad_detection()`
+  - `motor_on` : 控制飞机转桨
+    - Сигнатура: `motor_on(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.motor_on()`
+  - `motor_off` : 控制飞机停桨
+    - Сигнатура: `motor_off(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.motor_off()`
+  - `get_speed` : 获取当前设置速度
+    - Сигнатура: `get_speed(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_speed()`
+  - `sub_attitude` : 订阅飞机姿态信息
+    - Сигнатура: `sub_attitude(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:(1, 5, 10)，订阅数据的频率.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入数据处理的回掉函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+    - Пример: `obj.sub_attitude()`
+  - `unsub_attitude` : 取消订阅飞机姿态信息
+    - Сигнатура: `unsub_attitude(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_attitude()`
+  - `sub_imu` : 订阅飞机陀螺仪信息
+    - Сигнатура: `sub_imu(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:(1, 5, 10)，订阅数据的频率.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入数据处理的回掉函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+    - Пример: `obj.sub_imu()`
+  - `unsub_imu` : 取消订阅飞机陀螺仪信息
+    - Сигнатура: `unsub_imu(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_imu()`
+
+## Модуль `robomaster.gimbal`
+
+### Классы
+
+### `GimbalMoveAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30, coord=COORDINATE_YCPN, **kw)`
+  - **Аргументы конструктора:**
+    - `pitch`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `yaw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `coord`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `GimbalMoveAction()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30, coord=COORDINATE_YCPN, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `pitch`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `yaw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `coord`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `update_from_push` : 推送消息更新Action状态
+    - Сигнатура: `update_from_push(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.update_from_push(...)`
+### `GimbalRecenterAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, pitch_speed=100, yaw_speed=100, **kw)`
+  - **Аргументы конструктора:**
+    - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `GimbalRecenterAction()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, pitch_speed=100, yaw_speed=100, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `update_from_push` : 推送消息更新Action状态
+    - Сигнатура: `update_from_push(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.update_from_push(...)`
+### `GimbalPosSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `GimbalPosSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `angle` : Описание отсутствует.
+    - Сигнатура: `angle(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.angle()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `Gimbal` 
+- **Кратко:** EP 云台模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Gimbal(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `suspend` : 控制云台进入休眠状态
+    - Сигнатура: `suspend(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.suspend()`
+  - `resume` : 控制云台从休眠状态中恢复
+    - Сигнатура: `resume(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.resume()`
+  - `drive_speed` : 控制以一定速度转动
+    - Сигнатура: `drive_speed(self, pitch_speed=30.0, yaw_speed=30.0)`
+    - Приватный: нет
+    - Аргументы:
+      - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `-360, 360`; описание: float: [-360, 360]，pitch轴速度，单位 °/s.
+      - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `-360, 360`; описание: float: [-360, 360]，yaw 轴速度，单位 °/s.
+    - Пример: `obj.drive_speed()`
+  - `recenter` : 控制云台回中
+    - Сигнатура: `recenter(self, pitch_speed=60, yaw_speed=60)`
+    - Приватный: нет
+    - Аргументы:
+      - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `-360, 360`; описание: float: [-360, 360]，pitch轴速度，单位 °/s.
+      - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `-360, 360`; описание: float: [-360, 360]，yaw 轴速度，单位 °/s.
+    - Пример: `obj.recenter()`
+  - `_set_work_mode` (приватный): Описание отсутствует.
+    - Сигнатура: `_set_work_mode(self, mode)`
+    - Приватный: да
+    - Аргументы:
+      - `mode`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._set_work_mode("free")`
+  - `move` : 控制云台运动到指定位置，坐标轴原点为当前位置
+    - Сигнатура: `move(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30)`
+    - Приватный: нет
+    - Аргументы:
+      - `pitch`: тип `не указан`; единицы `не указаны`; допустимые значения `-55, 55`; описание: float: [-55, 55]，pitch 轴角度，单位 °.
+      - `yaw`: тип `не указан`; единицы `не указаны`; допустимые значения `-55, 55`; описание: float: [-55, 55]，yaw 轴角度，单位 °.
+      - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 540`; описание: float: [0, 540]，pitch 轴运动速速，单位 °/s.
+      - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 540`; описание: float: [0, 540]，yaw 轴运动速度，单位 °/s.
+    - Пример: `obj.move()`
+  - `moveto` : 控制云台运动到指定位置，坐标轴原点为上电位置
+    - Сигнатура: `moveto(self, pitch=0, yaw=0, pitch_speed=30, yaw_speed=30)`
+    - Приватный: нет
+    - Аргументы:
+      - `pitch`: тип `не указан`; единицы `не указаны`; допустимые значения `-25, 30`; описание: int: [-25, 30]，pitch 轴角度，单位 °.
+      - `yaw`: тип `не указан`; единицы `не указаны`; допустимые значения `-250, 250`; описание: int: [-250, 250]，yaw 轴角度，单位 °.
+      - `pitch_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 540`; описание: int: [0, 540]，pitch 轴运动速度，单位 °.
+      - `yaw_speed`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 540`; описание: int: [0, 540]，yaw 轴运动速度，单位 °.
+    - Пример: `obj.moveto()`
+  - `sub_angle` : 订阅云台姿态角信息
+    - Сигнатура: `sub_angle(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (pitch_angle, yaw_angle, pitch_ground_angle, yaw_ground_angle):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_angle()`
+  - `unsub_angle` : 取消云台姿态角订阅
+    - Сигнатура: `unsub_angle(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_angle()`
+
+## Модуль `robomaster.gripper`
+
+### Классы
+
+### `GripperSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `GripperSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `status` : Описание отсутствует.
+    - Сигнатура: `status(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.status()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `Gripper` 
+- **Кратко:** EP 机械爪模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Gripper(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `reset` : Описание отсутствует.
+    - Сигнатура: `reset(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset()`
+  - `open` : 控制机械爪张开
+    - Сигнатура: `open(self, power=50)`
+    - Приватный: нет
+    - Аргументы:
+      - `power`: тип `не указан`; единицы `не указаны`; допустимые значения `1, 100`; описание: int: [1, 100]，控制出力.
+    - Пример: `obj.open()`
+  - `close` : 控制机械爪关闭
+    - Сигнатура: `close(self, power=50)`
+    - Приватный: нет
+    - Аргументы:
+      - `power`: тип `не указан`; единицы `не указаны`; допустимые значения `1, 100`; описание: int: [1, 100]，控制出力.
+    - Пример: `obj.close()`
+  - `pause` : 控制机械爪停止
+    - Сигнатура: `pause(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pause()`
+  - `sub_status` : 订阅夹爪的状态信息
+    - Сигнатура: `sub_status(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50)，设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (status):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_status()`
+  - `unsub_status` : 取消夹爪状态信息订阅
+    - Сигнатура: `unsub_status(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_status()`
+
+## Модуль `robomaster.led`
+
+### Классы
+
+### `Led` 
+- **Кратко:** EP 装甲灯模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Led(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `set_led` : 设置整机装甲灯效
+    - Сигнатура: `set_led(self, comp=COMP_ALL, r=0, g=0, b=0, effect=EFFECT_ON, freq=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `comp`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("all", "top_all", "top_right", "top_left", "bottom_all", "bottom_front",         "bottom_back", "bottom_left", "bottom_right") 灯效部位，all: 所有装甲灯；top_all:云台所有装甲灯；        top_right: 云台右侧装甲灯；top_left: 云台左侧装甲灯; bottom_all: 底盘所有装甲灯；bottom_front: 前装甲灯；        bottom_back: 后装甲灯；bottom_left: 左装甲灯；bottom_right: 右装甲灯.
+      - `r`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: int: [0~255]，RGB红色分量值.
+      - `g`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: int: [0~255]，RGB绿色分量值.
+      - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: int: [0~255]，RGB蓝色分量值.
+      - `effect`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("on", "off", "flash", "breath", "scrolling") 灯效类型，on:常亮；off:常灭；flash:闪烁；        breath:呼吸；scrolling:跑马灯（仅对云台灯有效）.
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `1, 10`; описание: int: [1, 10]，闪烁频率，仅对闪烁灯效有效.
+    - Пример: `obj.set_led()`
+  - `set_gimbal_led` : 设置云台灯效
+    - Сигнатура: `set_gimbal_led(self, comp=COMP_TOP_ALL, r=255, g=255, b=255, led_list=[0, 1, 2, 3], effect=EFFECT_ON)`
+    - Приватный: нет
+    - Аргументы:
+      - `comp`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("top_all", "top_left", "top_right")，云台部位.
+      - `r`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int: [0, 255]，RGB红色分量值.
+      - `g`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int: [0, 255]，RGB绿色分量值.
+      - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int: [0, 255]，RGB蓝色分量值.
+      - `led_list`: тип `не указан`; единицы `не указаны`; допустимые значения `idx0, idx1, ...`; описание: list [idx0, idx1, ...]，idx：int[0,7] 云台灯序号列表..
+      - `effect`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("on", "off")，灯效类型.
+    - Пример: `obj.set_gimbal_led()`
+### `TelloLed` 
+- **Кратко:** 教育无人机 扩展LED模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloLed(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `set_led` : 设置扩展模块led颜色
+    - Сигнатура: `set_led(self, r=0, g=255, b=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `r`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led红色通道的强度.
+      - `g`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led绿色通道的强度.
+      - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led蓝色通道的强度.
+    - Пример: `obj.set_led()`
+  - `set_led_breath` : 设置扩展模块led以指定的颜色与频率实现呼吸效果
+    - Сигнатура: `set_led_breath(self, freq=1, r=0, g=255, b=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `0.1, 2.5`; описание: int:[0.1, 2.5], 扩展led呼吸模式下的频率，共十档，随着数字增大速度变快.
+      - `r`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led红色通道的强度.
+      - `g`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led绿色通道的强度.
+      - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 扩展led蓝色通道的强度.
+    - Пример: `obj.set_led_breath()`
+  - `set_led_blink` : 设置扩展模块led以制定的两种颜色与频率实现闪烁效果
+    - Сигнатура: `set_led_blink(self, freq=5, r1=0, g1=255, b1=0, r2=0, g2=255, b2=255)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `0.1, 10`; описание: int:[0.1, 10], 扩展ked闪烁模式下的频率， 共十档，随着数字增大速度变快.
+      - `r1`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第一种颜色的红色通道的强度.
+      - `g1`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第一种颜色的绿色通道的强度.
+      - `b1`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第一种颜色的蓝色通道的强度.
+      - `r2`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第二种颜色的红色通道的强度.
+      - `g2`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第二种颜色的绿色通道的强度.
+      - `b2`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255], 第二种颜色的蓝色通道的强度.
+    - Пример: `obj.set_led_blink()`
+  - `set_mled_bright` : 设置点阵屏的亮度
+    - Сигнатура: `set_mled_bright(self, bright=255)`
+    - Приватный: нет
+    - Аргументы:
+      - `bright`: тип `не указан`; единицы `не указаны`; допустимые значения `0, 255`; описание: int:[0, 255] 点阵屏的亮度.
+    - Пример: `obj.set_mled_bright()`
+  - `set_mled_boot` : 设置点阵屏的开机画面
+    - Сигнатура: `set_mled_boot(self, display_graph)`
+    - Приватный: нет
+    - Аргументы:
+      - `display_graph`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: string: 长度最大为64，点阵屏显示图案的编码字符串，每个字符解读为二进制后对应位置的led点的状态，.
+    - Пример: `obj.set_mled_boot(0)`
+  - `set_mled_sc` : 清除点阵屏开机显示画面
+    - Сигнатура: `set_mled_sc(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.set_mled_sc()`
+  - `set_mled_char` : 控制扩展点阵屏模块，显示输入的字符
+    - Сигнатура: `set_mled_char(self, color='r', display_char='0')`
+    - Приватный: нет
+    - Аргументы:
+      - `color`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `display_char`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_mled_char()`
+  - `set_mled_graph` : 用户自定义扩展点阵屏显示图案
+    - Сигнатура: `set_mled_graph(self, display_graph)`
+    - Приватный: нет
+    - Аргументы:
+      - `display_graph`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: string: 长度最大为64，点阵屏显示图案的编码字符串，每个字符解读为二进制后对应位置的led点的状态，.
+    - Пример: `obj.set_mled_graph(0)`
+  - `set_mled_char_scroll` : 控制扩展点阵屏滚动显示字符串
+    - Сигнатура: `set_mled_char_scroll(self, direction='l', color='r', freq=1.5, display_str='DJI')`
+    - Приватный: нет
+    - Аргументы:
+      - `direction`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `color`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `display_str`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_mled_char_scroll()`
+  - `set_mled_graph_scroll` : 控制扩展点阵屏滚动显示图像
+    - Сигнатура: `set_mled_graph_scroll(self, direction='l', freq=1.5, display_graph=TELLO_DISPLAY_GRAPH)`
+    - Приватный: нет
+    - Аргументы:
+      - `direction`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `display_graph`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_mled_graph_scroll()`
+  - `_set_mled_scroll` (приватный): 控制扩展点阵屏滚动显示
+    - Сигнатура: `_set_mled_scroll(self, cmd)`
+    - Приватный: да
+    - Аргументы:
+      - `cmd`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._set_mled_scroll(...)`
+
+## Модуль `robomaster.media`
+
+### Классы
+
+### `LiveView` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `LiveView(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `start_video_stream` : Описание отсутствует.
+    - Сигнатура: `start_video_stream(self, display=True, addr=None, ip_proto='tcp')`
+    - Приватный: нет
+    - Аргументы:
+      - `display`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `ip_proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.start_video_stream()`
+  - `stop_video_stream` : Описание отсутствует.
+    - Сигнатура: `stop_video_stream(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop_video_stream()`
+  - `read_video_frame` : Описание отсутствует.
+    - Сигнатура: `read_video_frame(self, timeout=3, strategy='pipeline')`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `strategy`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.read_video_frame()`
+  - `_h264_decode` (приватный): Описание отсутствует.
+    - Сигнатура: `_h264_decode(self, data)`
+    - Приватный: да
+    - Аргументы:
+      - `data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._h264_decode(...)`
+  - `_video_decoder_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_video_decoder_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._video_decoder_task()`
+  - `_video_display_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_video_display_task(self, name='RoboMaster LiveView')`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._video_display_task()`
+  - `read_audio_frame` : Описание отсутствует.
+    - Сигнатура: `read_audio_frame(self, timeout=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.read_audio_frame()`
+  - `start_audio_stream` : Описание отсутствует.
+    - Сигнатура: `start_audio_stream(self, addr=None, ip_proto='tcp')`
+    - Приватный: нет
+    - Аргументы:
+      - `addr`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `ip_proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.start_audio_stream()`
+  - `stop_audio_stream` : Описание отсутствует.
+    - Сигнатура: `stop_audio_stream(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop_audio_stream()`
+  - `_audio_decoder_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_audio_decoder_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._audio_decoder_task()`
+
+## Модуль `robomaster.module`
+
+### Классы
+
+### `_AutoRegisterModule` (приватный)
+- **Кратко:** help to automatically register Proto Class where ever they're defined
+- **Приватный класс:** да
+- **Конструктор:** `__init__(cls, name, bases, attrs, **kw)`
+  - **Аргументы конструктора:**
+    - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `_AutoRegisterModule(..., ..., ...)`
+- **Методы:**
+  - `__new__` (приватный): Описание отсутствует.
+    - Сигнатура: `__new__(mcs, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `mcs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__new__(..., ..., ..., ...)`
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(cls, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ..., ...)`
+### `Module` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Module(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `client` : Описание отсутствует.
+    - Сигнатура: `client(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.client()`
+  - `reset` : Описание отсутствует.
+    - Сигнатура: `reset(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `get_version` : 获取模块版本号
+    - Сигнатура: `get_version(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_version()`
+  - `_send_sync_proto` (приватный): Описание отсутствует.
+    - Сигнатура: `_send_sync_proto(self, proto, target=None)`
+    - Приватный: да
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `target`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._send_sync_proto(...)`
+  - `_send_async_proto` (приватный): Описание отсутствует.
+    - Сигнатура: `_send_async_proto(self, proto, target=None)`
+    - Приватный: да
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `target`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._send_async_proto(...)`
+
+## Модуль `robomaster.protocol`
+
+### Функции модуля
+
+#### `host2byte` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `host2byte(host, index)`
+- **Аргументы:**
+  - `host`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `host2byte("192.168.2.1", 0)`
+
+#### `byte2host` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `byte2host(b)`
+- **Аргументы:**
+  - `b`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `byte2host(...)`
+
+#### `make_proto_cls_key` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `make_proto_cls_key(cmdset, cmdid)`
+- **Аргументы:**
+  - `cmdset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - `cmdid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `make_proto_cls_key(..., 1)`
+
+#### `decode_msg` 
+- **Кратко:** Описание отсутствует.
+- **Приватная:** нет
+- **Сигнатура:** `decode_msg(buff, protocol='v1')`
+- **Аргументы:**
+  - `buff`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - `protocol`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+- **Пример:** `decode_msg(...)`
+
+### Классы
+
+### `_AutoRegisterProto` (приватный)
+- **Кратко:** help to automatically register Proto Class where ever they're defined
+- **Приватный класс:** да
+- **Конструктор:** `__init__(cls, name, bases, attrs, **kw)`
+  - **Аргументы конструктора:**
+    - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `_AutoRegisterProto(..., ..., ...)`
+- **Методы:**
+  - `__new__` (приватный): Описание отсутствует.
+    - Сигнатура: `__new__(mcs, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `mcs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__new__(..., ..., ..., ...)`
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(cls, name, bases, attrs, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `bases`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `attrs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(..., ..., ...)`
+### `ProtoData` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, **kwargs)`
+  - **Аргументы конструктора:**
+    - `**kwargs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `ProtoData()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, **kwargs)`
+    - Приватный: да
+    - Аргументы:
+      - `**kwargs`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `cmdset` : Описание отсутствует.
+    - Сигнатура: `cmdset(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.cmdset()`
+  - `cmset` : Описание отсутствует.
+    - Сигнатура: `cmset(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.cmset(...)`
+  - `cmdid` : Описание отсутствует.
+    - Сигнатура: `cmdid(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.cmdid()`
+  - `cmdid` : Описание отсутствует.
+    - Сигнатура: `cmdid(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.cmdid(...)`
+  - `cmdkey` : Описание отсутствует.
+    - Сигнатура: `cmdkey(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.cmdkey()`
+  - `pack_req` : 协议对象打包发送数据为字节流
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : 从字节流解包
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+  - `pack_resp` : 协议对象打包
+    - Сигнатура: `pack_resp(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_resp()`
+  - `unpack_resp` : 从字节流解包为返回值和相关属性
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `MsgBase` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `MsgBase()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+### `Msg` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, sender=0, receiver=0, proto=None)`
+  - **Аргументы конструктора:**
+    - `sender`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `receiver`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Msg()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, sender=0, receiver=0, proto=None)`
+    - Приватный: да
+    - Аргументы:
+      - `sender`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `receiver`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `cmdset` : Описание отсутствует.
+    - Сигнатура: `cmdset(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.cmdset()`
+  - `cmdid` : Описание отсутствует.
+    - Сигнатура: `cmdid(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.cmdid()`
+  - `is_ack` : Описание отсутствует.
+    - Сигнатура: `is_ack(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.is_ack()`
+  - `receiver` : Описание отсутствует.
+    - Сигнатура: `receiver(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.receiver()`
+  - `sender` : Описание отсутствует.
+    - Сигнатура: `sender(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sender()`
+  - `pack` : Msg 消息打包
+    - Сигнатура: `pack(self, is_ack=False)`
+    - Приватный: нет
+    - Аргументы:
+      - `is_ack`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: bool: 是否是ack消息.
+    - Пример: `obj.pack()`
+  - `unpack_protocol` : 从自身的buf数据解码协议及协议内容。
+    - Сигнатура: `unpack_protocol(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unpack_protocol()`
+  - `get_proto` : Описание отсутствует.
+    - Сигнатура: `get_proto(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_proto()`
+### `TextMsg` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, proto=None)`
+  - **Аргументы конструктора:**
+    - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TextMsg()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, proto=None)`
+    - Приватный: да
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `pack` : Описание отсутствует.
+    - Сигнатура: `pack(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack()`
+  - `unpack_protocol` : Описание отсутствует.
+    - Сигнатура: `unpack_protocol(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unpack_protocol()`
+  - `get_proto` : Описание отсутствует.
+    - Сигнатура: `get_proto(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_proto()`
+  - `get_buf` : Описание отсутствует.
+    - Сигнатура: `get_buf(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_buf()`
+### `ProtoGetVersion` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGetVersion()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGetProductVersion` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGetProductVersion()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGetSn` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGetSn()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoTakePhoto` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoTakePhoto()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSetZoom` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetZoom()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGetZoom` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGetZoom()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSetWhiteBalance` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetWhiteBalance()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoFcSubInfoReq` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoFcSubInfoReq()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisStickOverlay` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisStickOverlay()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGimbalCtrlSpeed` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGimbalCtrlSpeed()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoArmorHitEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoArmorHitEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoIrHitEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoIrHitEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoGameMsgEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGameMsgEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoSetArmorParam` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetArmorParam()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisWheelSpeed` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisWheelSpeed()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSetSystemLed` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetSystemLed()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSetRobotMode` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetRobotMode()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buff, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buff`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGetRobotMode` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGetRobotMode()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoBlasterFire` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoBlasterFire()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoBlasterSetLed` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoBlasterSetLed()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSetSdkMode` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetSdkMode()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoStreamCtrl` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoStreamCtrl()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSetSdkConnection` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetSdkConnection()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSdkHeartBeat` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSdkHeartBeat()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoAiModuleEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoAiModuleEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoUwbModuleEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoUwbModuleEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoGimbalSetWorkMode` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGimbalSetWorkMode()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGimbalCtrl` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGimbalCtrl()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoPlaySound` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoPlaySound()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+  - `sound_id` : Описание отсутствует.
+    - Сигнатура: `sound_id(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sound_id()`
+  - `sound_id` : Описание отсутствует.
+    - Сигнатура: `sound_id(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.sound_id(...)`
+  - `play_times` : Описание отсутствует.
+    - Сигнатура: `play_times(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.play_times()`
+  - `play_times` : Описание отсутствует.
+    - Сигнатура: `play_times(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.play_times(...)`
+### `ProtoSoundPush` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSoundPush()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+  - `percent` : Описание отсутствует.
+    - Сигнатура: `percent(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.percent()`
+  - `percent` : Описание отсутствует.
+    - Сигнатура: `percent(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.percent(...)`
+  - `sound_id` : Описание отсутствует.
+    - Сигнатура: `sound_id(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sound_id()`
+  - `sound_id` : Описание отсутствует.
+    - Сигнатура: `sound_id(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.sound_id(...)`
+### `ProtoGimbalRotate` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGimbalRotate()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGimbalActionPush` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGimbalActionPush()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoGimbalRecenter` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGimbalRecenter()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoVisionDetectStatus` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoVisionDetectStatus()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoVisionSetColor` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoVisionSetColor()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoPositionMove` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoPositionMove()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoPositionPush` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoPositionPush()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSetWheelSpeed` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSetWheelSpeed()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisSetWorkMode` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisSetWorkMode()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisSpeedMode` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisSpeedMode()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisPwmPercent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisPwmPercent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisPwmFreq` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisPwmFreq()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisSerialSet` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisSerialSet()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoChassisSerialMsgSend` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoChassisSerialMsgSend()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoVisionDetectEnable` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoVisionDetectEnable()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoVisionDetectInfo` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoVisionDetectInfo()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoSubscribeAddNode` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSubscribeAddNode()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSubNodeReset` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSubNodeReset()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoDelMsg` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoDelMsg()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoAddSubMsg` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoAddSubMsg()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoPushPeriodMsg` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoPushPeriodMsg()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoGripperCtrl` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoGripperCtrl()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoRoboticArmMove` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoRoboticArmMove()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoRoboticArmGetPostion` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoRoboticArmGetPostion()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoSensorGetData` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoSensorGetData()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoServoModeSet` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoServoModeSet()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+### `ProtoServoControl` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoServoControl()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+### `ProtoServoGetAngle` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoServoGetAngle()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoServoCtrlSet` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoServoCtrlSet()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoServoCtrlPush` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoServoCtrlPush()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoRoboticArmMoveCtrl` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoRoboticArmMoveCtrl()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_resp` : Описание отсутствует.
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+### `ProtoRoboticArmMovePush` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoRoboticArmMovePush()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `ProtoRoboticAiInit` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ProtoRoboticAiInit()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `pack_req` : Описание отсутствует.
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : Описание отсутствует.
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+### `TextProtoData` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TextProtoData()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `text_cmd` : Описание отсутствует.
+    - Сигнатура: `text_cmd(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.text_cmd()`
+  - `text_cmd` : Описание отсутствует.
+    - Сигнатура: `text_cmd(self, cmd)`
+    - Приватный: нет
+    - Аргументы:
+      - `cmd`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.text_cmd(...)`
+  - `pack_req` : 协议对象打包发送数据为字节流。
+    - Сигнатура: `pack_req(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_req()`
+  - `unpack_req` : 从字节流解包。
+    - Сигнатура: `unpack_req(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_req(...)`
+  - `pack_resp` : 协议对象打包。
+    - Сигнатура: `pack_resp(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack_resp()`
+  - `unpack_resp` : 从字节流解包为返回值和相关属性。
+    - Сигнатура: `unpack_resp(self, buf, offset=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `offset`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack_resp(...)`
+  - `get_status` : Описание отсутствует.
+    - Сигнатура: `get_status(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_status()`
+  - `resp` : Описание отсутствует.
+    - Сигнатура: `resp(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.resp()`
+  - `proresp` : 针对acceleration?、attitude?、temp?命令的回复进行预处理。
+    - Сигнатура: `proresp(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.proresp()`
+### `TextProtoDrone` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TextProtoDrone()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+### `TextProtoDronePush` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TextProtoDronePush()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+### `TelloDdsProto` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloDdsProto()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+### `STAConnInfo` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `STAConnInfo()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `set_info` : Описание отсутствует.
+    - Сигнатура: `set_info(self, ssid='', password='', id='', cc='CN')`
+    - Приватный: нет
+    - Аргументы:
+      - `ssid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `password`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `cc`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.set_info()`
+  - `pack` : Описание отсутствует.
+    - Сигнатура: `pack(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pack()`
+  - `unpack` : Описание отсутствует.
+    - Сигнатура: `unpack(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.unpack(...)`
+
+## Модуль `robomaster.robot`
+
+### Классы
+
+### `RobotPlaySoundAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, sound_id, times, **kw)`
+  - **Аргументы конструктора:**
+    - `sound_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `times`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `RobotPlaySoundAction(1, ...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, sound_id, times, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `sound_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `times`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(1, ...)`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `update_from_push` : Описание отсутствует.
+    - Сигнатура: `update_from_push(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.update_from_push(...)`
+### `TelloTempInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloTempInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `temp_info` : Описание отсутствует.
+    - Сигнатура: `temp_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.temp_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `TelloTofInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloTofInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `tof_info` : Описание отсутствует.
+    - Сигнатура: `tof_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.tof_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `TelloDroneInfoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloDroneInfoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `drone_info` : Описание отсутствует.
+    - Сигнатура: `drone_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.drone_info()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `TelloStatusSubject` 
+- **Кратко:** Tello 飞机的所有状态数据
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TelloStatusSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `decode` : 根据数据推送更新 drone 的状态数据
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.freq()`
+  - `freq` : Описание отсутствует.
+    - Сигнатура: `freq(self, in_freq)`
+    - Приватный: нет
+    - Аргументы:
+      - `in_freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.freq(10)`
+  - `pad_position` : Описание отсутствует.
+    - Сигнатура: `pad_position(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.pad_position()`
+  - `get_status` : Описание отсутствует.
+    - Сигнатура: `get_status(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.get_status(...)`
+### `RobotBase` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, cli=None, conf=config.ep_conf)`
+  - **Аргументы конструктора:**
+    - `cli`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `conf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `RobotBase()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, cli=None, conf=config.ep_conf)`
+    - Приватный: да
+    - Аргументы:
+      - `cli`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `conf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `client` : Описание отсутствует.
+    - Сигнатура: `client(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.client()`
+  - `product` : Описание отсутствует.
+    - Сигнатура: `product(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.product()`
+### `Drone` 
+- **Кратко:** 教育系列无人机
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, cli=None)`
+  - **Аргументы конструктора:**
+    - `cli`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Drone()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, cli=None)`
+    - Приватный: да
+    - Аргументы:
+      - `cli`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `conf` : Описание отсутствует.
+    - Сигнатура: `conf(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.conf()`
+  - `flight` : Описание отсутствует.
+    - Сигнатура: `flight(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.flight()`
+  - `action_dispatcher` : Описание отсутствует.
+    - Сигнатура: `action_dispatcher(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.action_dispatcher()`
+  - `battery` : Описание отсутствует.
+    - Сигнатура: `battery(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.battery()`
+  - `camera` : Описание отсутствует.
+    - Сигнатура: `camera(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.camera()`
+  - `dds` : Описание отсутствует.
+    - Сигнатура: `dds(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.dds()`
+  - `sensor` : Описание отсутствует.
+    - Сигнатура: `sensor(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sensor()`
+  - `led` : Описание отсутствует.
+    - Сигнатура: `led(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.led()`
+  - `ai_module` : Описание отсутствует.
+    - Сигнатура: `ai_module(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.ai_module()`
+  - `get_module` : Описание отсутствует.
+    - Сигнатура: `get_module(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.get_module(...)`
+  - `_scan_modules` (приватный): Описание отсутствует.
+    - Сигнатура: `_scan_modules(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._scan_modules()`
+  - `get_subnets` : Look through the machine's internet connection and
+    - Сигнатура: `get_subnets(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_subnets()`
+  - `_scan_host` (приватный): Find avaliable ip list in server's subnets
+    - Сигнатура: `_scan_host(self, timeout=10)`
+    - Приватный: да
+    - Аргументы:
+      - `timeout`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._scan_host()`
+  - `scan_drone_robot` : Automatic scanning of robots in the network
+    - Сигнатура: `scan_drone_robot(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.scan_drone_robot()`
+  - `_scan_receive_task` (приватный): Listen to responses from the Tello when scan the devices.
+    - Сигнатура: `_scan_receive_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._scan_receive_task()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `search_stop` : Описание отсутствует.
+    - Сигнатура: `search_stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.search_stop()`
+  - `initialize` : Описание отсутствует.
+    - Сигнатура: `initialize(self, conn_type=config.DEFAULT_CONN_TYPE)`
+    - Приватный: нет
+    - Аргументы:
+      - `conn_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.initialize()`
+  - `_enable_sdk` (приватный): Описание отсутствует.
+    - Сигнатура: `_enable_sdk(self, on_off=1)`
+    - Приватный: да
+    - Аргументы:
+      - `on_off`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._enable_sdk()`
+  - `close` : 停止drone对象
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `send_command` : Описание отсутствует.
+    - Сигнатура: `send_command(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.send_command()`
+  - `get_sdk_version` : 获取SDK版本号
+    - Сигнатура: `get_sdk_version(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_sdk_version()`
+  - `get_wifi_version` : 获取WIFI版本号
+    - Сигнатура: `get_wifi_version(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_wifi_version()`
+  - `get_ssid` : 获取SSID名称
+    - Сигнатура: `get_ssid(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_ssid()`
+  - `get_drone_version` : 获取飞机固件版本号
+    - Сигнатура: `get_drone_version(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_drone_version()`
+  - `get_esp32_version` : 获取esp32版本号
+    - Сигнатура: `get_esp32_version(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_esp32_version()`
+  - `get_hardware` : 获取飞机硬件信息
+    - Сигнатура: `get_hardware(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_hardware()`
+  - `get_sn` : 获取飞机sn号
+    - Сигнатура: `get_sn(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_sn()`
+  - `get_wifi` : 获取wifi信噪比
+    - Сигнатура: `get_wifi(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_wifi()`
+  - `get_motor_time` : 获取电机运行时间
+    - Сигнатура: `get_motor_time(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_motor_time()`
+  - `get_height` : 获取飞机相对高度
+    - Сигнатура: `get_height(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_height()`
+  - `get_temp` : 获取飞机机身温度
+    - Сигнатура: `get_temp(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_temp()`
+  - `get_attitude` : 获取飞机三轴姿态信息
+    - Сигнатура: `get_attitude(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_attitude()`
+  - `get_baro` : 获取电机气压计高度
+    - Сигнатура: `get_baro(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_baro()`
+  - `get_acceleration` : 获取飞机三轴加速度值
+    - Сигнатура: `get_acceleration(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_acceleration()`
+  - `set_wifichannel` : 设置飞机WIFI信道
+    - Сигнатура: `set_wifichannel(self, channel)`
+    - Приватный: нет
+    - Аргументы:
+      - `channel`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 需要设置的信道.
+    - Пример: `obj.set_wifichannel(...)`
+  - `config_sta` : 设置飞机的连接模式为组网模式
+    - Сигнатура: `config_sta(self, ssid, password)`
+    - Приватный: нет
+    - Аргументы:
+      - `ssid`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 路由器的账号.
+      - `password`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 路由器的密码.
+    - Пример: `obj.config_sta(1, ...)`
+  - `sub_temp` : 订阅飞机温度信息
+    - Сигнатура: `sub_temp(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据的频率, 1HZ, 5HZ, 10HZ.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入数据处理的回掉函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+    - Пример: `obj.sub_temp()`
+  - `unsub_temp` : 取消订阅温度信息。
+    - Сигнатура: `unsub_temp(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_temp()`
+  - `sub_tof` : 订阅飞机tof信息
+    - Сигнатура: `sub_tof(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据的频率, 1HZ, 5HZ, 10HZ.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入数据处理的回掉函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+    - Пример: `obj.sub_tof()`
+  - `unsub_tof` : 取消订阅tof信息
+    - Сигнатура: `unsub_tof(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_tof()`
+  - `sub_drone_info` : 订阅飞机高度、气压计、电机运行时间信息
+    - Сигнатура: `sub_drone_info(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据的频率, 1HZ, 5HZ, 10HZ.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入数据处理的回掉函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+    - Пример: `obj.sub_drone_info()`
+  - `unsub_drone_info` : 取消订阅飞机高度、气压计、电机运行时间信息
+    - Сигнатура: `unsub_drone_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_drone_info()`
+  - `_sub_drone_all_status` (приватный): 订阅飞机所有状态数据
+    - Сигнатура: `_sub_drone_all_status(self, freq=10, callback=None, *args, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据的频率, 1HZ, 5HZ, 10HZ.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: function:传入数据处理的回掉函数.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数参数.
+    - Пример: `obj._sub_drone_all_status()`
+  - `_unsub_drone_all_status` (приватный): 取消订阅飞机所有状态
+    - Сигнатура: `_unsub_drone_all_status(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._unsub_drone_all_status()`
+  - `get_status` : 获取飞机指定的状态
+    - Сигнатура: `get_status(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: string:需要获取的状态名，可列表["MID", "x", "y", "z", "mpry", "pitch", "roll", "yaw", "vgx", "vgy",.
+    - Пример: `obj.get_status(...)`
+### `Robot` 
+- **Кратко:** RoboMaster EP 机甲大师 机器人
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, cli=None)`
+  - **Аргументы конструктора:**
+    - `cli`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Robot()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, cli=None)`
+    - Приватный: да
+    - Аргументы:
+      - `cli`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `_start_heart_beat_timer` (приватный): Описание отсутствует.
+    - Сигнатура: `_start_heart_beat_timer(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._start_heart_beat_timer()`
+  - `_stop_heart_beat_timer` (приватный): Описание отсутствует.
+    - Сигнатура: `_stop_heart_beat_timer(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._stop_heart_beat_timer()`
+  - `_send_heart_beat_msg` (приватный): Описание отсутствует.
+    - Сигнатура: `_send_heart_beat_msg(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._send_heart_beat_msg()`
+  - `conf` : Описание отсутствует.
+    - Сигнатура: `conf(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.conf()`
+  - `action_dispatcher` : Описание отсутствует.
+    - Сигнатура: `action_dispatcher(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.action_dispatcher()`
+  - `ip` : Описание отсутствует.
+    - Сигнатура: `ip(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.ip()`
+  - `conn_type` : Описание отсутствует.
+    - Сигнатура: `conn_type(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.conn_type()`
+  - `proto_type` : Описание отсутствует.
+    - Сигнатура: `proto_type(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.proto_type()`
+  - `chassis` : 获取底盘模块对象
+    - Сигнатура: `chassis(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.chassis()`
+  - `gimbal` : 获取云台模块对象
+    - Сигнатура: `gimbal(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.gimbal()`
+  - `blaster` : 获取水弹枪模块对象
+    - Сигнатура: `blaster(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.blaster()`
+  - `led` : 获取灯效控制模块对象
+    - Сигнатура: `led(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.led()`
+  - `vision` : 获取智能识别模块对象
+    - Сигнатура: `vision(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.vision()`
+  - `battery` : 获取电池模块对象
+    - Сигнатура: `battery(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.battery()`
+  - `camera` : 获取相机模块对象
+    - Сигнатура: `camera(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.camera()`
+  - `robotic_arm` : 获取机械臂模块对象
+    - Сигнатура: `robotic_arm(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.robotic_arm()`
+  - `dds` : Описание отсутствует.
+    - Сигнатура: `dds(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.dds()`
+  - `servo` : Описание отсутствует.
+    - Сигнатура: `servo(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.servo()`
+  - `sensor` : Описание отсутствует.
+    - Сигнатура: `sensor(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sensor()`
+  - `sensor_adaptor` : Описание отсутствует.
+    - Сигнатура: `sensor_adaptor(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.sensor_adaptor()`
+  - `gripper` : Описание отсутствует.
+    - Сигнатура: `gripper(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.gripper()`
+  - `armor` : Описание отсутствует.
+    - Сигнатура: `armor(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.armor()`
+  - `uart` : Описание отсутствует.
+    - Сигнатура: `uart(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.uart()`
+  - `ai_module` : Описание отсутствует.
+    - Сигнатура: `ai_module(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.ai_module()`
+  - `is_initialized` : Описание отсутствует.
+    - Сигнатура: `is_initialized(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.is_initialized()`
+  - `_scan_modules` (приватный): Описание отсутствует.
+    - Сигнатура: `_scan_modules(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._scan_modules()`
+  - `get_module` : 获取模块对象
+    - Сигнатура: `get_module(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 模块名称，字符串，如：chassis, gimbal, led, blaster, camera, battery, vision, etc..
+    - Пример: `obj.get_module(...)`
+  - `initialize` : 初始化机器人
+    - Сигнатура: `initialize(self, conn_type=config.DEFAULT_CONN_TYPE, proto_type=config.DEFAULT_PROTO_TYPE, sn=None)`
+    - Приватный: нет
+    - Аргументы:
+      - `conn_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 连接建立类型: ap表示使用热点直连；sta表示使用组网连接，rndis表示使用USB连接.
+      - `proto_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 通讯方式: tcp, udp.
+      - `sn`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.initialize()`
+  - `close` : Описание отсутствует.
+    - Сигнатура: `close(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.close()`
+  - `_wait_for_connection` (приватный): Описание отсутствует.
+    - Сигнатура: `_wait_for_connection(self, conn_type, proto_type, sn=None)`
+    - Приватный: да
+    - Аргументы:
+      - `conn_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `proto_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `sn`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._wait_for_connection(0, 0)`
+  - `reset` : 重置机器人到初始默认状态
+    - Сигнатура: `reset(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset()`
+  - `reset_robot_mode` : Описание отсутствует.
+    - Сигнатура: `reset_robot_mode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset_robot_mode()`
+  - `set_robot_mode` : 设置机器人工作模式
+    - Сигнатура: `set_robot_mode(self, mode=GIMBAL_LEAD)`
+    - Приватный: нет
+    - Аргументы:
+      - `mode`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 机器人工作模式: free表示自由模式；chassis_lead表示云台跟随底盘模式；gimbal_lead表示底盘跟随云台模式.
+    - Пример: `obj.set_robot_mode()`
+  - `get_robot_mode` : 获取机器人工作模式
+    - Сигнатура: `get_robot_mode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_robot_mode()`
+  - `_enable_sdk` (приватный): 进入和退出SDK模式
+    - Сигнатура: `_enable_sdk(self, enable=1)`
+    - Приватный: да
+    - Аргументы:
+      - `enable`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 进入或退出SDK模式，1 为进入SDK模式，0 为退出SDK模式.
+    - Пример: `obj._enable_sdk()`
+  - `get_version` : 获取机器人固件版本号信息
+    - Сигнатура: `get_version(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_version()`
+  - `get_sn` : 获取机器人硬件SN信息
+    - Сигнатура: `get_sn(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_sn()`
+  - `_sub_add_node` (приватный): Описание отсутствует.
+    - Сигнатура: `_sub_add_node(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._sub_add_node()`
+  - `_sub_node_reset` (приватный): Описание отсутствует.
+    - Сигнатура: `_sub_node_reset(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._sub_node_reset()`
+  - `play_audio` : 播放本地音频文件
+    - Сигнатура: `play_audio(self, filename)`
+    - Приватный: нет
+    - Аргументы:
+      - `filename`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 播放音效的文件名，目前仅支持单通道，48KHz采样的wav格式文件.
+    - Пример: `obj.play_audio(...)`
+  - `play_sound` : 播放系统音效
+    - Сигнатура: `play_sound(self, sound_id, times=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `sound_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 系统音效ID值.
+      - `times`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 播放次数.
+    - Пример: `obj.play_sound(1)`
+
+## Модуль `robomaster.robotic_arm`
+
+### Классы
+
+### `ArmSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ArmSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `arm_data` : 获取机械臂信息
+    - Сигнатура: `arm_data(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.arm_data()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `RoboticArmMoveAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, x=0, y=0, z=0, mode=0, **kw)`
+  - **Аргументы конструктора:**
+    - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `mode`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `RoboticArmMoveAction()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, x=0, y=0, z=0, mode=0, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `z`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `mode`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `update_from_push` : Описание отсутствует.
+    - Сигнатура: `update_from_push(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.update_from_push(...)`
+### `RoboticArm` 
+- **Кратко:** EP 机械臂 模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `RoboticArm(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `reset` : Описание отсутствует.
+    - Сигнатура: `reset(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset()`
+  - `recenter` : 控制机械臂回中
+    - Сигнатура: `recenter(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.recenter()`
+  - `move` : 机械臂相对位置移动
+    - Сигнатура: `move(self, x=0, y=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float, x轴运动距离，向前移动为正方向，单位 mm.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float, y轴运动距离，向上移动为正方向，单位 mm.
+    - Пример: `obj.move()`
+  - `moveto` : 机械臂绝对位置移动
+    - Сигнатура: `moveto(self, x=0, y=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `x`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float, x轴运动距离，向前移动为正方向，单位 mm.
+      - `y`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: float, y轴运动距离，向上移动为正方向，单位 mm.
+    - Пример: `obj.moveto()`
+  - `sub_position` : 订阅机械臂的位置信息
+    - Сигнатура: `sub_position(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:(1,5,10,20,50) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (pos_x, pos_y)：.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_position()`
+  - `unsub_position` : 取消机械臂位置信息订阅
+    - Сигнатура: `unsub_position(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_position()`
+
+## Модуль `robomaster.sensor`
+
+### Классы
+
+### `TofSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `TofSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `tof` : 距离传感器数据获取
+    - Сигнатура: `tof(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.tof()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `AdapterSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `AdapterSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `adapter` : 距离传感器转接板数据获取
+    - Сигнатура: `adapter(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.adapter()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `DistanceSensor` 
+- **Кратко:** EP 距离传感器模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `DistanceSensor(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `sub_distance` : 订阅距离传感器测量的距离信息
+    - Сигнатура: `sub_distance(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据的频率，支持的订阅频率为1、5、10、20、50hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入数据处理的回调函数，回调函数的参数为：.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入参数。.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.sub_distance()`
+  - `unsub_distance` : 取消距离传感器的信息订阅。
+    - Сигнатура: `unsub_distance(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_distance()`
+### `SensorAdaptor` 
+- **Кратко:** EP 传感器板模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `SensorAdaptor(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `get_adc` : 传感器板adc值获取
+    - Сигнатура: `get_adc(self, id=1, port=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `id`: тип `не указан`; единицы `не указаны`; допустимые значения `1,8`; описание: int[1,8]，传感器板编号.
+      - `port`: тип `не указан`; единицы `не указаны`; допустимые значения `1,2`; описание: int:[1,2]，传感器板端口号.
+    - Пример: `obj.get_adc()`
+  - `get_io` : 传感器板io电平值获取
+    - Сигнатура: `get_io(self, id=1, port=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `id`: тип `не указан`; единицы `не указаны`; допустимые значения `1,8`; описание: int[1,8], 传感器板编号.
+      - `port`: тип `не указан`; единицы `не указаны`; допустимые значения `1,2`; описание: int:[1,2], 传感器板端口号.
+    - Пример: `obj.get_io()`
+  - `get_pulse_period` : 传感器板电平持续时间获取
+    - Сигнатура: `get_pulse_period(self, id=1, port=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `id`: тип `не указан`; единицы `не указаны`; допустимые значения `1,8`; описание: int[1,8], 传感器板编号.
+      - `port`: тип `не указан`; единицы `не указаны`; допустимые значения `1,2`; описание: int:[1,2], 传感器板端口号.
+    - Пример: `obj.get_pulse_period()`
+  - `sub_adapter` : 订阅传感器转接板信息
+    - Сигнатура: `sub_adapter(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 订阅数据的频率，支持的订阅频率为1、5、10、20、50hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入数据处理的回调函数，回调函数的参数为：.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 传入参数。.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.sub_adapter()`
+  - `unsub_adapter` : 取消传感器转接板的信息订阅。
+    - Сигнатура: `unsub_adapter(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_adapter()`
+### `TelloDistanceSensor` 
+- **Кратко:** 教育无人机 距离传感器模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `TelloDistanceSensor(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `get_ext_tof` : 获取扩展模块tof传感器的数值
+    - Сигнатура: `get_ext_tof(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.get_ext_tof()`
+
+## Модуль `robomaster.servo`
+
+### Классы
+
+### `ServoSubject` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `ServoSubject()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `servo_data` : Описание отсутствует.
+    - Сигнатура: `servo_data(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.servo_data()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `ServoSetAngleAction` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, index=0, angle=0, **kw)`
+  - **Аргументы конструктора:**
+    - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `angle`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `ServoSetAngleAction()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, index=0, angle=0, **kw)`
+    - Приватный: да
+    - Аргументы:
+      - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `angle`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__()`
+  - `__repr__` (приватный): Описание отсутствует.
+    - Сигнатура: `__repr__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__repr__()`
+  - `encode` : Описание отсутствует.
+    - Сигнатура: `encode(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.encode()`
+  - `update_from_push` : Описание отсутствует.
+    - Сигнатура: `update_from_push(self, proto)`
+    - Приватный: нет
+    - Аргументы:
+      - `proto`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.update_from_push(...)`
+### `Servo` 
+- **Кратко:** EP 舵机模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Servo(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `moveto` : 舵机绝对位置移动
+    - Сигнатура: `moveto(self, index=0, angle=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `1, 3`; описание: int [1, 3]，舵机编号.
+      - `angle`: тип `не указан`; единицы `не указаны`; допустимые значения `-180, 180`; описание: int: [-180, 180]，舵机旋转角度，单位（°）.
+    - Пример: `obj.moveto()`
+  - `drive_speed` : Описание отсутствует.
+    - Сигнатура: `drive_speed(self, index=0, speed=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `speed`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.drive_speed()`
+  - `pause` : 停止
+    - Сигнатура: `pause(self, index=0)`
+    - Приватный: нет
+    - Аргументы:
+      - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `1, 3`; описание: int: [1, 3]，舵机编号.
+    - Пример: `obj.pause()`
+  - `get_angle` : 获取舵机角度值
+    - Сигнатура: `get_angle(self, index=1)`
+    - Приватный: нет
+    - Аргументы:
+      - `index`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: int: [1，3]，舵机编号.
+    - Пример: `obj.get_angle()`
+  - `sub_servo_info` : 订阅舵机角度信息
+    - Сигнатура: `sub_servo_info(self, freq=5, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `freq`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: (1, 5, 10, 20, 50) 设置数据订阅数据的推送频率，单位 Hz.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (valid[4], speed[4], angle[4]):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 可变参数.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 关键字参数.
+    - Пример: `obj.sub_servo_info()`
+  - `unsub_servo_info` : 取消订阅舵机的角度信息
+    - Сигнатура: `unsub_servo_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_servo_info()`
+
+## Модуль `robomaster.uart`
+
+### Классы
+
+### `Uart` 
+- **Кратко:** EP 串口模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Uart(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `__del__` (приватный): Описание отсутствует.
+    - Сигнатура: `__del__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__del__()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `stop` : Описание отсутствует.
+    - Сигнатура: `stop(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.stop()`
+  - `_msg_recv` (приватный): Описание отсутствует.
+    - Сигнатура: `_msg_recv(cls, self, msg)`
+    - Приватный: да
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._msg_recv(...)`
+  - `_dispatch_task` (приватный): Описание отсутствует.
+    - Сигнатура: `_dispatch_task(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._dispatch_task()`
+  - `serial_process_decode` : Описание отсутствует.
+    - Сигнатура: `serial_process_decode(self, msg)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.serial_process_decode(...)`
+  - `sub_serial_msg` : Описание отсутствует.
+    - Сигнатура: `sub_serial_msg(self, callback=None, *args)`
+    - Приватный: нет
+    - Аргументы:
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.sub_serial_msg()`
+  - `unsub_serial_msg` : Описание отсутствует.
+    - Сигнатура: `unsub_serial_msg(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unsub_serial_msg()`
+  - `serial_process_exec` : Описание отсутствует.
+    - Сигнатура: `serial_process_exec(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.serial_process_exec()`
+  - `serial_read_data` : Описание отсутствует.
+    - Сигнатура: `serial_read_data(self, msg_len)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg_len`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.serial_read_data(...)`
+  - `serial_param_set` : 底盘串口参数设置
+    - Сигнатура: `serial_param_set(self, baud_rate=0, data_bit=1, odd_even=0, stop_bit=0, rx_en=1, tx_en=1, rx_size=50, tx_size=50)`
+    - Приватный: нет
+    - Аргументы:
+      - `baud_rate`: тип `не указан`; единицы `не указаны`; допустимые значения `0~4映射‘9600’，‘19200’，‘38400’，‘57600’，‘115200’`; описание: 串口波特率，设置范围：0~4映射‘9600’，‘19200’，‘38400’，‘57600’，‘115200’.
+      - `data_bit`: тип `не указан`; единицы `не указаны`; допустимые значения `0~3映射‘bit7’, 'bit8', 'bit9', 'bit10'`; описание: 数据位设置，设置范围：0~3映射‘bit7’, 'bit8', 'bit9', 'bit10'.
+      - `odd_even`: тип `не указан`; единицы `не указаны`; допустимые значения `0~3映射‘none’, 'odd', 'even'`; описание: 数据校验位，设置范围：0~3映射‘none’, 'odd', 'even'.
+      - `stop_bit`: тип `не указан`; единицы `не указаны`; допустимые значения `1~2`; описание: 停止位，设置范围：1~2.
+      - `rx_en`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 接收使能.
+      - `tx_en`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 发送使能.
+      - `rx_size`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 接收buff大小.
+      - `tx_size`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 发送buff大小.
+    - Пример: `obj.serial_param_set()`
+  - `serial_send_msg` : 底盘串口数据数据发送
+    - Сигнатура: `serial_send_msg(self, msg_buf)`
+    - Приватный: нет
+    - Аргументы:
+      - `msg_buf`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 发送的数据.
+    - Пример: `obj.serial_send_msg(...)`
+
+## Модуль `robomaster.util`
+
+### Классы
+
+### `UnitChecker` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, name, default=0, start=0, end=0, step=1, decimal=2, scale=1, unit=UNIT_METRIC)`
+  - **Аргументы конструктора:**
+    - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `default`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `start`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `end`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `step`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `decimal`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `scale`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - `unit`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `UnitChecker(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, name, default=0, start=0, end=0, step=1, decimal=2, scale=1, unit=UNIT_METRIC)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `default`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `start`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `end`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `step`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `decimal`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `scale`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `unit`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `name` : Описание отсутствует.
+    - Сигнатура: `name(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.name()`
+  - `default` : Описание отсутствует.
+    - Сигнатура: `default(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.default()`
+  - `scale` : Описание отсутствует.
+    - Сигнатура: `scale(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.scale()`
+  - `step` : Описание отсутствует.
+    - Сигнатура: `step(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.step()`
+  - `decimal` : Описание отсутствует.
+    - Сигнатура: `decimal(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.decimal()`
+  - `start` : Описание отсутствует.
+    - Сигнатура: `start(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.start()`
+  - `end` : Описание отсутствует.
+    - Сигнатура: `end(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.end()`
+  - `unit` : Описание отсутствует.
+    - Сигнатура: `unit(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.unit()`
+  - `check` : Описание отсутствует.
+    - Сигнатура: `check(self, value)`
+    - Приватный: нет
+    - Аргументы:
+      - `value`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.check(...)`
+  - `proto2val` : Описание отсутствует.
+    - Сигнатура: `proto2val(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.proto2val(...)`
+  - `val2proto` : Описание отсутствует.
+    - Сигнатура: `val2proto(self, val)`
+    - Приватный: нет
+    - Аргументы:
+      - `val`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.val2proto(...)`
+
+## Модуль `robomaster.version`
+
+
+## Модуль `robomaster.vision`
+
+### Классы
+
+### `VisionPushEvent` 
+- **Кратко:** Описание отсутствует.
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self)`
+  - **Аргументы конструктора:**
+  - **Пример:** `VisionPushEvent()`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj.__init__()`
+  - `data_info` : Описание отсутствует.
+    - Сигнатура: `data_info(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.data_info()`
+  - `decode` : Описание отсутствует.
+    - Сигнатура: `decode(self, data)`
+    - Приватный: нет
+    - Аргументы:
+      - `data`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.decode(...)`
+### `Vision` 
+- **Кратко:** EP 视觉识别模块
+- **Приватный класс:** нет
+- **Конструктор:** `__init__(self, robot)`
+  - **Аргументы конструктора:**
+    - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+  - **Пример:** `Vision(...)`
+- **Методы:**
+  - `__init__` (приватный): Описание отсутствует.
+    - Сигнатура: `__init__(self, robot)`
+    - Приватный: да
+    - Аргументы:
+      - `robot`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.__init__(...)`
+  - `reset` : Описание отсутствует.
+    - Сигнатура: `reset(self)`
+    - Приватный: нет
+    - Аргументы: нет.
+    - Пример: `obj.reset()`
+  - `_id2marker` (приватный): ID转换为Marker字符
+    - Сигнатура: `_id2marker(marker_id)`
+    - Приватный: да
+    - Аргументы:
+      - `marker_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._id2marker(1)`
+  - `_type2info` (приватный): Описание отсутствует.
+    - Сигнатура: `_type2info(det_type)`
+    - Приватный: да
+    - Аргументы:
+      - `det_type`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._type2info(0)`
+  - `_id2gesture` (приватный): Описание отсутствует.
+    - Сигнатура: `_id2gesture(gus_id)`
+    - Приватный: да
+    - Аргументы:
+      - `gus_id`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._id2gesture(1)`
+  - `sub_detect_info` : 订阅智能识别消息
+    - Сигнатура: `sub_detect_info(self, name, color=None, callback=None, *args, **kw)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("person", "gesture", "line", "marker", "robot")，person 行人，gesture 手势，line 线识别，        marker 标签识别，robot 机器人识别.
+      - `color`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum:("red", "green", "blue"): 指定识别颜色，仅线识别和标签识别时生效.
+      - `callback`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 回调函数，返回数据 (list(rect_info)):.
+      - `*args`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `**kw`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj.sub_detect_info(...)`
+  - `unsub_detect_info` : 取消智能订阅消息
+    - Сигнатура: `unsub_detect_info(self, name)`
+    - Приватный: нет
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: enum: ("person", "gesture", "line", "marker", "robot")，取消的智能识别功能.
+    - Пример: `obj.unsub_detect_info(...)`
+  - `_enable_detection` (приватный): 开启视觉检测功能
+    - Сигнатура: `_enable_detection(self, name)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 检测功能的类型.
+    - Пример: `obj._enable_detection(...)`
+  - `_disable_detection` (приватный): 关闭视觉对应类型的检测功能
+    - Сигнатура: `_disable_detection(self, func_mask)`
+    - Приватный: да
+    - Аргументы:
+      - `func_mask`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: 视觉检测功能类型.
+    - Пример: `obj._disable_detection(...)`
+  - `_get_sdk_function` (приватный): 获取视觉检测的功能类型
+    - Сигнатура: `_get_sdk_function(self)`
+    - Приватный: да
+    - Аргументы: нет.
+    - Пример: `obj._get_sdk_function()`
+  - `_set_color` (приватный): Описание отсутствует.
+    - Сигнатура: `_set_color(self, name, color)`
+    - Приватный: да
+    - Аргументы:
+      - `name`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+      - `color`: тип `не указан`; единицы `не указаны`; допустимые значения `не указаны`; описание: описание отсутствует.
+    - Пример: `obj._set_color(..., ...)`
